@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const AllInOneCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -208,14 +209,26 @@ const AllInOneCTA = () => {
                 >
                   Get Started
                 </Button>
-                <a
-                  href="https://wiki.ccaas.intarvas.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/about#services-showcase"
                   className="w-full h-[52px] bg-white text-gray-900 rounded-xl font-semibold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 flex items-center justify-center"
+                  onClick={(e) => {
+                    // Handle smooth scroll to section
+                    const href = e.currentTarget.getAttribute('href');
+                    if (href && href.includes('#')) {
+                      const [path, hash] = href.split('#');
+                      if (hash && window.location.pathname === path) {
+                        e.preventDefault();
+                        const element = document.getElementById(hash);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                      }
+                    }
+                  }}
                 >
                   Explore Services
-                </a>
+                </Link>
               </div>
             </div>
           </div>
