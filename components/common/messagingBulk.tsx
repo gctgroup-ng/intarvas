@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 import MessagingPlatformSection from "./messaging";
 
 const MessagingPlatformSectionNumber = () => {
-  const [activeFeature, setActiveFeature] = useState(2);
+  const [activeFeature, setActiveFeature] = useState(0);
 
   const features = [
     {

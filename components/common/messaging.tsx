@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { CheckCircle } from "lucide-react";
 
 const MessagingPlatformSection = () => {
-  const [activeFeature, setActiveFeature] = useState(3);
+  const [activeFeature, setActiveFeature] = useState(0);
 
   const features = [
     {
