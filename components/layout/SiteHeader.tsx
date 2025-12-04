@@ -91,7 +91,7 @@ export default function SiteHeader() {
                 <div className="flex items-center gap-8 py-3">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                        <img src={ shouldUseBlackLogo ? "/intervaslogoblack.svg" : "/images/Logo.svg"} alt="IntarVAS Logo" className="h-8 w-[200px]"/>
+                        <img src={ shouldUseBlackLogo ? "/intervaslogoblack.svg" : "/images/Logo.svg"} alt="IntarvAS Logo" className="h-8 w-[200px]"/>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -146,7 +146,7 @@ export default function SiteHeader() {
                             <div className="flex flex-col h-full">
                                 {/* Mobile Header */}
                                 <div className="flex items-center p-4 border-b border-gray-200 shrink-0">
-                                    <img src="/intervaslogoblack.svg" alt="IntarVAS Logo" className="h-8 w-[200px]"/>
+                                    <img src="/intervaslogoblack.svg" alt="IntarvAS Logo" className="h-8 w-[200px]"/>
                                 </div>
 
                                 {/* Mobile Navigation */}

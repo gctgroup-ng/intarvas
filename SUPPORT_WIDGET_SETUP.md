@@ -1,6 +1,6 @@
 # 🎯 Support Widget Setup Complete!
 
-Your IntarVAS support widget is now installed globally across your entire website.
+Your IntarvAS support widget is now installed globally across your entire website.
 
 ## 📁 Files Modified/Created
 
@@ -143,7 +143,7 @@ If you need to customize the widget position or appearance:
 ### Widget Appears Multiple Times?
 
 - Clear browser cache and reload
-- Check console for "IntarVAS support widget loaded successfully"
+- Check console for "IntarvAS support widget loaded successfully"
 - Should only appear once
 
 ### Widget Positioning Issues?

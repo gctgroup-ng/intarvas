@@ -183,7 +183,7 @@ Your app is now running on Next.js 15! Here's what you can do:
 
 ## 🎉 Migration Successful!
 
-Your IntarVAS app is now powered by Next.js 15 with:
+Your IntarvAS app is now powered by Next.js 15 with:
 - ✅ App Router (latest React features)
 - ✅ Built-in API Routes (no external backend needed)
 - ✅ Resend email integration

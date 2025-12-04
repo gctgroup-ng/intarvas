@@ -121,7 +121,7 @@ const ContactUsSection = () => {
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl animate-fade-in-up delay-300 ">
             Explore our commitment to exceptional customer support. Our team is
             ready to assist you around the clock, ensuring a smooth and reliable
-            experience with IntarVAS services.
+            experience with IntarvAS services.
           </p>
         </div>
 
@@ -292,7 +292,7 @@ const ContactUsSection = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="IntarVAS Office Location - Victoria Island, Lagos"
+                  title="IntarvAS Office Location - Victoria Island, Lagos"
                 ></iframe>
 
                 {/* Overlay Card */}

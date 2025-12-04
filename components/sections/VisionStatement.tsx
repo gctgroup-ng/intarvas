@@ -116,7 +116,7 @@ const VisionMissionSection = () => {
               <span className="text-[#858D9D]">Our mission</span> is to connect businesses and customers with reliable, scalable telecom solutions.
             </h2>
             <p className="text-[#667085] text-sm sm:text-base lg:text-[18px] leading-relaxed font-[300]">
-              As a premier provider of telecom and digital solutions, IntarVAS
+              As a premier provider of telecom and digital solutions, IntarvAS
               has spent years empowering businesses with exceptional
               telecommunications expertise. We're dedicated to delivering
               cutting-edge services that help companies thrive in the digital

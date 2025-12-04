@@ -8,35 +8,29 @@ const FAQAccordion = () => {
 
   const faqs = [
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
+      question: "What kinds of phone numbers does IntarvAS provide?",
+      answer: "We provide Nigerian vanity and toll-free numbers — including 0700 “vanity” numbers and 0800 toll-free numbers to help businesses present a professional, memorable contact line."
     },
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
+      question: "How will getting a 0700 or 0800 number benefit my business?",
+      answer: "By using our numbers, you gain a more professional and credible image, make it easier for customers to remember you, and enhance accessibility nationwide."
     },
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
+      question: "Can calls to these numbers be routed to multiple departments or locations?",
+      answer: "Yes, our system supports flexible call routing. You can direct incoming calls to different teams, departments, or locations, all via a single central number."
     },
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
+      question: "Is the service scalable as my business grows?",
+      answer: "Yes. The numbers and system are scalable, and they support advanced telecom features that can grow along with your company’s needs."
     },
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
+      question: "Are calls from customers free?",
+      answer: "For toll-free numbers (0800), callers can reach you without cost. This encourages customer engagement while keeping communication affordable for your business."
     },
     {
-      question: "Do you sell Nigerian Phone numbers?",
-      answer:
-        "Yes, we provide Nigerian phone numbers including 0700 and 0800 numbers. These vanity numbers help businesses establish a professional presence and are easy for customers to remember. Contact us to learn more about available numbers and pricing.",
-    },
+      question: "Do you offer desk phones or hardware as part of the package?",
+      answer: "Yes, IntarvAS offers enterprise-grade desk phones that work with our IP/PBX/SIP system."
+    }
   ];
 
   const toggleAccordion = (index) => {

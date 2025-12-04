@@ -31,7 +31,7 @@
 //         <div>
 //           <div className="mb-3 font-medium">Services</div>
 //           <ul className="space-y-2 text-sm text-muted-foreground">
-//             <li><Link href="/services/pbx">IntarVAS PBX</Link></li>
+//             <li><Link href="/services/pbx">IntarvAS PBX</Link></li>
 //             <li><Link href="/services/bulk-messaging">Bulk Messaging</Link></li>
 //             <li><Link href="/services/numbers">0700 & 0800</Link></li>
 //           </ul>
@@ -75,7 +75,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Logo.svg"
-                alt="IntarVAS Logo"
+                alt="IntarvAS Logo"
                 className="h-8 w-[200px]"
               />
             </Link>

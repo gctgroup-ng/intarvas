@@ -174,13 +174,13 @@
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha1",
 //     // },
 //     // {
-//     //   text: "IntarVAS has been instrumental in scaling our customer support. The call recording feature helps us train our team better, and the analytics provide valuable insights into customer behavior.",
+//     //   text: "IntarvAS has been instrumental in scaling our customer support. The call recording feature helps us train our team better, and the analytics provide valuable insights into customer behavior.",
 //     //   name: "David Okonkwo",
 //     //   company: "HealthPlus Pharmacy",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=David1",
 //     // },
 //     // {
-//     //   text: "The reliability of IntarVAS services is unmatched. We've never experienced downtime, and their customer support team is always available to help. Truly professional service.",
+//     //   text: "The reliability of IntarvAS services is unmatched. We've never experienced downtime, and their customer support team is always available to help. Truly professional service.",
 //     //   name: "Grace Okafor",
 //     //   company: "EduTech Academy",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Grace1",
@@ -198,7 +198,7 @@
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jennifer1",
 //     // },
 //     // {
-//     //   text: "IntarVAS helped us transition from traditional phone systems to modern cloud solutions seamlessly. The migration was smooth, and the new features have boosted our productivity.",
+//     //   text: "IntarvAS helped us transition from traditional phone systems to modern cloud solutions seamlessly. The migration was smooth, and the new features have boosted our productivity.",
 //     //   name: "Ahmed Hassan",
 //     //   company: "Kano State Government",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ahmed1",
@@ -210,7 +210,7 @@
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Blessing1",
 //     // },
 //     // {
-//     //   text: "Cost-effective and reliable - that's what IntarVAS delivers. We've reduced our communication costs by 60% while improving service quality. The ROI has been incredible.",
+//     //   text: "Cost-effective and reliable - that's what IntarvAS delivers. We've reduced our communication costs by 60% while improving service quality. The ROI has been incredible.",
 //     //   name: "Samuel Adebayo",
 //     //   company: "AgroTech Solutions",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Samuel1",
@@ -222,7 +222,7 @@
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Patience1",
 //     // },
 //     // {
-//     //   text: "IntarVAS has been our trusted partner for over 3 years. Their technical support is excellent, and they're always quick to implement new features we request.",
+//     //   text: "IntarvAS has been our trusted partner for over 3 years. Their technical support is excellent, and they're always quick to implement new features we request.",
 //     //   name: "Ibrahim Tanko",
 //     //   company: "Kaduna State University",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ibrahim1",
@@ -234,7 +234,7 @@
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Victoria1",
 //     // },
 //     // {
-//     //   text: "We've been able to expand our customer base significantly with IntarVAS services. The toll-free number gives us national reach, and customers trust us more.",
+//     //   text: "We've been able to expand our customer base significantly with IntarvAS services. The toll-free number gives us national reach, and customers trust us more.",
 //     //   name: "Mohammed Sani",
 //     //   company: "Northern Bank PLC",
 //     //   avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mohammed1",
@@ -275,7 +275,7 @@
 //           </h2>
 //           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
 //             From government agencies to growing enterprises, our clients trust
-//             IntarVAS.
+//             IntarvAS.
 //           </p>
 //         </div>
 
@@ -587,7 +587,7 @@ const TestimonialsSection = () => {
             What our clients say
           </h2>
           <p className="text-xs sm:text-sm lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            From government agencies to growing enterprises, our clients trust IntarVAS.
+            From government agencies to growing enterprises, our clients trust IntarvAS.
           </p>
         </div>
 

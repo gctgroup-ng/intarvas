@@ -74,7 +74,7 @@ fetch('/api/send-email', { method: 'POST' })
 Current configuration in `/api/send-email.ts`:
 - **From:** support@intarvas.com
 - **To:** support@intarvas.com
-- **Subject:** Test Email from IntarVAS
+- **Subject:** Test Email from IntarvAS
 - **Body:** This is a test message sent via Resend.
 
 ## 🔒 Security Note

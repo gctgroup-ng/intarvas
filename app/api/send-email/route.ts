@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       from: "onboarding@resend.dev", // Resend's test email (works without domain verification)
       to: "support@intarvas.com", // Your Resend account email (only email that can receive test emails)
       replyTo: email, // User's email for replies
-      subject: subject || "New Contact Form Message from IntarVAS",
+      subject: subject || "New Contact Form Message from IntarvAS",
       html: `
         <div style="font-family: sans-serif; line-height: 1.6;">
           <h2>New Message from ${fullName}</h2>
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
           <p>${message.replace(/\n/g, '<br>')}</p>
           <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;" />
           <p style="color: #666; font-size: 12px;">
-            This message was sent from the IntarVAS contact form.<br/>
+            This message was sent from the IntarvAS contact form.<br/>
             Reply directly to this email to respond to ${fullName}.
           </p>
         </div>

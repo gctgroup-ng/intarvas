@@ -313,7 +313,7 @@ const FeaturesSection = () => {
       case "pbx":
         return "images/phone.png";
       case "messaging":
-        return "/bulkmessagingphoneimage.svg";
+        return "/sms-bulk.png";
       case "allinone":
         return "/allinoneimage.svg";
       case "numbers":

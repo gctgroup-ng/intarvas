@@ -11,8 +11,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
-  title: "IntarVAS - Smart Telecom Solutions",
-  description: "Transform your business communication with IntarVAS",
+  title: "IntarvAS - Smart Telecom Solutions",
+  description: "Transform your business communication with IntarvAS",
   icons: {
     icon: [
       {

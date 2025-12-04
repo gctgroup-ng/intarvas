@@ -1,6 +1,6 @@
 # ✅ Email Setup Complete!
 
-Your IntarVAS project now has a working email system using **Resend** + **Vercel Serverless Functions**.
+Your IntarvAS project now has a working email system using **Resend** + **Vercel Serverless Functions**.
 
 ## 🎯 What Was Created
 

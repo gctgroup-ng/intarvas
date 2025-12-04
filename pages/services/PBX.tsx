@@ -251,7 +251,7 @@ export default function PBX() {
             {/* Animated image */}
           <img
             src={"/images/pbxHeroImg.png"}
-            alt="IntarVAS PBX analytics dashboard showing call history and statistics"
+            alt="IntarvAS PBX analytics dashboard showing call history and statistics"
             className="w-full rounded-[32px] relative z-10 transform transition-all duration-700 hover:scale-105 hover:rotate-1 shadow-2xl hover:shadow-lg"
           />
           </div>

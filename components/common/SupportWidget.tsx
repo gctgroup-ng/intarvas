@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 /**
- * IntarVAS Support Widget Component
+ * IntarvAS Support Widget Component
  * Loads the support widget script on all pages EXCEPT the home page
  */
 const SupportWidget = () => {
@@ -35,11 +35,11 @@ const SupportWidget = () => {
 
     // Add error handling
     script.onerror = () => {
-      console.error('Failed to load IntarVAS support widget');
+      console.error('Failed to load IntarvAS support widget');
     };
 
     script.onload = () => {
-      console.log('IntarVAS support widget loaded successfully');
+      console.log('IntarvAS support widget loaded successfully');
     };
 
     // Append to body

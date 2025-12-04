@@ -17,7 +17,7 @@ export default function BulkMessaging() {
   const [hasAnimatedDescription, setHasAnimatedDescription] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
-  const descriptionText ="    As a licensed VAS Aggregator, IntarVAS provides an A2P bulk messaging platform that's reliable, compliant, and far-reaching. We serve enterprises, fintech, government, NGOs, and retail, handling everything from transactional alerts and promotional campaigns to OTP verification.";
+  const descriptionText ="    As a licensed VAS Aggregator, IntarvAS provides an A2P bulk messaging platform that's reliable, compliant, and far-reaching. We serve enterprises, fintech, government, NGOs, and retail, handling everything from transactional alerts and promotional campaigns to OTP verification.";
                 
 
   const heroRef = useRef<HTMLDivElement>(null);
@@ -260,7 +260,7 @@ export default function BulkMessaging() {
             <p className="mx-auto font-inter md:text-[38px] max-w-md md:max-w-4xl font-[600] text-center text-lg leading-[1.2] text-muted-foreground">
               {(() => {
                 const descriptionText =
-                  "    As a licensed VAS Aggregator, IntarVAS provides an A2P bulk messaging platform that's reliable, compliant, and far-reaching. We serve enterprises, fintech, government, NGOs, and retail, handling everything from transactional alerts and promotional campaigns to OTP verification.";
+                  "    As a licensed VAS Aggregator, IntarvAS provides an A2P bulk messaging platform that's reliable, compliant, and far-reaching. We serve enterprises, fintech, government, NGOs, and retail, handling everything from transactional alerts and promotional campaigns to OTP verification.";
                 const descriptionWords = descriptionText.split(" ");
 
                 return descriptionWords.map((word, index) => {

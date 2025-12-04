@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# IntarVAS Codebase Cleanup Script
+# IntarvAS Codebase Cleanup Script
 # ✅ CLEANUP ALREADY COMPLETED - This script has been run successfully!
 # The /src/ folder and old Vite files have been removed.
 # See CLEANUP_COMPLETED.md for details.
@@ -18,7 +18,7 @@ exit 0
 
 # === ORIGINAL SCRIPT BELOW (no longer needed) ===
 
-echo "🧹 IntarVAS Codebase Cleanup"
+echo "🧹 IntarvAS Codebase Cleanup"
 echo "=============================="
 echo ""
 echo "This will delete the following old files:"
