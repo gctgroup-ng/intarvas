@@ -1,4 +1,3 @@
-write this as a markdown file
 # Intarvas Communications
 
 Intarvas Communications is a modern communications platform that provides seamless connectivity solutions for businesses and individuals.
@@ -107,7 +106,7 @@ For support and inquiries, contact:
 
 ## License
 
-© 2025 Intarvas Communications. All rights reserved.
+© 2024 Intarvas Communications. All rights reserved.
 
 ---
 

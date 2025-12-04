@@ -219,9 +219,3 @@ html, body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-[class*="lovable"],
-[id*="lovable"],
-div:has(> *:contains("Lovable")) {
-  display: none !important;
-}
