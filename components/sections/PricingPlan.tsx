@@ -48,40 +48,111 @@ const PricingPlans = () => {
     };
   }, []);
 
+  // const plans = [
+  //   {
+  //     name: "Basic Level",
+  //     icon: <Award className="w-6 h-6" />,
+  //     price: "5,000",
+  //     period: "/month",
+  //     description: "Best for small businesses",
+  //     userRange: "(min. 4 users)",
+  //     popular: false,
+  //     features: [
+  //       { text: "Basic Cloud PBX functionality", included: true },
+  //       { text: "Sales tools, per PBX", included: false },
+  //       { text: "Call Center, per PBX", included: false },
+  //       { text: "Call Statistics, per PBX", included: false },
+  //       { text: "Auto-dialing option, per PBX", included: false },
+  //       {
+  //         text: "Call recording with one-month storage, per PBX",
+  //         included: false,
+  //       },
+  //       { text: "CRM Integration / API, per PBX", included: false },
+  //       { text: "Integration with Microsoft Teams", included: false },
+  //       { text: "External IP-PBX Connector, per PBX", included: false },
+  //     ],
+  //   },
+  //   {
+  //     name: "Medium Enterprises",
+  //     icon: <Shield className="w-6 h-6" />,
+  //     price: "132,800",
+  //     period: "/month",
+  //     description: "Best for businesses with",
+  //     userRange: "4-50 users",
+  //     popular: true,
+  //     features: [
+  //       { text: "Basic Cloud PBX functionality", included: true },
+  //       { text: "Sales tools, per PBX", included: true },
+  //       { text: "Call Center, per PBX", included: true },
+  //       { text: "Call Statistics, per PBX", included: true },
+  //       { text: "Auto-dialing option, per PBX", included: true },
+  //       {
+  //         text: "Call recording with one-month storage, per PBX",
+  //         included: true,
+  //       },
+  //       { text: "CRM Integration / API, per PBX", included: true },
+  //       { text: "Integration with Microsoft Teams", included: true },
+  //       { text: "External IP-PBX Connector, per PBX", included: true },
+  //     ],
+  //   },
+  //   {
+  //     name: "Large Enterprise",
+  //     icon: <TrendingUp className="w-6 h-6" />,
+  //     price: "Custom Pricing",
+  //     period: "/month",
+  //     description: "Best for businesses with",
+  //     userRange: "50+ users",
+  //     popular: false,
+  //     features: [
+  //       { text: "Basic Cloud PBX functionality", included: true },
+  //       { text: "Sales tools, per PBX", included: true },
+  //       { text: "Call Center, per PBX", included: true },
+  //       { text: "Call Statistics, per PBX", included: true },
+  //       { text: "Auto-dialing option, per PBX", included: true },
+  //       {
+  //         text: "Call recording with one-month storage, per PBX",
+  //         included: true,
+  //       },
+  //       { text: "CRM Integration / API, per PBX", included: true },
+  //       { text: "Integration with Microsoft Teams", included: true },
+  //       { text: "External IP-PBX Connector, per PBX", included: true },
+  //     ],
+  //   },
+  // ];
   const plans = [
     {
       name: "Basic Level",
       icon: <Award className="w-6 h-6" />,
-      price: "5,000",
+      price: "XX,XXX",
       period: "/month",
       description: "Best for small businesses",
       userRange: "(min. 4 users)",
       popular: false,
       features: [
-        { text: "Basic Cloud PBX functionality", included: true },
-        { text: "Sales tools, per PBX", included: false },
-        { text: "Call Center, per PBX", included: false },
-        { text: "Call Statistics, per PBX", included: false },
-        { text: "Auto-dialing option, per PBX", included: false },
+        { text: "Interactive Voice Recording", included: true },
+        { text: "Call Distribution", included: true },
+        { text: "Queue management", included: true },
+        { text: "BlackList", included: true },
+        { text: "Basic Call Report", included: true },
         {
-          text: "Call recording with one-month storage, per PBX",
-          included: false,
+          text: "Voicemail and FAX",
+          included: true,
         },
-        { text: "CRM Integration / API, per PBX", included: false },
-        { text: "Integration with Microsoft Teams", included: false },
-        { text: "External IP-PBX Connector, per PBX", included: false },
+        { text: "Call Forwarding", included: true },
+        { text: "Call Transfer", included: true },
+        { text: "Mobile and PC Application", included: true },
       ],
     },
     {
       name: "Medium Enterprises",
       icon: <Shield className="w-6 h-6" />,
-      price: "132,800",
+      price: "XXX,XXX",
       period: "/month",
       description: "Best for businesses with",
       userRange: "4-50 users",
       popular: true,
       features: [
-        { text: "Basic Cloud PBX functionality", included: true },
+        { text: "All Features in Basic Level", included: true },
         { text: "Sales tools, per PBX", included: true },
         { text: "Call Center, per PBX", included: true },
         { text: "Call Statistics, per PBX", included: true },
@@ -104,7 +175,7 @@ const PricingPlans = () => {
       userRange: "50+ users",
       popular: false,
       features: [
-        { text: "Basic Cloud PBX functionality", included: true },
+        { text: "All Features in Basic Level", included: true },
         { text: "Sales tools, per PBX", included: true },
         { text: "Call Center, per PBX", included: true },
         { text: "Call Statistics, per PBX", included: true },
@@ -119,7 +190,6 @@ const PricingPlans = () => {
       ],
     },
   ];
-
   return (
     <section id="pricing-section" className="bg-gray-50 py-20 px-8">
       <div className="max-w-7xl mx-auto">
@@ -196,7 +266,8 @@ const PricingPlans = () => {
                       : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
                   }`}
                 >
-                  Get Started
+                  
+                  {plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`}
                 </button>
                 </a>
 
