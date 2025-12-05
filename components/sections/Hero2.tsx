@@ -282,7 +282,7 @@ const HeroSection = ({
             <Button variant="outline" size="default" onClick={onSecondaryClick}
               className="bg-white text-[#001933] border-[#001933] hover:bg-gray-50 w-full sm:w-auto sm:px-6"
             >
-              <Link href="/about#services-showcase-section">
+              <Link href="/about#services-showcase">
                 {secondaryButtonText}
               </Link>
             </Button>

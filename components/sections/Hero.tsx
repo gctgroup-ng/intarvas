@@ -138,7 +138,7 @@ const Hero = () => {
                     </p>
 
                     <div className="animate-fade-in-up delay-500 flex flex-col sm:flex-row gap-4 pt-4">
-                        <Link href="/about#services-showcase-section">
+                        <Link href="/about#services-showcase">
                             <Button variant="outline" size="lg"
                                 className="bg-white text-[#001933] border-white hover:bg-gray-100 font-semibold px-8" >
                                 {secondaryButtonText}
@@ -162,7 +162,7 @@ const Hero = () => {
                         {subtitle}
                     </h1>
                     <div className="animate-fade-in-up delay-500 flex sm:flex-row gap-3 pt-3 sm:pt-6">
-                        <Link href="/about#services-showcase-section">
+                        <Link href="/about#services-showcase">
                             <Button variant="outline" size="default" className="bg-white text-[#001933] border-[#001933] hover:bg-gray-50 w-full sm:w-auto sm:px-6">
                                 {secondaryButtonText}
                             </Button>

@@ -210,7 +210,7 @@ const AllInOneCTA = () => {
                   Get Started
                 </Button>
                 <Link
-                  href="/about#services-showcase-section"
+                  href="/about#services-showcase"
                   className="w-full h-[52px] bg-white text-gray-900 rounded-xl font-semibold text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 flex items-center justify-center"
                   onClick={(e) => {
                     // Handle smooth scroll to section

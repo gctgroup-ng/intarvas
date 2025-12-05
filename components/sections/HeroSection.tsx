@@ -296,7 +296,7 @@ const HeroSection = ({
             ref={buttonsRef}
             className="mt-8 flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
           >
-            <Link href="/about#services-showcase-section">
+            <Link href="/about#services-showcase">
               <Button
                 variant="outline"
                 size="default"

@@ -56,7 +56,7 @@ export default function BusinessCom({
 
           <div className={`mt-8 flex flex-wrap gap-3 transition-all duration-700 delay-400 ${isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-8"}`}>
             <Button variant="outline" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
-              <a href="/about#services-showcase-section">
+              <a href="/about#services-showcase">
                 Explore Services
               </a>
             </Button>
