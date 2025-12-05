@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -92,10 +92,10 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
+      </head> */}
       <body>
         <ClientProviders>
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
           {/* <LoadingScreen /> */}
           <Toaster />
           <Sonner />

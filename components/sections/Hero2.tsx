@@ -282,7 +282,7 @@ const HeroSection = ({
             <Button variant="outline" size="default" onClick={onSecondaryClick}
               className="bg-white text-[#001933] border-[#001933] hover:bg-gray-50 w-full sm:w-auto sm:px-6"
             >
-              <Link href="https://wiki.ccaas.intarvas.com" target="_blank" rel="noopener noreferrer">
+              <Link href="/about#services-showcase-section">
                 {secondaryButtonText}
               </Link>
             </Button>

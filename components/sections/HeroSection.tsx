@@ -296,7 +296,7 @@ const HeroSection = ({
             ref={buttonsRef}
             className="mt-8 flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
           >
-            <Link href="https://wiki.ccaas.intarvas.com" target="_blank" rel="noopener noreferrer">
+            <Link href="/about#services-showcase-section">
               <Button
                 variant="outline"
                 size="default"

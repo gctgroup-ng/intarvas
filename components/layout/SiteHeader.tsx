@@ -122,7 +122,7 @@ export default function SiteHeader() {
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex items-center gap-3">
                     <Button variant="outline" asChild>
-                        <Link href="https://wiki.ccaas.intarvas.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="/about#services-showcase-section">
                             Explore Services
                         </Link>
                     </Button>
@@ -183,7 +183,7 @@ export default function SiteHeader() {
                                 {/* Mobile Action Buttons */}
                                 <div className="p-6 space-y-4 border-t border-gray-200 shrink-0">
                                     <Button variant="outline" className="w-full text-lg py-6" asChild>
-                                        <Link href="https://wiki.ccaas.intarvas.com" target="_blank" rel="noopener noreferrer">
+                                        <Link href="/about#services-showcase-section">
                                             Explore Services
                                         </Link>
                                     </Button>

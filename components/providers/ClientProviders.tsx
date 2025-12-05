@@ -33,7 +33,7 @@ export function ClientProviders({ children }: { children: React.ReactNode }) {
 
   return (
     <LoadingProvider>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <LoadingScreen />
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>{children}</TooltipProvider>

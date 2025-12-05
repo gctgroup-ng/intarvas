@@ -345,7 +345,10 @@
 
 "use client";
 
+import { Star } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { RiStarFill } from "react-icons/ri";
+
 
 const TestimonialsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -535,27 +538,56 @@ const TestimonialsSection = () => {
       name: "Adesoji Emmanuel",
       company: "XRNET Technologies LTD",
       avatar: "/images/xrnet-logo.svg",
+      rating: 4
     },
     {
-      text: "I'll give them 5 stars, their service has been really good.",
+      text: "I'll give them 5 stars, their service has been great, and the support from the Intarvas team has been outsatnding so far",
       name: "Olakunle Opajobi",
       company: "Winners Golden Chance Group",
       avatar: "/images/WGC.svg",
+      rating: 5
     },
     {
       text: "My experience using the IntarvAS PBX has been smooth so far.",
       name: "Kpejoh Tamara",
       company: "XRNET Technologies LTD",
       avatar: "/images/xrnet-logo.svg",
+      rating: 4
     },
+    {
+      text: "Intarvas has been an incredible partner for us. Their PBX and SMS solutions were exactly what we needed, and they ensured our onboarding process was smooth and hassle-free. The team has been consistently responsive and supportive every step of the way.",
+      name: "Emmanuel Ezeani",
+      company: "Ruut CSM",
+      avatar: "/images/Partner Logos/PNGs/ruut_csm-.png",
+      rating: 5
+    },
+    {
+      text: "It's swift and friendly.",
+      name: "Marian Omon Adebayo-Adeola",
+      company: "Aero Contractors",
+      avatar: "/images/aero-logo.svg",
+      rating: 4
+    },
+    {
+      text: "Intarvas has been an incredible partner for us. Their PBX and SMS solutions were exactly what we needed, and they ensured our onboarding process was smooth and hassle-free. The team has been consistently responsive and supportive every step of the way.",
+      name: "Temitayo Akure",
+      company: "Ruut CSM",
+      avatar: "/images/Partner Logos/PNGs/ruut_csm-.png",
+      rating: 5
+    }
   ];
 
   const Card = ({ testimonial }) => {
     return (
       <div className="bg-white rounded-lg sm:rounded-xl lg:rounded-2xl w-80 sm:w-80 lg:w-full p-4 sm:p-6 lg:p-8 shadow-sm hover:shadow-md transition-all duration-300 flex-shrink-0">
-        <p className="text-sm sm:text-base lg:text-base text-gray-700 leading-relaxed mb-4 sm:mb-6 lg:mb-8 line-clamp-3 sm:line-clamp-none">
+        <p className="text-sm sm:text-base lg:text-base text-gray-700 leading-relaxed line-clamp-3 sm:line-clamp-none">
           {testimonial.text}
         </p>
+        <div className="flex flex-row mb-4 sm:mb-6 lg:mb-8 mt-4">
+          {Array.from({ length: testimonial.rating }, (_, index) => (
+            <RiStarFill key={index} className="text-amber-400" />
+          ))}
+        </div>
         <div className="flex items-center gap-2 sm:gap-3">
           <img
             src={testimonial.avatar}
