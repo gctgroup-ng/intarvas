@@ -91,7 +91,7 @@ const Footer = () => {
                 SOCIAL MEDIA
               </h3>
               <div className="flex gap-3">
-                <button
+                {/* <button
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
                   aria-label="Facebook"
                   disabled
@@ -104,18 +104,18 @@ const Footer = () => {
                   disabled
                 >
                   <Twitter className="w-5 h-5 text-black" />
-                </button>
+                </button> */}
                 <a
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
+                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="LinkedIn"
-                  href="https://www.linkedin.com/company/intarvas/"
+                  href="https://www.linkedin.com/company/intarvas/" target="_blank" rel="noopener noreferrer"
                 >
                   <Linkedin className="w-5 h-5 text-black" />
                 </a>
                 <a
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
+                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="Instagram"
-                  href="https://www.instagram.com/intarvas/"
+                  href="https://www.instagram.com/intarvas/" target="_blank" rel="noopener noreferrer"
                 >
                   <Instagram className="w-5 h-5 text-black" />
                 </a>

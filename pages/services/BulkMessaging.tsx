@@ -17,7 +17,7 @@ export default function BulkMessaging() {
   const [hasAnimatedDescription, setHasAnimatedDescription] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
-  const descriptionText ="    As a licensed VAS Aggregator, IntarvAS provides an A2P bulk messaging platform that's reliable, compliant, and far-reaching. We serve enterprises, fintech, government, NGOs, and retail, handling everything from transactional alerts and promotional campaigns to OTP verification.";
+  const descriptionText ="Intarvas is VAS licensee providing a reliable, compliant A2P bulk messaging platform for transactional alerts, promotional campaigns, and OTP verification across enterprises, fintech, government, NGOs, and retail.";
                 
 
   const heroRef = useRef<HTMLDivElement>(null);
@@ -236,7 +236,7 @@ export default function BulkMessaging() {
           />
         </div>
       </section>
-      <AnimatedText descriptionText={descriptionText} />
+      <AnimatedText descriptionText={descriptionText} textSize="text-[40px]" />
 
       {/* Description Section */}
       {/* <section
