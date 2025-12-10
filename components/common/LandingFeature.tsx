@@ -313,13 +313,13 @@ const FeaturesSection = () => {
       case "pbx":
         return "images/phone.png";
       case "messaging":
-        return "/sms-bulk.png";
+        return "/bulkmessagingphoneimage.svg";
       case "allinone":
         return "/allinoneimage.svg";
       case "numbers":
-        return "/number.png";
+        return "/0700phone.svg";
       default:
-        return "/number.png";
+        return "images/phone.png";
     }
   };
 
@@ -401,7 +401,7 @@ const FeaturesSection = () => {
 
   const tabs = tabSequenceRef.current;
   const sectionHeight = sectionRef.current.offsetHeight;
-
+  
   // Kill any existing ScrollTriggers to avoid conflicts
   ScrollTrigger.getAll().forEach(trigger => {
     if (trigger.trigger === sectionRef.current) {
@@ -409,37 +409,30 @@ const FeaturesSection = () => {
     }
   });
 
-  // Delay ScrollTrigger initialization to prevent interfering with initial scroll position
-  const initTimeout = setTimeout(() => {
-    // Ensure we're at the top before initializing ScrollTrigger
-    if (window.scrollY === 0) {
-      // Create a timeline for smooth tab transitions
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: `+=${sectionHeight * tabs.length}`,
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1,
-          markers: false,
-          invalidateOnRefresh: true,
-          fastScrollEnd: true,
-          preventOverlaps: true,
-          onEnter: () => {
-            isAnimatingRef.current = true;
-          },
-          onLeave: () => {
-            isAnimatingRef.current = false;
-          },
-          onEnterBack: () => {
-            isAnimatingRef.current = true;
-          },
-          onLeaveBack: () => {
-            isAnimatingRef.current = false;
-          }
-        }
-      });
+  // Create a timeline for smooth tab transitions
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: sectionRef.current,
+      start: "top top",
+      end: `+=${sectionHeight * tabs.length}`,
+      scrub: 1,
+      pin: true,
+      anticipatePin: 1,
+      markers: false,
+      onEnter: () => {
+        isAnimatingRef.current = true;
+      },
+      onLeave: () => {
+        isAnimatingRef.current = false;
+      },
+      onEnterBack: () => {
+        isAnimatingRef.current = true;
+      },
+      onLeaveBack: () => {
+        isAnimatingRef.current = false;
+      }
+    }
+  });
 
     // Add tab transitions to the timeline with proper spacing
     tabs.forEach((tab, index) => {
@@ -452,28 +445,25 @@ const FeaturesSection = () => {
       }
     });
 
-      // Animate content entrance on scroll
-      gsap.fromTo(sectionRef.current.querySelector('[class*="grid"]'),
-        {
-          opacity: 0,
-          y: 30
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          }
+    // Animate content entrance on scroll
+    gsap.fromTo(sectionRef.current.querySelector('[class*="grid"]'), 
+      {
+        opacity: 0,
+        y: 30
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          toggleActions: "play none none none",
         }
-      );
-    }
-  }, 1600); // 1600ms delay - wait for scroll lock to release
+      }
+    );
 
     return () => {
-      clearTimeout(initTimeout);
       ScrollTrigger.getAll().forEach((trigger) => {
         if (trigger.trigger === sectionRef.current) {
           trigger.kill();
@@ -510,7 +500,7 @@ const FeaturesSection = () => {
           onClick={() => handleTabClick("allinone")}
         >
           <span className="hidden sm:inline">All in one solution</span>
-          <span className="sm:hidden">AIO</span>
+          <span className="sm:hidden">AIO...</span>
         </button>
         <button
           className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
@@ -622,8 +612,7 @@ const FeaturesSection = () => {
               className={`w-[300px] h-[300px] object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
             />
 
-            <CarouselPlugin list={getCurrentFeatures()} />            
-            
+            <CarouselPlugin list={getCurrentFeatures()} />
           </div>
         </div>
       </div>
