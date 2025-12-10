@@ -17,13 +17,13 @@ const MessagingPlatformSectionNumber = () => {
     {
       title: "Professional Image",
       description:
-        "Project credibility and trust with numbers associated with established organizations, benefit from perception of professionalism",
+        "Project credibility and trust with numbers associated with established organizations, benefit from perception of professionalism.",
       imgSrc: "/images/number02.png",
     },
     {
       title: "Flexible Management",
       description:
-        "Route calls to different departments, teams or location using one central number. Ensure every customer reaches the right person",
+        "Route calls to different departments, teams or location using one central number. Ensure every customer reaches the right person.",
       imgSrc: "/images/number03.png",
     },
     {
@@ -41,7 +41,7 @@ const MessagingPlatformSectionNumber = () => {
     {
       title: "Cost-effective Communication",
       description:
-        "Customers call freely, with a low-cost option for businesses to manage engagement affordaly.",
+        "Customers call freely, with a low-cost option for businesses to manage engagement affordably.",
       imgSrc: "/images/number06.png",
     },
   ];
