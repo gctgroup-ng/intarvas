@@ -3,6 +3,9 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Button } from "../ui/button";
 import PBXCarousel from '../PBXCarousel'
+import { DownloadButton } from "@/components/common/DownloadButton";
+import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+
 
 const IMAGES = [
   { title: 'PBX 1', id: 1, image: "/pbx/pbx-1.svg" },
@@ -85,6 +88,10 @@ export default function PbxFooter() {
                 </a>
               </Button>
             </div>
+            {/* <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-5 mt-8">
+              <DownloadButton  icon={FaAppStoreIos} href="https://apps.apple.com/ng/app/virtual-pbx-intarvas/id6746045043" store="App Store" subtitle="Download on the"/>
+              <DownloadButton icon={FaGooglePlay} href="https://play.google.com/store/apps/details?id=com.intarvas.pbx&pcampaignid=web_share" store="Google Play" subtitle="Get it on"/>
+            </div> */}
           </div>
         </div>
       </div>

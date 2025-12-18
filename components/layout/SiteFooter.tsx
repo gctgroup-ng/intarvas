@@ -52,6 +52,8 @@
 import React, { useState } from "react";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
+import { DownloadButton } from "@/components/common/DownloadButton";
+import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -91,7 +93,7 @@ const Footer = () => {
                 SOCIAL MEDIA
               </h3>
               <div className="flex gap-3">
-                {/* <button
+                <button
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
                   aria-label="Facebook"
                   disabled
@@ -104,7 +106,7 @@ const Footer = () => {
                   disabled
                 >
                   <Twitter className="w-5 h-5 text-black" />
-                </button> */}
+                </button>
                 <a
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="LinkedIn"
@@ -209,7 +211,7 @@ const Footer = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="example@gmail.com"
+                placeholder="example@intarvas.com"
                 required
                 className="w-full px-6 py-3 pr-28 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600"
               />
@@ -220,6 +222,16 @@ const Footer = () => {
                 Submit
               </button>
             </form>
+
+            <div>
+              <h3 className="text-sm font-semibold mt-8 tracking-wider">
+                DOWNLOAD INTARVAS PBX
+              </h3>
+              <div className="flex sm:flex-row items-center gap-8 sm:gap-5 mt-6">
+                <DownloadButton  icon={FaAppStoreIos} href="https://apps.apple.com/ng/app/virtual-pbx-intarvas/id6746045043" store="App Store" subtitle="Download on the"/>
+                <DownloadButton icon={FaGooglePlay} href="https://play.google.com/store/apps/details?id=com.intarvas.pbx&pcampaignid=web_share" store="Google Play" subtitle="Get it on"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>

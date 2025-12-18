@@ -38,7 +38,7 @@ export default function SiteHeader() {
 
     const shouldUseBlackLogo = useMemo(
         () =>
-        pathname.includes("/services") || pathname === "/contact" || isScrolled,
+        pathname.includes("/services") || pathname === "/contact" || pathname === "/privacy" || isScrolled,
         [pathname, isScrolled]
     );
 

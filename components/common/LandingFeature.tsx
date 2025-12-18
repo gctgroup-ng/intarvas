@@ -319,7 +319,7 @@ const FeaturesSection = () => {
       case "numbers":
         return "/0700phone.svg";
       default:
-        return "images/phone.png";
+        return "/0700phone.svg";
     }
   };
 
@@ -475,7 +475,7 @@ const FeaturesSection = () => {
   return (
     <div ref={sectionRef} className="bg-black text-white px-3 py-10 md:py-20 relative overflow-hidden">
       {/* Header Navigation */}
-      <div className={`flex max-w-[300px] md:max-w-[44rem] mx-auto md:p-1 rounded-full md:flex-wrap bg-[#0C0C0C]  items-center justify-center md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${
+      <div className={`flex max-w-[300px] md:max-w-[44rem] mx-auto md:p-1 rounded-full md:flex-wrap bg-[#1A1A1A]   items-center justify-center md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${
           isVisible
             ? "opacity-100 transform translate-y-0"
             : "opacity-0 transform translate-y-8"
@@ -500,7 +500,7 @@ const FeaturesSection = () => {
           onClick={() => handleTabClick("allinone")}
         >
           <span className="hidden sm:inline">All in one solution</span>
-          <span className="sm:hidden">AIO...</span>
+          <span className="sm:hidden">AIO</span>
         </button>
         <button
           className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
@@ -536,7 +536,7 @@ const FeaturesSection = () => {
       >
         {/* Left Side - Features List */}
         <div
-          className={`bg-[#0C0C0C] rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${
+          className={`bg-[#1A1A1A]  rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${
             isVisible
               ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform -translate-x-12"
@@ -580,7 +580,7 @@ const FeaturesSection = () => {
 
         {/* Right Side - Dynamic Image */}
         <div
-          className={`bg-[#0C0C0C] rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${
+          className={`bg-[#1A1A1A]  rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${
             isVisible
               ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform translate-x-12"

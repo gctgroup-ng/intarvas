@@ -12,7 +12,7 @@ const MessagingPlatformSectionNumber = () => {
       title: "Memorable Numbers",
       description:
         "Make it easy for customers to remember your business. With our numbers, your brand stays top of mind and instantly recognizable.",
-      imgSrc: "/images/number01.png",
+      imgSrc: "/bulk-sms/memorable-numbers.jpg",
     },
     {
       title: "Professional Image",
@@ -30,13 +30,13 @@ const MessagingPlatformSectionNumber = () => {
       title: "Nationwide Accessibility",
       description:
         "Give your customers a single number they can call from anywhere in Nigeria. No matter the region, you remain accessible and consistent.",
-      imgSrc: "/images/number04.png",
+      imgSrc: "/bulk-sms/connectivity.jpg",
     },
     {
       title: "Scalable",
       description:
         "As your business expands, our numbers scale with you. Supporting advanced telecom features.",
-      imgSrc: "/images/number05.png",
+      imgSrc: "/bulk-sms/image-numbers.png",
     },
     {
       title: "Cost-effective Communication",
@@ -111,14 +111,14 @@ const MessagingPlatformSectionNumber = () => {
 
           {/* Right Side - Image with Overlay (Desktop Only) */}
           <div className="hidden lg:block relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <div className="rounded-3xl overflow-hidden shadow-2xl max-h-[890px]">
               <img
                 src={`${features[activeFeature].imgSrc}`}
                 alt="Person using messaging platform"
-                className="w-full h-auto object-contain"
+                className="w-full object-contain"
                 loading="lazy"
-                width={200}
-                height={200}
+                // width={200}
+                // height={200}
               />
             </div>
 

@@ -41,7 +41,7 @@ export default function Navbar({ children }: NavbarProps) {
 
     const shouldUseBlackLogo = useMemo(
         () =>
-        pathname.includes("/services") || pathname === "/contact" || isScrolled,
+        pathname.includes("/services") || pathname === "/contact" || pathname === "/privacy" || isScrolled,
         [pathname, isScrolled]
     );
     // const shouldUseBlackLogo = useMemo(

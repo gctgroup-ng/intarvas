@@ -159,7 +159,7 @@ const ContactUsSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="example@gmail.com"
+                  placeholder="example@intarvas.com"
                   required
                   disabled={isLoading}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
@@ -176,7 +176,7 @@ const ContactUsSection = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+234123456789"
+                  placeholder="+234700134000"
                   disabled={isLoading}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
                 />
