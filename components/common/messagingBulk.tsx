@@ -18,13 +18,13 @@ const MessagingPlatformSectionNumber = () => {
       title: "Professional Image",
       description:
         "Project credibility and trust with numbers associated with established organizations, benefit from perception of professionalism.",
-      imgSrc: "/images/number02.png",
+      imgSrc: "/professional.jpg",
     },
     {
       title: "Flexible Management",
       description:
         "Route calls to different departments, teams or location using one central number. Ensure every customer reaches the right person.",
-      imgSrc: "/images/number03.png",
+      imgSrc: "/bulk-sms/image-numbers.png",
     },
     {
       title: "Nationwide Accessibility",
