@@ -66,7 +66,7 @@ export function CarouselPlugin({ list }: { list?: any }) {
         >
           {list?.map((item, index) => (
             <CarouselItem key={index}>
-              <Card className="min-h-[200px] bg-[#0C0C0C] flex flex-col items-center justify-around space-y-4 p-2">
+              <Card className="min-h-[200px] bg-[#1A1A1A] flex flex-col items-center justify-around space-y-4 p-2 border-transparent">
                 <CardContent>
                   <div
                     className={`bg-[#1F2228] z-10 w-16 h-16 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]`}

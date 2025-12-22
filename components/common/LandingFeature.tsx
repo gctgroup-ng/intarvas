@@ -12,8 +12,7 @@ const FeaturesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  // const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
-  const tabSequenceRef = useRef<string[]>(['', "pbx", "allinone", "messaging", "numbers", '']);
+  const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
   
   const isAnimatingRef = useRef(false);
 
@@ -313,13 +312,13 @@ const FeaturesSection = () => {
       case "pbx":
         return "images/phone.png";
       case "messaging":
-        return "/bulkmessagingphoneimage.svg";
+        return "/sms-bulk.png";
       case "allinone":
         return "/allinoneimage.svg";
       case "numbers":
-        return "/0700phone.svg";
+        return "/number.png";
       default:
-        return "/0700phone.svg";
+        return "/number.png";
     }
   };
 
@@ -344,31 +343,31 @@ const FeaturesSection = () => {
     
     setActiveTab(tab);
     
-    if (sectionRef.current) {
-      const tabIndex = tabSequenceRef.current.indexOf(tab);
-      const sectionHeight = sectionRef.current.offsetHeight;
+    // if (sectionRef.current) {
+    //   const tabIndex = tabSequenceRef.current.indexOf(tab);
+    //   const sectionHeight = sectionRef.current.offsetHeight;
       
-      // Calculate scroll position based on tab index
-      const scrollProgress = tabIndex / (tabSequenceRef.current.length - 1);
-      const scrollDistance = sectionHeight * tabSequenceRef.current.length;
-      const scrollPosition = sectionRef.current.offsetTop + (scrollProgress * scrollDistance);
+    //   // Calculate scroll position based on tab index
+    //   const scrollProgress = tabIndex / (tabSequenceRef.current.length - 1);
+    //   const scrollDistance = sectionHeight * tabSequenceRef.current.length;
+    //   const scrollPosition = sectionRef.current.offsetTop + (scrollProgress * scrollDistance);
       
-      isAnimatingRef.current = true;
+    //   isAnimatingRef.current = true;
       
-      gsap.to(window, {
-        duration: 0.8,
-        scrollTo: {
-          y: scrollPosition,
-          autoKill: false
-        },
-        ease: "power2.inOut",
-        onComplete: () => {
-          setTimeout(() => {
-            isAnimatingRef.current = false;
-          }, 300);
-        }
-      });
-    }
+    //   gsap.to(window, {
+    //     duration: 0.8,
+    //     scrollTo: {
+    //       y: scrollPosition,
+    //       autoKill: false
+    //     },
+    //     ease: "power2.inOut",
+    //     onComplete: () => {
+    //       setTimeout(() => {
+    //         isAnimatingRef.current = false;
+    //       }, 300);
+    //     }
+    //   });
+    // }
   };
 
   // Scroll animation effect with intersection observer
@@ -396,86 +395,86 @@ const FeaturesSection = () => {
   }, []);
 
   // GSAP Scroll-triggered tab animation
-  useEffect(() => {
-      if (!sectionRef.current || !isVisible) return;
+  // useEffect(() => {
+  //     if (!sectionRef.current || !isVisible) return;
 
-  const tabs = tabSequenceRef.current;
-  const sectionHeight = sectionRef.current.offsetHeight;
+  // const tabs = tabSequenceRef.current;
+  // const sectionHeight = sectionRef.current.offsetHeight;
   
-  // Kill any existing ScrollTriggers to avoid conflicts
-  ScrollTrigger.getAll().forEach(trigger => {
-    if (trigger.trigger === sectionRef.current) {
-      trigger.kill();
-    }
-  });
+  // // Kill any existing ScrollTriggers to avoid conflicts
+  // ScrollTrigger.getAll().forEach(trigger => {
+  //   if (trigger.trigger === sectionRef.current) {
+  //     trigger.kill();
+  //   }
+  // });
 
-  // Create a timeline for smooth tab transitions
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionRef.current,
-      start: "top top",
-      end: `+=${sectionHeight * tabs.length}`,
-      scrub: 1,
-      pin: true,
-      anticipatePin: 1,
-      markers: false,
-      onEnter: () => {
-        isAnimatingRef.current = true;
-      },
-      onLeave: () => {
-        isAnimatingRef.current = false;
-      },
-      onEnterBack: () => {
-        isAnimatingRef.current = true;
-      },
-      onLeaveBack: () => {
-        isAnimatingRef.current = false;
-      }
-    }
-  });
+  // // Create a timeline for smooth tab transitions
+  // const tl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: sectionRef.current,
+  //     start: "top top",
+  //     end: `+=${sectionHeight * tabs.length}`,
+  //     scrub: 1,
+  //     pin: true,
+  //     anticipatePin: 1,
+  //     markers: false,
+  //     onEnter: () => {
+  //       isAnimatingRef.current = true;
+  //     },
+  //     onLeave: () => {
+  //       isAnimatingRef.current = false;
+  //     },
+  //     onEnterBack: () => {
+  //       isAnimatingRef.current = true;
+  //     },
+  //     onLeaveBack: () => {
+  //       isAnimatingRef.current = false;
+  //     }
+  //   }
+  // });
 
-    // Add tab transitions to the timeline with proper spacing
-    tabs.forEach((tab, index) => {
-      if (index > 0) {
-        // Each tab gets equal portion of the scroll distance
-        const progress = index / (tabs.length);
-        tl.add(() => {
-          setActiveTab(tab);
-        }, progress);
-      }
-    });
+  //   // Add tab transitions to the timeline with proper spacing
+  //   tabs.forEach((tab, index) => {
+  //     if (index > 0) {
+  //       // Each tab gets equal portion of the scroll distance
+  //       const progress = index / (tabs.length);
+  //       tl.add(() => {
+  //         setActiveTab(tab);
+  //       }, progress);
+  //     }
+  //   });
 
-    // Animate content entrance on scroll
-    gsap.fromTo(sectionRef.current.querySelector('[class*="grid"]'), 
-      {
-        opacity: 0,
-        y: 30
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        }
-      }
-    );
+  //   // Animate content entrance on scroll
+  //   gsap.fromTo(sectionRef.current.querySelector('[class*="grid"]'), 
+  //     {
+  //       opacity: 0,
+  //       y: 30
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 0.8,
+  //       scrollTrigger: {
+  //         trigger: sectionRef.current,
+  //         start: "top 80%",
+  //         toggleActions: "play none none none",
+  //       }
+  //     }
+  //   );
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => {
-        if (trigger.trigger === sectionRef.current) {
-          trigger.kill();
-        }
-      });
-    };
-  }, [isVisible]);
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach((trigger) => {
+  //       if (trigger.trigger === sectionRef.current) {
+  //         trigger.kill();
+  //       }
+  //     });
+  //   };
+  // }, [isVisible]);
 
   return (
     <div ref={sectionRef} className="bg-black text-white px-3 py-10 md:py-20 relative overflow-hidden">
       {/* Header Navigation */}
-      <div className={`flex max-w-[300px] md:max-w-[44rem] mx-auto md:p-1 rounded-full md:flex-wrap bg-[#1A1A1A]   items-center justify-center md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${
+      <div className={`flex sm:max-w-md md:max-w-[43rem]  mx-auto md:p-1 rounded-full md:flex-wrap bg-[#1A1A1A] items-center justify-around md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${
           isVisible
             ? "opacity-100 transform translate-y-0"
             : "opacity-0 transform translate-y-8"
