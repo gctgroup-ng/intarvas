@@ -10,7 +10,7 @@ const CustomQuoteBanner = () => {
           <img
             className="absolute bg-transparent w-full h-full object-fill"
             src="/images/TestingIllustration.svg"
-            alt="illustration of business people discussing pricing options"
+            alt=""
           />
           {/* Content */}
           <div className="relative p-12 text-center">

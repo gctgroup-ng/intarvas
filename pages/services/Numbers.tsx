@@ -146,7 +146,7 @@ export default function Numbers() {
               <div>
                 <img
                   src={"/images/number1.png"}
-                  alt="Illustration showing a person working on a laptop with various telecom icons around them"
+                  alt=""
                   className="w-full h-full object-fill"
                   style={{
                     objectPosition: "top",
@@ -159,7 +159,7 @@ export default function Numbers() {
               <div className="flex flex-col justify-between gap-4">
                 <img
                   src={"/images/number2.png"}
-                  alt="Illustration showing a person working on a laptop with various telecom icons around them"
+                  alt=""
                   className="w-full h-full object-fill"
                   style={{
                     objectPosition: "top",
@@ -169,7 +169,7 @@ export default function Numbers() {
                 />
                 <img
                   src={"/images/manonphone.png"}
-                  alt="Illustration showing a person working on a laptop with various telecom icons around them"
+                  alt=""
                   className="w-full h-full object-fill"
                   style={{
                     objectPosition: "top",

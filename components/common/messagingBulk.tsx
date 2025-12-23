@@ -96,7 +96,7 @@ const MessagingPlatformSectionNumber = () => {
                   >
                     <img
                       src={feature.imgSrc}
-                      alt={feature.title}
+                      alt=""
                       className="w-full h-auto object-contain"
                       loading="lazy"
                     />
@@ -114,7 +114,7 @@ const MessagingPlatformSectionNumber = () => {
             <div className="rounded-3xl overflow-hidden shadow-2xl max-h-[890px]">
               <img
                 src={`${features[activeFeature].imgSrc}`}
-                alt="Person using messaging platform"
+                alt=""
                 className="w-full object-contain"
                 loading="lazy"
                 // width={200}

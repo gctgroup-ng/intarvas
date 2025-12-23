@@ -38,7 +38,7 @@ export default function BusinessCom({
       <Noise patternSize={250} patternScaleX={1} patternScaleY={1} patternRefreshInterval={1} patternAlpha={15} />
       <div>
         {/* Background */}
-        <img className="absolute inset-0 w-full h-full object-cover" src="/images/BG.svg" alt="Business Communication"/>
+        <img className="absolute inset-0 w-full h-full object-cover" src="/images/BG.svg" alt=""/>
 
         {/* Content */}
         {/* Text */}
@@ -73,11 +73,11 @@ export default function BusinessCom({
           ${isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-12" }`}
         > 
           {backgroundFrame && (
-            <img src={backgroundFrame} alt="Background Frame"
+            <img src={backgroundFrame} alt=""
               className="absolute left-5 md:left-12 -top-2 md:-top-3 w-full h-full object-contain object-left opacity-40 -z-10 scale-110" 
             />
           )}
-          <img src={dashboardImage} alt="Business Communication Illustration"
+          <img src={dashboardImage} alt=""
             className="w-full h-auto transition-all duration-500 hover:scale-105 hover:brightness-110 relative z-10"
           />
         </div>

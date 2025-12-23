@@ -114,7 +114,7 @@ const MessagingPlatformSection = () => {
                   >
                     <img
                       src={feature.imgSrc}
-                      alt={feature.title}
+                      alt=""
                       className="w-full h-auto object-cover"
                       loading="lazy"
                     />
@@ -159,7 +159,7 @@ const MessagingPlatformSection = () => {
             <div className="rounded-3xl shadow-2xl">
               <img
                 src={`${features[activeFeature].imgSrc}`}
-                alt="Person using messaging platform"
+                alt=""
                 className="w-full h-auto object-cover"
               />
             </div>

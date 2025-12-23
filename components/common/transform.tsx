@@ -90,7 +90,7 @@ const Transform = () => {
       <div>
         <img
           src="/images/TransformIllustration.png"
-          alt="Transform your call center"
+          alt=""
           className="absolute bottom-0 right-0 w-[300px] md:w-[400px] h-auto animate-pulse hover:scale-105 transition-all duration-1000"
           style={{
             animation: 'breathe 3s ease-in-out infinite'

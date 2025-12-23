@@ -251,7 +251,7 @@ export default function PBX() {
             {/* Animated image */}
           <img
             src={"/images/pbxHeroImg.png"}
-            alt="IntarvAS PBX analytics dashboard showing call history and statistics"
+            alt=""
             className="w-full rounded-[32px] relative z-10 transform transition-all duration-700 hover:scale-105 hover:rotate-1 shadow-2xl hover:shadow-lg"
           />
           </div>
@@ -300,7 +300,7 @@ export default function PBX() {
                 icon={
                   <img
                     src={"/icon/voicemail.svg"}
-                    alt="call recording"
+                    alt=""
                     width={24}
                     height={24}
                     style={{ objectFit: "contain" }}
@@ -323,7 +323,7 @@ export default function PBX() {
                 icon={
                   <img
                     src={"/icon/chart.svg"}
-                    alt="Analytics"
+                    alt=""
                     width={24}
                     height={24}
                     style={{ objectFit: "contain" }}
@@ -346,7 +346,7 @@ export default function PBX() {
                 icon={
                   <img
                     src={"/icon/extensionicon.svg"}
-                    alt="Extensions"
+                    alt=""
                     width={24}
                     height={24}
                     style={{ objectFit: "contain" }}
@@ -369,7 +369,7 @@ export default function PBX() {
                 icon={
                   <img
                     src={"/icon/scalability.svg"}
-                    alt="Scalability"
+                    alt=""
                     width={24}
                     height={24}
                     style={{ objectFit: "contain" }}
@@ -434,7 +434,7 @@ export default function PBX() {
                 <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/correctpuzlleicon.svg"
-                    alt="Extensions"
+                    alt=""
                     width={26}
                     height={26}
                     className="text-white"
@@ -466,7 +466,7 @@ export default function PBX() {
                 <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/callrecordicon.svg"
-                    alt="Call Recording"
+                    alt=""
                     width={25}
                     height={23}
                     className="text-white"
@@ -498,7 +498,7 @@ export default function PBX() {
                 <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/analysicreporticon.svg"
-                    alt="Analytics"
+                    alt=""
                     width={24}
                     height={22}
                     className="text-white"
@@ -530,7 +530,7 @@ export default function PBX() {
                 <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/addplus.svg"
-                    alt="Call Forwarding"
+                    alt=""
                     width={26}
                     height={26}
                     className="text-white"
@@ -560,7 +560,7 @@ export default function PBX() {
               <div className="bg-[#0C0C0C] rounded-3xl p-8 flex justify-center items-center h-[400px] hover:scale-105 transition-transform duration-300">
                 <img
                   src="/laptopimg.svg"
-                  alt="PBX Dashboard"
+                  alt=""
                   className="w-[500px] h-full object-contain transition-all duration-500 ease-in-out hover:scale-105"
                 />
               </div>

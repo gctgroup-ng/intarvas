@@ -24,7 +24,7 @@ const AllInSolutionCard = ({ icon, title, description, img }) => {
         <div className="block w-full overflow-hidden rounded-lg">
           <img
             src={img}
-            alt={title}
+            alt=""
             className="w-full object-contain"
             onLoad={handleImageLoad}
           />

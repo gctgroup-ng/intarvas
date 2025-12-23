@@ -63,7 +63,7 @@ const LoadingScreen = () => {
                                 ? "cap-A"
                                 : "s"
               }.png`}
-              alt="IntarvAS Logo"
+              alt=""
               className="block"
             />
           </div>

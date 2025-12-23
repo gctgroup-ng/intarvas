@@ -73,7 +73,7 @@ const VisionMissionSection = () => {
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
                 <img
                   src="/vision-intarvas.png"
-                  alt="Vision - Professional woman"
+                  alt=""
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-contain"
                 />
               </div>
@@ -94,7 +94,7 @@ const VisionMissionSection = () => {
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
                 <img
                   src="/mission-intarvas.png"
-                  alt="Mission - Team meeting"
+                  alt=""
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-contain"
                 />
               </div>

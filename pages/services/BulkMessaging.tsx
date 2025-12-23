@@ -231,7 +231,7 @@ export default function BulkMessaging() {
         >
           <img
             src={"/images/bulkMessagingHeroImg.png"}
-            alt="Bulk messaging platform with colorful message illustrations"
+            alt=""
             className="w-full rounded-[32px] hover:scale-105 transition-transform duration-500"
           />
         </div>

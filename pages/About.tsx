@@ -224,7 +224,7 @@ export default function About() {
           }`}>
             <img
               src={"/building.png"}
-              alt="Illustration showing a person working on a laptop with various telecom icons around them"
+              alt=""
               className="w-auto rounded-[32px] object-contain"
             />
           </div>
@@ -235,7 +235,7 @@ export default function About() {
             }`}>
               <img
                 src={"/images/right_top.png"}
-                alt="Illustration showing a person working on a laptop with various telecom icons around them"
+                alt=""
                 className="w-full"
               />
             </div>
@@ -244,7 +244,7 @@ export default function About() {
             }`}>
               <img
                 src={"/images/right_bottom.png"}
-                alt="Illustration showing a person working on a laptop with various telecom icons around them"
+                alt=""
                 className="w-full"
               />
             </div>
