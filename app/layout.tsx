@@ -95,7 +95,7 @@ export default function RootLayout({
       </head> */}
       <body>
         <ClientProviders>
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
           {/* <LoadingScreen /> */}
           <Toaster />
           <Sonner />
