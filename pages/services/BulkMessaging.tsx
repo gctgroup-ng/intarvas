@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MessagingPlatformSection from "@/components/common/messaging";
-import FAQAccordion from "@/components/common/FAQ";
+import FAQAccordion from "@/components/common/FAQmessaging";
 import CustomQuoteBanner from "@/components/common/tailoredPricing";
 import { useEffect, useRef, useState } from "react";
 import AnimatedText from "@/components/AnimatedText";
