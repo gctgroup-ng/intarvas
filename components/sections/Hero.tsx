@@ -209,7 +209,7 @@ const Hero = () => {
       >
         <img
           src="/hero-animate/desk-dashboard.png"
-          alt="Statistics dashboard"
+          alt="Statistics"
           className="w-[700px] h-auto drop-shadow-2xl"
         />
       </div>
@@ -277,7 +277,7 @@ const Hero = () => {
           >
             <img
               src="/hero-animate/layer.png"
-              alt="Background layer"
+              alt="Background"
               className="w-[1133px] h-[749px] object-contain"
             />
           </div>
@@ -295,7 +295,7 @@ const Hero = () => {
           >
             <img
               src="/hero-animate/desktop-phone.png"
-              alt="PBX phone"
+              alt="PBX"
               className=" object-contain drop-shadow-2xl"
             />
           </div>

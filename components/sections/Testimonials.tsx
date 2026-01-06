@@ -591,7 +591,7 @@ const TestimonialsSection = () => {
         <div className="flex items-center gap-2 sm:gap-3">
           <img
             src={testimonial.avatar}
-            alt={testimonial.name}
+            alt={'image'}
             className="w-8 h-8 sm:w-10 h-10 lg:w-12 h-12 rounded-full"
           />
           <div className="min-w-0">

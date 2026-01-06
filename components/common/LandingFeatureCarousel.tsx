@@ -19,7 +19,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/correctpuzlleicon.svg"
-            alt="Virtual Extensions"
+            alt=""
             style={{ width: "26px", height: "26px" }}
             />
         ),
@@ -30,7 +30,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/callrecordicon.svg"
-            alt="Call Recording"
+            alt=""
             style={{ width: "25px", height: "23px" }}
             />
         ),
@@ -41,7 +41,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/analysicreporticon.svg"
-            alt="Analytics & Reporting"
+            alt=""
             style={{ width: "24px", height: "22px" }}
             />
         ),
@@ -52,7 +52,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/voicetoemailicon.svg"
-            alt="Voicemail-to-Email"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -63,7 +63,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/callfowardingicon.svg"
-            alt="Call Forwarding & Routing"
+            alt=""
             style={{ width: "26px", height: "26px" }}
             />
         ),
@@ -74,7 +74,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/seamlessscalabilityicon.svg"
-            alt="Seamless Scalability"
+            alt=""
             style={{ width: "18px", height: "18px" }}
             />
         ),
@@ -88,7 +88,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/bulksmsicon.svg"
-            alt="Bulk SMS"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -99,7 +99,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/ussdservicesicon.svg"
-            alt="USSD Services"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -110,7 +110,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/a2pmessagingicon.svg"
-            alt="A2P Messaging"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -121,7 +121,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/twowaymessagingicon.svg"
-            alt="Two-way Messaging"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -132,7 +132,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/realtimedeliveryicon.svg"
-            alt="Real-Time Delivery"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -143,7 +143,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/customSIDicon.svg"
-            alt="Custom Sender IDs"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -157,7 +157,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/headphoneicon.svg"
-            alt="Unified Support"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -168,7 +168,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/smartcrmicon.svg"
-            alt="Smart CRM"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -179,7 +179,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/ticketingautomationicon.svg"
-            alt="Ticketing & Automation"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -190,7 +190,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/securityicon.svg"
-            alt="Security & Compliance"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -201,7 +201,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/customworkflows.svg"
-            alt="Custom Workflows"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -212,7 +212,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/aianalyticsicon.svg"
-            alt="AI Analytics"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -226,7 +226,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/memorablevanity.svg"
-            alt="Vanity Numbers"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -237,7 +237,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/tollfreeicon.svg"
-            alt="Toll-Free Numbers"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -248,7 +248,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/enhancedtrusticon.svg"
-            alt="Enhanced Trust"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -259,7 +259,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/callroutingicon.svg"
-            alt="Call Routing"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -270,7 +270,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/scalableicon.svg"
-            alt="Scalable"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -281,7 +281,7 @@ const FeatureCarousel = () => {
         icon: (
             <img
             src="/customeraccessibilityicon.svg"
-            alt="Customer Accessibility"
+            alt=""
             style={{ width: "24px", height: "24px" }}
             />
         ),
@@ -551,7 +551,7 @@ const FeatureCarousel = () => {
                         <img
                         key={activeTab}
                         src={getCurrentImage()}
-                        alt={`${activeTab} Content`}
+                        alt={`Content`}
                         className={`${getImageSize()} object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
                         />
                     </div>
@@ -578,7 +578,7 @@ const FeatureCarousel = () => {
                             >
                                 <img
                                     src={slide.image}
-                                    alt={slide.title}
+                                    alt={`image`}
                                     className="w-[300px] h-[300px] object-contain transition-all duration-500 ease-in-out"
                                 />
                             </div>
@@ -688,7 +688,7 @@ const FeatureCarousel = () => {
                 <img
                     key={activeTab}
                     src={getCurrentImage()}
-                    alt={`${activeTab} Content`}
+                    alt={`Content`}
                     className={`w-[300px] h-[300px] object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
                 />
     

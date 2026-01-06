@@ -77,7 +77,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Logo.svg"
-                alt="IntarvAS Logo"
+                alt="Logo"
                 className="h-8 w-[200px]"
               />
             </Link>
@@ -155,6 +155,13 @@ const Footer = () => {
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Privacy
                 </Link>
               </li>
             </ul>

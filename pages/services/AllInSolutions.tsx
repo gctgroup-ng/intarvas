@@ -326,7 +326,7 @@ export default function AllInSolutions() {
         >
           <img
             src={"/images/allinsoluheroimg.png"}
-            alt="Bulk messaging platform with colorful message illustrations"
+            alt="image"
             className="w-full rounded-[32px] hover:scale-105 transition-transform duration-500"
           />
         </div>
@@ -373,7 +373,7 @@ export default function AllInSolutions() {
                 }}
               >
                 <AllInSolutionCard
-                  icon={<img src={item.icon} alt={item.title} />}
+                  icon={<img src={item.icon} alt={`image`} />}
                   title={item.title}
                   description={item.description}
                   img={item.image}

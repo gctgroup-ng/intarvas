@@ -115,7 +115,7 @@ export default function ServicesShowcase() {
               {/* Service Content */}
               <div className="p-6 md:p-9">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
-                  <img src={service.icon} alt={service.title} className="w-6 h-6" />
+                  <img src={service.icon} alt={"title"} className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold mb-3">{service.title}</h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
@@ -139,7 +139,7 @@ export default function ServicesShowcase() {
                 >
                   <img
                     src={service.img}
-                    alt={`${service.title} Mockup`}
+                    alt={`Mockup`}
                     className="w-full h-auto hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />

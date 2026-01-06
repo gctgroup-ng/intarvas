@@ -64,7 +64,7 @@ const ClientLogosSection = ({
               >
                 <img
                   src={logo.src}
-                  alt={logo.alt}
+                  alt={"logo"}
                   className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                   loading="lazy"
                 />
@@ -85,7 +85,7 @@ const ClientLogosSection = ({
               >
                 <img
                   src={logo.src}
-                  alt={logo.alt}
+                  alt={"logo"}
                   className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                   loading="lazy"
                 />
