@@ -219,13 +219,13 @@ export default function About() {
         <div className={`container grid grid-cols-2 gap-8 py-12 transition-all duration-1000 delay-300 ${
           isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
         }`}>
-          <div className={`hover:scale-105 transition-all duration-1000 ${
+          <div className={`hover:scale-105 transition-all duration-1000 flex items-center md:items-center  ${
             showImages.includes(0) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-8'
           }`}>
             <img
-              src={"/building.png"}
+              src={"/about-thrive/about-us1.jpg"}
               alt=""
-              className="w-auto rounded-[32px] object-contain"
+              className="w-auto rounded-[16px] md:rounded-[32px] scale-105"
             />
           </div>
 
@@ -234,18 +234,18 @@ export default function About() {
               showImages.includes(1) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
             }`}>
               <img
-                src={"/images/right_top.png"}
+                src={"/about-thrive/about-us2.jpg"}
                 alt=""
-                className="w-full"
+                className="w-full rounded-[16px] md:rounded-[32px] scale-95"
               />
             </div>
             <div className={`hover:scale-105 transition-all duration-1000 ${
               showImages.includes(2) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
             }`}>
               <img
-                src={"/images/right_bottom.png"}
+                src={"/about-thrive/invas-about-us.jpg"}
                 alt=""
-                className="w-full"
+                className="w-full md:w-auto rounded-[16px] md:rounded-[32px] scale-95"
               />
             </div>
           </div>
