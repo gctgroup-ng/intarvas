@@ -569,11 +569,11 @@ const TestimonialsSection = () => {
       rating: 4
     },
     {
-      text: "Intarvas has been an incredible partner for us. Their PBX and SMS solutions were exactly what we needed, and they ensured our onboarding process was smooth and hassle-free. The team has been consistently responsive and supportive every step of the way.",
+      text: "The onboarding was great, and the team has been very helpful to us with using and trying to work around the app.",
       name: "Temitayo Akure",
-      company: "Ruut CSM",
-      avatar: "/images/Partner Logos/PNGs/ruut_csm-.png",
-      rating: 5
+      company: "Suntrust Bank",
+      avatar: "/images/Partner Logos/PNGs/SUNTRUST-LOGO.png",
+      rating: 4
     }
   ];
 
