@@ -34,7 +34,7 @@ export default function AllInSolutions() {
       name: "crm",
       description:
         "Personalize every customer interaction with a smart, unified CRM that keeps your history organized.",
-      image: "/images/image1.png",
+      image:  "/intarvas-feat-2.jpg",
     },
     {
       icon: "/icon/tick.svg",
@@ -42,7 +42,7 @@ export default function AllInSolutions() {
       name: "security",
       description:
         "We use enterprise-grade encryption, guarantee 99.9% uptime, and are fully compliant with telecom standards.",
-      image: "/images/image2.png",
+      image: "/intarvas-feat-1.jpg",
     },
     {
       icon: "/icon/ticket.svg",

@@ -41,6 +41,13 @@ const SERVICES: Service[] = [
     img: "/about-thrive/about-5.png",
     href: "/services/bulk-messaging",
   },
+  {
+    icon: "/intarvas-logo.svg",
+    title: "inVAS",
+    description: "Our messaging solution encompasses a comprehensive suite of messaging services, catering to both person-to-person (P2P) and Application-to-Person (A2P) communication needs.",
+    img: "/about-thrive/about-5.png",
+    href: "/services/invas",
+  },
 ];
 
 const ANIMATION_DELAYS = { header: 0, cards: [200, 400, 600, 800], images: [600, 700, 800, 900] };

@@ -22,6 +22,7 @@ const SERVICES: MenuItem[] = [
     { name: "All In one Solution", path: "/services/all-in-solution" },
     { name: "Bulk Messaging", path: "/services/bulk-messaging" },
     { name: "Vanity & toll free numbers", path: "/services/numbers" },
+    { name: "inVAS", path: "/services/invas" },
 ];
 
 export default function Navbar({ children }: NavbarProps) {

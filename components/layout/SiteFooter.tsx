@@ -195,6 +195,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/services/invas"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  inVAS
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/numbers"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
