@@ -181,6 +181,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/services/invas"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  inVAS
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/bulk-messaging"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
@@ -192,13 +199,6 @@ const Footer = () => {
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   IntarvAS PBX
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/invas"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  inVAS
                 </Link>
               </li>
               <li>

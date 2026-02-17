@@ -33,18 +33,12 @@ export function FAQSection() {
       answer:
         "Getting started is simple. Sign up for an account, choose your plan, and our onboarding team will guide you through setup and configuration.",
     },
-    {
-      question:
-        "How does the payment system work for PCI Marketing Services?",
-      answer:
-        "Payment is based on your selected plan with monthly or yearly billing options. You can manage your subscription and billing information in your account dashboard.",
-    },
-    {
-      question:
-        "Can I integrate this software with my existing CRM or Third-party services?",
-      answer:
-        "Yes, Invas offers API endpoints and integrations with popular CRM and third-party services to seamlessly connect with your existing business tools.",
-    },
+    // {
+    //   question:
+    //     "Can I integrate this software with my existing CRM or Third-party services?",
+    //   answer:
+    //     "Yes, Invas offers API endpoints and integrations with popular CRM and third-party services to seamlessly connect with your existing business tools.",
+    // },
   ];
 
   return (

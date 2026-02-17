@@ -23,8 +23,8 @@ export default function Invas() {
             {/* <StatsSection /> */}
             <ChatbotSection />
             {/* <OmniChannelSection /> */}
-            <ScrollFeature/>
             <CallingSection />
+            <ScrollFeature/>
             {/* <PricingSection /> */}
             <IndustriesSection />
             {/* <FeaturesSection /> */}
