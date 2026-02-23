@@ -8,7 +8,7 @@ import { CallingSection } from "@/components/invas-sections/calling-solutions-se
 // import { PricingSection } from "@/components/invas-sections/pricing-section";
 import { IndustriesSection } from "@/components/invas-sections/industries-section";
 // import { FeaturesSection } from "@/components/invas-sections/features-section";
-import { WhyChooseSection } from "@/components/invas-sections/why-choose-section";
+// import { WhyChooseSection } from "@/components/invas-sections/why-choose-section";
 import { FAQSection } from "@/components/invas-sections/faq-section";
 // import { WhatsAppCTASection } from "@/components/invas-sections/whatsapp-cta-section";
 // import { ContactSection } from "@/components/invas-sections/contact-section";
@@ -28,7 +28,7 @@ export default function Invas() {
             {/* <PricingSection /> */}
             <IndustriesSection />
             {/* <FeaturesSection /> */}
-            <WhyChooseSection />
+            {/* <WhyChooseSection /> */}
             <FAQSection />
             {/* <WhatsAppCTASection /> */} 
             {/* <ContactSection /> */}

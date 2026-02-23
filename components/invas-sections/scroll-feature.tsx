@@ -20,42 +20,42 @@ export function ScrollFeature() {
       title: "Create Templates",
       name: "create-templates",
       description: "Save time and ensure consistency in your WhatsApp messages by creating customized templates tailored to your needs.",
-      image: "/about-thrive/invas-about-us.jpg",
+      image: "/invas/template_builder.png",
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Launch Campaigns",
       name: "launch-campaigns",
       description: "Our solution lets you create, manage, and automate personalized campaigns—whether for promotions, updates, or customer engagement.",
-      image: "/about-thrive/invas-about-us.jpg",
+      image: "/invas/launch_campaign.png",
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Create Phonebooks",
       name: "create-phonebooks",
       description: "Create customized phonebooks tailored to your needs, making it easy to manage and reach out to your contacts efficiently.",
-      image: "/about-thrive/invas-about-us.jpg"
+      image: "/invas/phonebooks.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Advanced Chatting",
       name: "advanced-chatting",
       description: "Lets you send rich, interactive messages—like buttons, product lists, quick replies, and forms—that go far beyond the basic text and media options in the WhatsApp Business app.",
-      image: "/about-thrive/invas-about-us.jpg"
+      image: "/invas/advanced_chatting.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Chatbot Automation",
       name: "chatbot-automation",
       description: "Allows you to set up predefined conversation flows that automatically respond to customer messages.",
-      image: "/about-thrive/invas-about-us.jpg"
+      image: "/invas/chatbot_automation.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Live Analytics",
       name: "live-analytics",
       description: "Live monitoring and analytics let you track conversations and performance in real time, measuring engagement and response to optimize results.",
-      image: "/about-thrive/invas-about-us.jpg"
+      image: "/invas/monitor_calls.png"
     }
 
   ];

@@ -9,7 +9,7 @@ interface AnimatedTextProps {
 export default function AnimatedText({
     descriptionText = "With IntarvAS PBX, you get enterprise-grade call management without the cost of on-site hardware. Create extensions for your team, route calls intelligently, and manage everything from a simple dashboard.",
     background = "bg-[#FFFFFF]",
-    textSize = "text-[38px]",
+    textSize = "text-5xl",
 }: AnimatedTextProps) {
     const [scrollProgress, setScrollProgress] = useState(0);
     const [isMounted, setIsMounted] = useState(false);
@@ -52,7 +52,7 @@ export default function AnimatedText({
     }, [isMounted]);
 
     return (
-        <section id="description-section" className={`${background} w-full py-[200px] relative overflow-hidden`}>
+        <section id="description-section" className={`${background} w-full py-[120px] relative overflow-hidden`}>
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-10 left-20 w-64 h-64 bg-blue-500/5 rounded-full blur-2xl animate-bounce"></div>
                 <div className="absolute bottom-10 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-2xl animate-bounce delay-1000"></div>
@@ -61,7 +61,7 @@ export default function AnimatedText({
 
             <div className="container mx-auto px-1 relative z-10">
                 <div className="transition-all duration-1000 opacity-100 transform translate-y-0">
-                    <p className={`mx-auto font-inter sm:${textSize} text-3xl md:px-0 px-6 font-[600] max-w-[865px] text-center hover:scale-105 transition-all duration-500 cursor-default`} style={{lineHeight: "48px", letterSpacing: "-5%"}}>
+                    <p className={`mx-auto font-inter text-3xl sm:text-4xl md:text-5xl md:px-0 px-6 font-[600] max-w-[865px] text-center hover:scale-105 transition-all duration-500 cursor-default`} style={{lineHeight: "48px", letterSpacing: "-5%"}}>
                         {descriptionWords.map((word, index) => {
                             const greyR = 133, greyG = 141, greyB = 157;
                             const darkR = 0, darkG = 25, darkB = 51;

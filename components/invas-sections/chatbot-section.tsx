@@ -31,7 +31,7 @@ export function ChatbotSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left - Image/Illustration */}
           <div className="flex justify-center">
-            <img src="/about-thrive/invas-about-us.jpg" alt="Chatbot interface" className="w-full max-w object-cover rounded-lg"/>
+            <img src="/invas/chatbot_.png" alt="Chatbot interface" className="w-full max-w object-cover rounded-lg"/>
           </div>
 
           {/* Right - Content */}

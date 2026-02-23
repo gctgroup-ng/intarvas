@@ -29,7 +29,7 @@ export function IndustriesSection() {
                   <div className="text-4xl mb-3 group-hover:scale-110 transition-transform text-[#0e8d17] group-hover:text-blue-600">
                     {industry.icon}
                   </div>
-                  <p className="text-center font-semibold text-md text-[#0e8d17] group-hover:text-blue-600">
+                  <p className="text-center font-semibold text-md group-hover:text-blue-600">
                     {industry.name}
                   </p>
                 </div>
@@ -41,7 +41,7 @@ export function IndustriesSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
               INVAS — Built for{" "}
-              <span className="text-blue-600">Every Industry</span>
+              <span className="text-[#0e8d17]">Every Industry</span>
             </h2>
             <p className="text-gray-600 mb-8 text-base leading-relaxed">
               Whether you're in real estate, healthcare, retail, or any other industry, INVAS provides tailored solutions to enhance customer engagement and streamline operations.
@@ -57,8 +57,8 @@ export function IndustriesSection() {
                 "Emergency Alerts and Notifications",
               ].map((feature, index) => (
                 <div key={index+1} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-blue-600 font-bold">✓</span>
+                  <div className="w-6 h-6 rounded-full bg-[#0e8d17]/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-[#0e8d17] font-bold">✓</span>
                   </div>
                   <span className="text-gray-700 font-medium">{feature}</span>
                 </div>
