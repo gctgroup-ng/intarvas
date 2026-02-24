@@ -55,7 +55,7 @@ export function ScrollFeature() {
       title: "Live Analytics",
       name: "live-analytics",
       description: "Live monitoring and analytics let you track conversations and performance in real time, measuring engagement and response to optimize results.",
-      image: "/invas/monitor_calls.png"
+      image: "/invas/live_analytics.png"
     }
 
   ];
