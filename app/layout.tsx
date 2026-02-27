@@ -4,10 +4,8 @@ import "./globals.css";
 import { ClientProviders } from "@/components/providers/ClientProviders";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
-import LoadingScreen from "@/components/common/LoadingScreen";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-import SupportWidget from "@/components/common/SupportWidget";
 import ScrollToTop from "@/components/ScrollToTop";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -108,6 +106,7 @@ export default function RootLayout({
       <body>
         <noscript>
           <iframe
+            title="Google Tag Manager"
             src="https://www.googletagmanager.com/ns.html?id=GTM-5S9FTKDR"
             height="0"
             width="0"
