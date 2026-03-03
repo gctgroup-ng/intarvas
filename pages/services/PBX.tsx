@@ -2,10 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { PricingPlan as PricingPlans } from "@/components/sections";
+import { PricingPlan as PricingPlans, Testimonials as TestimonialsSection } from "@/components/sections";
 import AllInSolutionCard from "@/components/card/AllInSolution";
 import PbxFooter from "@/components/common/pbxFooter";
-import { Testimonials as TestimonialsSection } from "@/components/sections";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,7 +12,7 @@ import AnimatedText from "@/components/AnimatedText";
 
 
 // Register ScrollTrigger plugin
-if (typeof window !== "undefined") {
+if (globalThis.window !== undefined) {
   gsap.registerPlugin(ScrollTrigger);
 }
 
@@ -23,19 +22,19 @@ export default function PBX() {
   const featuresRef = useRef<HTMLDivElement>(null);
   const stickyLeftRef = useRef<HTMLDivElement>(null);
   const scrollingRightRef = useRef<HTMLDivElement>(null);  
-  const [titleText, setTitleText] = useState("");
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
+  // const [titleText, setTitleText] = useState("");
+  // const [isTypingComplete, setIsTypingComplete] = useState(false);
+  // const [scrollProgress, setScrollProgress] = useState(0);
   const [isTrustVisible, setIsTrustVisible] = useState(false);
   const [showTrustCards, setShowTrustCards] = useState(false);
   const [isLaptopSectionVisible, setIsLaptopSectionVisible] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
   const fullTitle = "IntarvAS PBX";
-  const fullDescription =
-    "Run your business on a smarter, cloud-based PBX that connects teams, customers, and partners with ease.";
-  const descriptionText = "With IntarvAS PBX, you get enterprise-grade call management without the cost of on-site hardware. Create extensions for your team, route calls intelligently, and manage everything from a simple dashboard.";
-  const descriptionWords = descriptionText.split(" ");
+  // const fullDescription =
+  //   "Run your business on a smarter, cloud-based PBX that connects teams, customers, and partners with ease.";
+  // const descriptionText = "With IntarvAS PBX, you get enterprise-grade call management without the cost of on-site hardware. Create extensions for your team, route calls intelligently, and manage everything from a simple dashboard.";
+  // const descriptionWords = descriptionText.split(" ");
 
   // Prevent hydration mismatch by only enabling client-side features after mount
   useEffect(() => {
@@ -47,13 +46,13 @@ export default function PBX() {
     let titleIndex = 0;
     const titleInterval = setInterval(() => {
       if (titleIndex <= fullTitle.length) {
-        setTitleText(fullTitle.slice(0, titleIndex));
+        // setTitleText(fullTitle.slice(0, titleIndex));
         titleIndex++;
       } else {
         clearInterval(titleInterval);
         // Start description typing after title is complete
         setTimeout(() => {
-          setIsTypingComplete(true);
+          // setIsTypingComplete(true);
         }, 500);
       }
     }, 100); // Faster typing for title
@@ -72,16 +71,16 @@ export default function PBX() {
       const descriptionSection = document.getElementById("description-section");
       if (!descriptionSection) return;
       
-      const rect = descriptionSection.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+      // const rect = descriptionSection.getBoundingClientRect();
+      // const windowHeight = window.innerHeight;
       
       // Calculate progress based on when the section comes into view
       // Start animation when section is 50% visible, complete when fully scrolled past
-      const startPoint = windowHeight * 0.5; // Start when section is 50% visible
-      const endPoint = -rect.height; // Complete when section is fully scrolled past
+      // const startPoint = windowHeight * 0.5; // Start when section is 50% visible
+      // const endPoint = -rect.height; // Complete when section is fully scrolled past
       
-      const progress = Math.max(0, Math.min(1, (startPoint - rect.top) / (startPoint - endPoint)));
-      setScrollProgress(progress);
+      // const progress = Math.max(0, Math.min(1, (startPoint - rect.top) / (startPoint - endPoint)));
+      // setScrollProgress(progress);
     };
 
     // Small delay to ensure DOM is ready
@@ -100,7 +99,7 @@ export default function PBX() {
   // GSAP ScrollTrigger for sticky left column in features section - DESKTOP ONLY
   useLayoutEffect(() => {
     // Only run GSAP after component is mounted and on desktop
-    if (!isMounted || (typeof window !== "undefined" && window.innerWidth < 1024) || !featuresRef.current || !stickyLeftRef.current || !scrollingRightRef.current) return;
+    if (!isMounted || (globalThis.window !== undefined && globalThis.window.innerWidth < 1024) || !featuresRef.current || !stickyLeftRef.current || !scrollingRightRef.current) return;
 
     // Clear any existing ScrollTriggers
     ScrollTrigger.getAll().forEach(trigger => {
@@ -130,7 +129,7 @@ export default function PBX() {
 
     // Cleanup on resize
     const handleResize = () => {
-      if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      if (globalThis.window !== undefined && globalThis.window.innerWidth < 1024) {
         // Kill ScrollTrigger on mobile/tablet
         ScrollTrigger.getAll().forEach(trigger => {
           if (trigger.vars.id === "pbx-features-sticky") {
