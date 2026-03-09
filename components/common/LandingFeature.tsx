@@ -12,9 +12,9 @@ const FeaturesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
+  // const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
   
-  const isAnimatingRef = useRef(false);
+  // const isAnimatingRef = useRef(false);
 
   const pbxFeatures = [
     {
