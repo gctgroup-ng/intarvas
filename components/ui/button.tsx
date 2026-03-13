@@ -11,15 +11,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "rounded-[6px] border border-white/20 bg-gradient-to-b from-white/24 to-transparent bg-[#007DFE] text-white shadow-[0_1px_2px_0_rgba(0,125,254,0.65),0_0_0_1px_rgba(0,125,254,0.72)] hover:brightness-110 transition-all",
+        default: "rounded-[6px] border border-white/20 bg-gradient-to-b from-white/24 to-transparent bg-[#0A0F8F] text-white shadow-[0_1px_2px_0_rgba(0,125,254,0.65),0_0_0_1px_rgba(0,125,254,0.72)] hover:brightness-110 transition-all",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "rounded-[6px] border border-white/20 bg-gradient-to-b from-white/24 to-transparent bg-[#007DFE] text-white shadow-[0_1px_2px_0_rgba(0,125,254,0.65),0_0_0_1px_rgba(0,125,254,0.72)] hover:brightness-110 transition-all",
+        hero: "rounded-[6px] border border-[#0A0F8F] bg-gradient-to-b from-white/24 to-transparent bg-[#0A0F8F] text-white shadow-[0_1px_2px_0_rgba(0,125,254,0.65),0_0_0_1px_rgba(0,125,254,0.72)] hover:brightness-110 transition-all",
         "primary-gradient":
-          "bg-gradient-to-r from-primary to-[#007DFE]/80 text-white hover:bg-accent hover:text-custom-100 shadow-[1px_3px_4px_rgba(0,0,0,0.3)]",
+          "bg-gradient-to-r from-primary to-[#0A0F8F]/80 text-white hover:bg-accent hover:text-custom-100 shadow-[1px_3px_4px_rgba(0,0,0,0.3)]",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -37,7 +37,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 

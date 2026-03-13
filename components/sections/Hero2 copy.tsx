@@ -19,7 +19,7 @@ interface HeroSectionProps {
 const Hero2 = ({
   title = "Smart Telecom Solutions for Modern Businesses",
   subtitle =
-    "Special Numbers, Call Centres, Bulk Messaging & Digital Solutions all tailored for modern Nigerian brands.",
+  "Special Numbers, Call Centres, Bulk Messaging & Digital Solutions all tailored for modern Nigerian brands.",
   primaryButtonText = "Explore Product",
   secondaryButtonText = "Request a Demo",
   onPrimaryClick,
@@ -85,14 +85,14 @@ const Hero2 = ({
 
         <div ref={buttonsRef} className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center">
           {/* Primary */}
-          <Button onClick={onPrimaryClick} variant="hero" size="lg" 
-            className="rounded-full transition-all duration-300 ease-in-out hover:scale-105 shadow-md hover:bg-[#007DFE]/10 hover:text-[#001933] border-[#007DFE]"
+          <Button onClick={onPrimaryClick} variant="hero" size="lg"
+            className="rounded-full transition-all duration-300 ease-in-out hover:scale-105 shadow-md hover:bg-[#0A0F8F]/10 hover:text-[#001933] border-[#0A0F8F]"
           >
             <Link href="/about#services-showcase">{primaryButtonText}</Link>
           </Button>
 
           {/* Secondary */}
-          <Button onClick={onSecondaryClick} variant="outline" size="lg" 
+          <Button onClick={onSecondaryClick} variant="outline" size="lg"
             className="rounded-full bg-transparent border border-black transition-all duration-300 ease-in-out hover:scale-105 shadow-md"
           >
             <Link href="/contact">{secondaryButtonText}</Link>

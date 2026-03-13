@@ -11,327 +11,327 @@ const FeatureCarousel = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
     const contentRef = useRef<HTMLDivElement>(null);
     const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
-    
+
     const isAnimatingRef = useRef(false);
 
     const pbxFeatures = [
         {
-        icon: (
-            <img
-            src="/correctpuzlleicon.svg"
-            alt=""
-            style={{ width: "26px", height: "26px" }}
-            />
-        ),
-        title: "Virtual Extensions",
-        subtitle: "for scalable teams.",
+            icon: (
+                <img
+                    src="/correctpuzlleicon.svg"
+                    alt=""
+                    style={{ width: "26px", height: "26px" }}
+                />
+            ),
+            title: "Virtual Extensions",
+            subtitle: "for scalable teams.",
         },
         {
-        icon: (
-            <img
-            src="/callrecordicon.svg"
-            alt=""
-            style={{ width: "25px", height: "23px" }}
-            />
-        ),
-        title: "Call Recording",
-        subtitle: "for compliance and quality checks.",
+            icon: (
+                <img
+                    src="/callrecordicon.svg"
+                    alt=""
+                    style={{ width: "25px", height: "23px" }}
+                />
+            ),
+            title: "Call Recording",
+            subtitle: "for compliance and quality checks.",
         },
         {
-        icon: (
-            <img
-            src="/analysicreporticon.svg"
-            alt=""
-            style={{ width: "24px", height: "22px" }}
-            />
-        ),
-        title: "Analytics & Reporting",
-        subtitle: "dashboards",
+            icon: (
+                <img
+                    src="/analysicreporticon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "22px" }}
+                />
+            ),
+            title: "Analytics & Reporting",
+            subtitle: "dashboards",
         },
         {
-        icon: (
-            <img
-            src="/voicetoemailicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Voicemail-to-Email",
-        subtitle: "for better accessibility.",
+            icon: (
+                <img
+                    src="/voicetoemailicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Voicemail-to-Email",
+            subtitle: "for better accessibility.",
         },
         {
-        icon: (
-            <img
-            src="/callfowardingicon.svg"
-            alt=""
-            style={{ width: "26px", height: "26px" }}
-            />
-        ),
-        title: "Call Forwarding & Routing",
-        subtitle: "flexibility.",
+            icon: (
+                <img
+                    src="/callfowardingicon.svg"
+                    alt=""
+                    style={{ width: "26px", height: "26px" }}
+                />
+            ),
+            title: "Call Forwarding & Routing",
+            subtitle: "flexibility.",
         },
         {
-        icon: (
-            <img
-            src="/seamlessscalabilityicon.svg"
-            alt=""
-            style={{ width: "18px", height: "18px" }}
-            />
-        ),
-        title: "Seamless Scalability",
-        subtitle: "for growing businesses.",
+            icon: (
+                <img
+                    src="/seamlessscalabilityicon.svg"
+                    alt=""
+                    style={{ width: "18px", height: "18px" }}
+                />
+            ),
+            title: "Seamless Scalability",
+            subtitle: "for growing businesses.",
         },
     ];
 
     const bulkMessagingFeatures = [
         {
-        icon: (
-            <img
-            src="/bulksmsicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Bulk SMS delivery",
-        subtitle: "at scale.",
+            icon: (
+                <img
+                    src="/bulksmsicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Bulk SMS delivery",
+            subtitle: "at scale.",
         },
         {
-        icon: (
-            <img
-            src="/ussdservicesicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "USSD Services",
-        subtitle: "for customer interaction.",
+            icon: (
+                <img
+                    src="/ussdservicesicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "USSD Services",
+            subtitle: "for customer interaction.",
         },
         {
-        icon: (
-            <img
-            src="/a2pmessagingicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "A2P Messaging APIs",
-        subtitle: "for integration.",
+            icon: (
+                <img
+                    src="/a2pmessagingicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "A2P Messaging APIs",
+            subtitle: "for integration.",
         },
         {
-        icon: (
-            <img
-            src="/twowaymessagingicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Two-way Messaging",
-        subtitle: "with customers.",
+            icon: (
+                <img
+                    src="/twowaymessagingicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Two-way Messaging",
+            subtitle: "with customers.",
         },
         {
-        icon: (
-            <img
-            src="/realtimedeliveryicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Real-Time Delivery Reports",
-        subtitle: "with metrics.",
+            icon: (
+                <img
+                    src="/realtimedeliveryicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Real-Time Delivery Reports",
+            subtitle: "with metrics.",
         },
         {
-        icon: (
-            <img
-            src="/customSIDicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Custom Sender IDs",
-        subtitle: "for brand identity.",
+            icon: (
+                <img
+                    src="/customSIDicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Custom Sender IDs",
+            subtitle: "for brand identity.",
         },
     ];
 
     const allInOneFeatures = [
         {
-        icon: (
-            <img
-            src="/headphoneicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Unified Omnichannel Support",
-        subtitle: "(voice, chat, email, social).",
+            icon: (
+                <img
+                    src="/headphoneicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Unified Omnichannel Support",
+            subtitle: "(voice, chat, email, social).",
         },
         {
-        icon: (
-            <img
-            src="/smartcrmicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Smart CRM",
-        subtitle: "with customer history and insights.",
+            icon: (
+                <img
+                    src="/smartcrmicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Smart CRM",
+            subtitle: "with customer history and insights.",
         },
         {
-        icon: (
-            <img
-            src="/ticketingautomationicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Ticketing & Automation",
-        subtitle: "for faster resolutions.",
+            icon: (
+                <img
+                    src="/ticketingautomationicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Ticketing & Automation",
+            subtitle: "for faster resolutions.",
         },
         {
-        icon: (
-            <img
-            src="/securityicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Security & Compliance",
-        subtitle: "built for enterprise standards.",
+            icon: (
+                <img
+                    src="/securityicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Security & Compliance",
+            subtitle: "built for enterprise standards.",
         },
         {
-        icon: (
-            <img
-            src="/customworkflows.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Custom workflows",
-        subtitle: "to match your business processes.",
+            icon: (
+                <img
+                    src="/customworkflows.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Custom workflows",
+            subtitle: "to match your business processes.",
         },
         {
-        icon: (
-            <img
-            src="/aianalyticsicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "AI-powered Analytics",
-        subtitle: "for smarter decision making.",
+            icon: (
+                <img
+                    src="/aianalyticsicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "AI-powered Analytics",
+            subtitle: "for smarter decision making.",
         },
     ];
 
     const numbersFeatures = [
         {
-        icon: (
-            <img
-            src="/memorablevanity.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Memorable Vanity Numbers (0700)",
-        subtitle: "for branding.",
+            icon: (
+                <img
+                    src="/memorablevanity.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Memorable Vanity Numbers (0700)",
+            subtitle: "for branding.",
         },
         {
-        icon: (
-            <img
-            src="/tollfreeicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Toll-Free Numbers (0800)",
-        subtitle: "for nationwide reach.",
+            icon: (
+                <img
+                    src="/tollfreeicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Toll-Free Numbers (0800)",
+            subtitle: "for nationwide reach.",
         },
         {
-        icon: (
-            <img
-            src="/enhancedtrusticon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Enhanced Customer Trust",
-        subtitle: "with professional presence.",
+            icon: (
+                <img
+                    src="/enhancedtrusticon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Enhanced Customer Trust",
+            subtitle: "with professional presence.",
         },
         {
-        icon: (
-            <img
-            src="/callroutingicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Call Routing Options",
-        subtitle: "for flexibility.",
+            icon: (
+                <img
+                    src="/callroutingicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Call Routing Options",
+            subtitle: "for flexibility.",
         },
         {
-        icon: (
-            <img
-            src="/scalableicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Scalable",
-        subtitle: "for SMEs & Large Corporates.",
+            icon: (
+                <img
+                    src="/scalableicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Scalable",
+            subtitle: "for SMEs & Large Corporates.",
         },
         {
-        icon: (
-            <img
-            src="/customeraccessibilityicon.svg"
-            alt=""
-            style={{ width: "24px", height: "24px" }}
-            />
-        ),
-        title: "Improved Customer Accessibility",
-        subtitle: "anywhere in Nigeria.",
+            icon: (
+                <img
+                    src="/customeraccessibilityicon.svg"
+                    alt=""
+                    style={{ width: "24px", height: "24px" }}
+                />
+            ),
+            title: "Improved Customer Accessibility",
+            subtitle: "anywhere in Nigeria.",
         },
     ];
 
     const getCurrentFeatures = () => {
         switch (activeTab) {
-        case "pbx":
-            return pbxFeatures;
-        case "messaging":
-            return bulkMessagingFeatures;
-        case "allinone":
-            return allInOneFeatures;
-        case "numbers":
-            return numbersFeatures;
-        default:
-            return pbxFeatures;
+            case "pbx":
+                return pbxFeatures;
+            case "messaging":
+                return bulkMessagingFeatures;
+            case "allinone":
+                return allInOneFeatures;
+            case "numbers":
+                return numbersFeatures;
+            default:
+                return pbxFeatures;
         }
     };
 
     const getCurrentImage = () => {
         switch (activeTab) {
-        case "pbx":
-            return "images/phone.png";
-        case "messaging":
-            return "/sms-bulk.png";
-        case "allinone":
-            return "/allinoneimage.svg";
-        case "numbers":
-            return "/number.png";
-        default:
-            return "/number.png";
+            case "pbx":
+                return "images/phone.png";
+            case "messaging":
+                return "/sms-bulk.png";
+            case "allinone":
+                return "/allinoneimage.svg";
+            case "numbers":
+                return "/number.png";
+            default:
+                return "/number.png";
         }
     };
 
     const getImageSize = () => {
         switch (activeTab) {
-        case "pbx":
-            return "w-[400px] h-full";
-        case "messaging":
-            return "w-[400px] h-full";
-        case "allinone":
-            return "w-[500px] h-full";
-        case "numbers":
-            return "w-[400px] h-full";
-        default:
-            return "w-[400px] h-full";
+            case "pbx":
+                return "w-[400px] h-full";
+            case "messaging":
+                return "w-[400px] h-full";
+            case "allinone":
+                return "w-[500px] h-full";
+            case "numbers":
+                return "w-[400px] h-full";
+            default:
+                return "w-[400px] h-full";
         }
     };
 
@@ -371,20 +371,20 @@ const FeatureCarousel = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-        ([entry]) => {
-            setIsVisible(entry.isIntersecting);
-        },
-        { threshold: 0.1 }
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting);
+            },
+            { threshold: 0.1 }
         );
 
         if (contentRef.current) {
-        observer.observe(contentRef.current);
+            observer.observe(contentRef.current);
         }
 
         return () => {
-        if (contentRef.current) {
-            observer.unobserve(contentRef.current);
-        }
+            if (contentRef.current) {
+                observer.unobserve(contentRef.current);
+            }
         };
     }, []);
 
@@ -416,25 +416,25 @@ const FeatureCarousel = () => {
 
     const onTouchEnd = () => {
         if (!touchStart || !touchEnd) return;
-        
+
         const distance = touchStart - touchEnd;
         const isLeftSwipe = distance > minSwipeDistance;
         const isRightSwipe = distance < -minSwipeDistance;
-        
+
         if (isLeftSwipe) {
-        nextSlide();
+            nextSlide();
         }
-        
+
         if (isRightSwipe) {
-        prevSlide();
+            prevSlide();
         }
     };
 
-// ${
-//     isVisible
-//     ? "opacity-100 transform translate-y-0"
-//     : "opacity-0 transform translate-y-8"
-// }
+    // ${
+    //     isVisible
+    //     ? "opacity-100 transform translate-y-0"
+    //     : "opacity-0 transform translate-y-8"
+    // }
 
     return (
         <div ref={sectionRef} className="bg-black text-white px-3 py-10 md:py-20 relative overflow-hidden">
@@ -443,19 +443,17 @@ const FeatureCarousel = () => {
                 `}
             >
                 <button
-                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-                    activeTab === "pbx"
-                        ? "bg-[#007DFE] text-white"
-                        : "text-gray-400 hover:text-white"
-                    }`}
+                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "pbx"
+                            ? "bg-[#0A0F8F] text-white"
+                            : "text-gray-400 hover:text-white"
+                        }`}
                     onClick={() => handleTabClick("pbx")}
                 >
                     <span className="hidden sm:inline">IntarvAS PBX</span>
                     <span className="sm:hidden">PBX</span>
                 </button>
-                <button className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 truncate ${
-                    activeTab === "allinone"
-                        ? "bg-[#007DFE] text-white"
+                <button className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 truncate ${activeTab === "allinone"
+                        ? "bg-[#0A0F8F] text-white"
                         : "text-gray-400 hover:text-white"
                     }`}
                     onClick={() => handleTabClick("allinone")}
@@ -464,95 +462,90 @@ const FeatureCarousel = () => {
                     <span className="sm:hidden">AIO</span>
                 </button>
                 <button
-                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-                    activeTab === "messaging"
-                        ? "bg-[#007DFE] text-white"
-                        : "text-gray-400 hover:text-white"
-                    }`}
+                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "messaging"
+                            ? "bg-[#0A0F8F] text-white"
+                            : "text-gray-400 hover:text-white"
+                        }`}
                     onClick={() => handleTabClick("messaging")}
                 >
                     Bulk Messaging
                 </button>
                 <button
-                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-                    activeTab === "numbers"
-                        ? "bg-[#007DFE] text-white"
-                        : "text-gray-400 hover:text-white"
-                    }`}
+                    className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "numbers"
+                            ? "bg-[#0A0F8F] text-white"
+                            : "text-gray-400 hover:text-white"
+                        }`}
                     onClick={() => handleTabClick("numbers")}
                 >
                     <span className="hidden sm:inline">0700 & 0800</span>
                     <span className="sm:hidden">Numbers</span>
                 </button>
             </div>
-    
+
             {/* Main Content - Desktop View */}
             <div className="relative max-w-7xl mx-auto bg-black hidden md:block">
                 <div
                     ref={contentRef}
-                    className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 ${
-                        isVisible
-                        ? "opacity-100 transform translate-y-0"
-                        : "opacity-0 transform translate-y-12"
-                    }`}
+                    className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 ${isVisible
+                            ? "opacity-100 transform translate-y-0"
+                            : "opacity-0 transform translate-y-12"
+                        }`}
                 >
                     {/* Left Side - Features List */}
                     <div
-                        className={`bg-[#1A1A1A] rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${
-                        isVisible
-                            ? "opacity-100 transform translate-x-0"
-                            : "opacity-0 transform -translate-x-12"
-                        }`}
+                        className={`bg-[#1A1A1A] rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${isVisible
+                                ? "opacity-100 transform translate-x-0"
+                                : "opacity-0 transform -translate-x-12"
+                            }`}
                     >
                         {getCurrentFeatures().map((feature, index) => (
-                        <div
-                            key={`${activeTab}-${index}`}
-                            className="flex relative items-center gap-4 group animate-fade-in-up"
-                            style={{ animationDelay: `${index * 100}ms` }}
-                        >
-                            {/* Icon */}
                             <div
-                            className={`bg-[#1F2228] z-10 w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]`}
+                                key={`${activeTab}-${index}`}
+                                className="flex relative items-center gap-4 group animate-fade-in-up"
+                                style={{ animationDelay: `${index * 100}ms` }}
                             >
-                            {feature.icon}
-                            </div>
+                                {/* Icon */}
+                                <div
+                                    className={`bg-[#1F2228] z-10 w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]`}
+                                >
+                                    {feature.icon}
+                                </div>
 
-                            {/* Text */}
-                            <div className="flex-1">
-                            <h3 className="text-0.7xl transition-all duration-300 hover:text-white">
-                                <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
-                                {feature.title}
-                                </span>
-                                <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
-                                {feature.subtitle}
-                                </span>
-                            </h3>
-                            </div>
+                                {/* Text */}
+                                <div className="flex-1">
+                                    <h3 className="text-0.7xl transition-all duration-300 hover:text-white">
+                                        <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
+                                            {feature.title}
+                                        </span>
+                                        <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
+                                            {feature.subtitle}
+                                        </span>
+                                    </h3>
+                                </div>
 
-                            {/* Connector Line */}
-                            {index < getCurrentFeatures().length - 1 && (
-                            <div
-                                className="absolute top-[-20px] overflow-hidden left-[39px] mt-16 w-0.5 h-16 md:h-10 border-l-2 border-dashed border-blue-500 animate-pulse-slow"
-                                style={{ marginLeft: "-16px" }}
-                            ></div>
-                            )}
-                        </div>
+                                {/* Connector Line */}
+                                {index < getCurrentFeatures().length - 1 && (
+                                    <div
+                                        className="absolute top-[-20px] overflow-hidden left-[39px] mt-16 w-0.5 h-16 md:h-10 border-l-2 border-dashed border-blue-500 animate-pulse-slow"
+                                        style={{ marginLeft: "-16px" }}
+                                    ></div>
+                                )}
+                            </div>
                         ))}
                     </div>
 
                     {/* Right Side - Dynamic Image */}
                     <div
-                        className={`bg-[#1A1A1A] rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${
-                        isVisible
-                            ? "opacity-100 transform translate-x-0"
-                            : "opacity-0 transform translate-x-12"
-                        }`}
+                        className={`bg-[#1A1A1A] rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${isVisible
+                                ? "opacity-100 transform translate-x-0"
+                                : "opacity-0 transform translate-x-12"
+                            }`}
                     >
                         <img
-                        key={activeTab}
-                        src={getCurrentImage()}
-                        alt={`Content`}
-                        className={`${getImageSize()} object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
+                            key={activeTab}
+                            src={getCurrentImage()}
+                            alt={`Content`}
+                            className={`${getImageSize()} object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
                         />
                     </div>
                 </div>
@@ -567,7 +560,7 @@ const FeatureCarousel = () => {
                     onTouchEnd={onTouchEnd}
                 >
                     {/* Image Carousel */}
-                    <div 
+                    <div
                         className="flex transition-transform duration-500 ease-in-out mb-8"
                         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                     >
@@ -586,7 +579,7 @@ const FeatureCarousel = () => {
                     </div>
 
                     {/* Features List Carousel */}
-                    <div 
+                    <div
                         className="flex transition-transform duration-500 ease-in-out mb-8"
                         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                     >
@@ -651,11 +644,10 @@ const FeatureCarousel = () => {
                                 <button
                                     key={index}
                                     onClick={() => setCurrentSlide(index)}
-                                    className={`transition-all duration-300 rounded-full ${
-                                        currentSlide === index
-                                            ? 'w-8 h-2 bg-[#007DFE]'
+                                    className={`transition-all duration-300 rounded-full ${currentSlide === index
+                                            ? 'w-8 h-2 bg-[#0A0F8F]'
                                             : 'w-2 h-2 bg-gray-600 hover:bg-gray-500'
-                                    }`}
+                                        }`}
                                     aria-label={`Go to slide ${index + 1}`}
                                 />
                             ))}
@@ -676,25 +668,24 @@ const FeatureCarousel = () => {
             </div>
 
             <div>
-            {/* Mobile View */}
-            <div className="md:hidden mt-10">
-                <div
-                className={`flex flex-col items-center space-y-8 transition-all duration-1000 ${
-                    isVisible
-                    ? "opacity-100 transform translate-y-0"
-                    : "opacity-0 transform translate-y-12"
-                }`}
-                >
-                <img
-                    key={activeTab}
-                    src={getCurrentImage()}
-                    alt={`Content`}
-                    className={`w-[300px] h-[300px] object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
-                />
-    
-                <CarouselPlugin list={getCurrentFeatures()} />
+                {/* Mobile View */}
+                <div className="md:hidden mt-10">
+                    <div
+                        className={`flex flex-col items-center space-y-8 transition-all duration-1000 ${isVisible
+                                ? "opacity-100 transform translate-y-0"
+                                : "opacity-0 transform translate-y-12"
+                            }`}
+                    >
+                        <img
+                            key={activeTab}
+                            src={getCurrentImage()}
+                            alt={`Content`}
+                            className={`w-[300px] h-[300px] object-contain transition-all duration-500 ease-in-out animate-fade-in-right hover:scale-105`}
+                        />
+
+                        <CarouselPlugin list={getCurrentFeatures()} />
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     );

@@ -210,19 +210,17 @@ const PricingPlans = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl overflow-hidden transition-all duration-700 hover:shadow-xl hover:scale-105 ${
-                plan.popular
+              className={`relative bg-white rounded-2xl overflow-hidden transition-all duration-700 hover:shadow-xl hover:scale-105 ${plan.popular
                   ? "border-2 border-blue-500 shadow-lg scale-105"
                   : "border border-gray-200 hover:border-blue-300"
-              } ${
-                visibleCards.includes(index)
+                } ${visibleCards.includes(index)
                   ? 'opacity-100 transform translate-y-0'
                   : 'opacity-0 transform translate-y-8'
-              }`}
+                }`}
             >
               {/* Popular Badge */}
               {plan.popular && (
-                <div className="bg-[#007DFE] text-white text-center py-2 font-medium text-sm flex items-center justify-center gap-2">
+                <div className="bg-[#0A0F8F] text-white text-center py-2 font-medium text-sm flex items-center justify-center gap-2">
                   <TrendingUp className="w-4 h-4" />
                   Popular
                 </div>
@@ -259,43 +257,39 @@ const PricingPlans = () => {
 
                 {/* CTA Button */}
                 <a href="/contact">
-                <button
-                  className={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${
-                    plan.popular
-                      ? "bg-[#007DFE] text-white hover:brightness-110 hover:shadow-lg"
-                      : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
-                  }`}
-                >
-                  
-                  {plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`}
-                </button>
+                  <button
+                    className={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${plan.popular
+                        ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
+                        : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
+                      }`}
+                  >
+
+                    {plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`}
+                  </button>
                 </a>
 
                 {/* Features List */}
                 <div className="space-y-4">
                   {plan.features.map((feature, idx) => (
-                    <div 
-                      key={idx} 
-                      className={`flex items-start gap-3 transition-all duration-300 hover:translate-x-1 ${
-                        visibleCards.includes(index) 
-                          ? 'opacity-100 transform translate-x-0' 
+                    <div
+                      key={idx}
+                      className={`flex items-start gap-3 transition-all duration-300 hover:translate-x-1 ${visibleCards.includes(index)
+                          ? 'opacity-100 transform translate-x-0'
                           : 'opacity-0 transform translate-x-4'
-                      }`}
+                        }`}
                       style={{
                         transitionDelay: `${(idx * 50) + (index * 200)}ms`
                       }}
                     >
                       <div
-                        className={`mt-0.5 flex-shrink-0 transition-colors duration-300 ${
-                          feature.included ? "text-gray-800" : "text-gray-300"
-                        }`}
+                        className={`mt-0.5 flex-shrink-0 transition-colors duration-300 ${feature.included ? "text-gray-800" : "text-gray-300"
+                          }`}
                       >
                         <Check className="w-5 h-5" strokeWidth={2.5} />
                       </div>
                       <span
-                        className={`text-sm transition-colors duration-300 ${
-                          feature.included ? "text-gray-700" : "text-gray-400"
-                        }`}
+                        className={`text-sm transition-colors duration-300 ${feature.included ? "text-gray-700" : "text-gray-400"
+                          }`}
                       >
                         {feature.text}
                       </span>

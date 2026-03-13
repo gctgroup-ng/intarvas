@@ -34,7 +34,7 @@ export default function BusinessCom({
   }, [handleIntersection]);
 
   return (
-    <div ref={sectionRef} className="bg-[#0064CB] relative overflow-hidden">
+    <div ref={sectionRef} className="bg-[#0A0F8F] relative overflow-hidden">
       <Noise patternSize={250} patternScaleX={1} patternScaleY={1} patternRefreshInterval={1} patternAlpha={15} />
       <div>
         {/* Background */}

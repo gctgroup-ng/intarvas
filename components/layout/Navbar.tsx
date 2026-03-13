@@ -25,7 +25,7 @@ const SERVICES: MenuItem[] = [
     { name: "inVAS", path: "/services/invas" },
 ];
 
-export default function Navbar({ children }: NavbarProps) {
+export default function Navbar({ children }: Readonly<NavbarProps>) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function Navbar({ children }: NavbarProps) {
 
     const shouldUseBlackLogo = useMemo(
         () =>
-        pathname.includes("/services") || pathname === "/contact" || pathname === "/privacy" || isScrolled,
+            pathname.includes("/services") || pathname === "/contact" || pathname === "/privacy" || isScrolled,
         [pathname, isScrolled]
     );
     // const shouldUseBlackLogo = useMemo(
@@ -58,20 +58,20 @@ export default function Navbar({ children }: NavbarProps) {
 
     const getLinkClass = useCallback(
         (path: string) => {
-        const active = isActive(path);
-            return `relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
-                ${ active ? "text-[#007DFE] font-semibold" : "text-gray-400 hover:text-[#007DFE]"}
-                ${ active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
-            },
+            const active = isActive(path);
+            return `relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
+                ${active ? "text-[#0A0F8F] font-semibold" : "text-gray-400 hover:text-[#0A0F8F]"}
+                ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
+        },
         [isActive]
     );
 
     const getMobileLinkClass = useCallback(
         (path: string) => {
-        const active = isActive(path);
-        return `text-2xl font-semibold transition-colors relative inline-block 
-            ${active ? "text-[#007DFE]" : "text-gray-900 hover:text-[#007DFE]"} 
-            after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:origin-bottom-right after:transition-transform after:duration-300 
+            const active = isActive(path);
+            return `text-2xl font-semibold transition-colors relative inline-block 
+            ${active ? "text-[#0A0F8F]" : "text-gray-900 hover:text-[#0A0F8F]"} 
+            after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 
             ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
         [isActive]
@@ -79,17 +79,16 @@ export default function Navbar({ children }: NavbarProps) {
 
     const getMobileSubLinkClass = useCallback(
         (path: string) => {
-        const active = isActive(path);
-        return `relative inline-block after:w-full after:content-[''] after:absolute after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:transition-transform after:duration-300
-            ${active ? "text-[#007DFE] after:scale-x-20" : "text-gray-700 hover:text-[#007DFE] after:scale-x-0 hover:after:scale-x-100"}`;
+            const active = isActive(path);
+            return `relative inline-block after:w-full after:content-[''] after:absolute after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:transition-transform after:duration-300
+            ${active ? "text-[#0A0F8F] after:scale-x-20" : "text-gray-700 hover:text-[#0A0F8F] after:scale-x-0 hover:after:scale-x-100"}`;
         },
         [isActive]
     );
 
     return (
         <div className="flex flex-col min-h-screen">
-            <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-                    isScrolled
+            <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled
                     ? "bg-white/5 backdrop-blur-sm border-b border-white/20"
                     : "bg-transparent"
                 }`}
@@ -99,24 +98,24 @@ export default function Navbar({ children }: NavbarProps) {
                     <div className="flex items-center gap-8 py-3">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                            <img src={ shouldUseBlackLogo ? "/intervaslogoblack.svg" : "/images/Logo.svg"} alt="" className="h-8 w-[200px]"/>
+                            <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/images/Logo.svg"} alt="" className="h-8 w-[200px]" />
                         </Link>
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex gap-6">
                             <Link href="/" className={getLinkClass("/")}> Home </Link>
                             <div className="relative group">
-                                <button className="flex items-center gap-1 text-gray-400 hover:text-[#007DFE] cursor-pointer transition-colors">
+                                <button className="flex items-center gap-1 text-gray-400 hover:text-[#0A0F8F] cursor-pointer transition-colors">
                                     <span>Services</span>
                                     <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
                                 </button>
                                 <div className="absolute top-full left-0 mt-2 min-w-[240px] bg-white shadow-lg border border-gray-200 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
                                     <div className="py-2">
-                                    {SERVICES.map((service) => (
-                                        <Link key={service.path} href={service.path} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007DFE] transition-colors">
-                                        {service.name}
-                                        </Link>
-                                    ))}
+                                        {SERVICES.map((service) => (
+                                            <Link key={service.path} href={service.path} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#0A0F8F] transition-colors">
+                                                {service.name}
+                                            </Link>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +151,7 @@ export default function Navbar({ children }: NavbarProps) {
                                 <div className="flex flex-col h-full">
                                     {/* Mobile Header */}
                                     <div className="flex items-center p-4 border-b border-gray-200 shrink-0">
-                                        <img src="/intervaslogoblack.svg" alt="" className="h-8 w-[200px]"/>
+                                        <img src="/intervaslogoblue.svg" alt="" className="h-8 w-[200px]" />
                                     </div>
 
                                     {/* Mobile Navigation */}
@@ -165,17 +164,17 @@ export default function Navbar({ children }: NavbarProps) {
                                         <div className="space-y-4">
                                             <button onClick={() => setIsServicesOpen(!isServicesOpen)} className={`flex items-center gap-2 ${getMobileLinkClass("/services")}`} aria-expanded={isServicesOpen} aria-label="Toggle services menu" >
                                                 Services
-                                                <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${ isServicesOpen ? "rotate-180" : "rotate-0" }`}/>
+                                                <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${isServicesOpen ? "rotate-180" : "rotate-0"}`} />
                                             </button>
 
                                             {isServicesOpen && (
-                                            <div className="flex flex-col space-y-3 pl-4 animate-fade-in">
-                                                {SERVICES.map((service) => (
-                                                    <Link key={service.path} href={service.path} className="text-lg transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                                                        <span className={getMobileSubLinkClass(service.path)}>{service.name}</span>
-                                                    </Link>
-                                                ))}
-                                            </div>
+                                                <div className="flex flex-col space-y-3 pl-4 animate-fade-in">
+                                                    {SERVICES.map((service) => (
+                                                        <Link key={service.path} href={service.path} className="text-lg transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                                                            <span className={getMobileSubLinkClass(service.path)}>{service.name}</span>
+                                                        </Link>
+                                                    ))}
+                                                </div>
                                             )}
                                         </div>
                                         <div>

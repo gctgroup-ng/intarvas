@@ -24,7 +24,6 @@ export default function SiteHeader() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
-    // const pathname = usePathname();
     const baseUrl = usePathname();
     const pathname = `/${baseUrl.split('/')[1]}`;
 
@@ -53,26 +52,27 @@ export default function SiteHeader() {
             const active = isActive(path);
             let colorClass: string;
             if (active) {
-                colorClass = "text-[#007DFE] font-semibold";
+                colorClass = "text-[#0A0F8F] font-semibold";
             } else if (isScrolled) {
+                colorClass = "text-black";
+            } else if (shouldUseBlackLogo) {
                 colorClass = "text-black";
             } else {
                 colorClass = "text-[#A3A9B6]";
             }
-            return `flex items-center gap-1 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
+            return `flex items-center gap-1 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
                 ${colorClass} 
-                ${active ? "" : "hover:text-[#007DFE]"}
+                ${active ? "" : "hover:text-[#0A0F8F]"}
                 ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
         [isActive, isScrolled]
     );
-    // ${active ? "text-[#007DFE]" : `${isScrolled ? "text-black" : "text-gray-400"} hover:text-[#007DFE]`} 
     const getMobileLinkClass = useCallback(
         (path: string) => {
             const active = isActive(path);
             let colorClass: string;
             if (active) {
-                colorClass = "text-[#007DFE] font-semibold";
+                colorClass = "text-[#0A0F8F] font-semibold";
             } else if (isScrolled) {
                 colorClass = "text-black";
             } else {
@@ -80,8 +80,8 @@ export default function SiteHeader() {
             }
             return `text-2xl font-semibold transition-colors relative inline-block 
             ${colorClass} 
-            ${active ? "" : "hover:text-[#007DFE]"}
-            after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:origin-bottom-right after:transition-transform after:duration-300 
+            ${active ? "" : "hover:text-[#0A0F8F]"}
+            after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 
             ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
         [isActive, isScrolled]
@@ -90,8 +90,8 @@ export default function SiteHeader() {
     const getMobileSubLinkClass = useCallback(
         (path: string) => {
             const active = isActive(path);
-            return `relative inline-block after:w-full after:content-[''] after:absolute after:h-0.5 after:bottom-0 after:left-0 after:bg-[#007DFE] after:transition-transform after:duration-300
-            ${active ? "text-[#007DFE] after:scale-x-20" : "text-gray-700 hover:text-[#007DFE] after:scale-x-0 hover:after:scale-x-100"}`;
+            return `relative inline-block after:w-full after:content-[''] after:absolute after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:transition-transform after:duration-300
+            ${active ? "text-[#0A0F8F] after:scale-x-20" : "text-gray-700 hover:text-[#0A0F8F] after:scale-x-0 hover:after:scale-x-100"}`;
         },
         [isActive]
     );
@@ -108,7 +108,7 @@ export default function SiteHeader() {
                 <div className="flex items-center gap-8 py-3">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                        <img src={shouldUseBlackLogo ? "/intervaslogoblack.svg" : "/images/Logo.svg"} alt="Logo" className="h-8 w-[200px]" />
+                        <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/images/Logo.svg"} alt="Logo" className="h-8 w-[200px]" />
                     </Link>
 
                 </div>
@@ -116,16 +116,14 @@ export default function SiteHeader() {
                 <nav className="hidden lg:flex gap-6">
                     <Link href="/" className={getLinkClass("/")}> Home </Link>
                     <div className="relative group">
-                        <button className={getLinkClass("/services")}
-                        // className={`flex items-center gap-1 ${isScrolled ? "text-black" : "text-[#A3A9B6]"} hover:text-[#007DFE] cursor-pointer transition-colors`}
-                        >
+                        <button className={getLinkClass("/services")}>
                             <span>Services</span>
                             <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
                         </button>
                         <div className="absolute top-full left-0 mt-2 min-w-[240px] bg-white shadow-lg border border-gray-200 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
                             <div className="py-2">
                                 {SERVICES.map((service) => (
-                                    <Link key={service.path} href={service.path} className="block px-4 py-2 text-sm text-black hover:bg-gray-100 hover:text-[#007DFE] transition-colors">
+                                    <Link key={service.path} href={service.path} className="block px-4 py-2 text-sm text-black hover:bg-gray-100 hover:text-[#0A0F8F] transition-colors">
                                         {service.name}
                                     </Link>
                                 ))}
@@ -138,12 +136,12 @@ export default function SiteHeader() {
 
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex items-center gap-3">
-                    <Button variant="outline" asChild>
+                    <Button variant="outline" asChild className="rounded-full bg-transparent border border-black transition-all duration-300 ease-in-out shadow-lg">
                         <Link href="/about#services-showcase">
                             Explore Services
                         </Link>
                     </Button>
-                    <Button variant="hero" asChild>
+                    <Button variant="hero" asChild className="rounded-full transition-all duration-300 ease-in-out shadow-lg hover:bg-[#0A0F8F]/10 hover:text-[#001933] border-[#0A0F8F]">
                         <Link href="/contact">Request Demo</Link>
                     </Button>
                 </div>
@@ -163,7 +161,7 @@ export default function SiteHeader() {
                             <div className="flex flex-col h-full">
                                 {/* Mobile Header */}
                                 <div className="flex items-center p-4 border-b border-gray-200 shrink-0">
-                                    <img src="/intervaslogoblack.svg" alt="Logo" className="h-8 w-[200px]" />
+                                    <img src="/intervaslogoblue.svg" alt="Logo" className="h-8 w-[200px]" />
                                 </div>
 
                                 {/* Mobile Navigation */}

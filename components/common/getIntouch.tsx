@@ -41,23 +41,23 @@ const ContactUsSection = () => {
   const handlePuzzleSuccess = async (answer: number) => {
     // Close modal
     setShowPuzzleModal(false);
-    
+
     // Store the answer
     setPuzzleAnswer(answer);
-    
+
     // Now submit the form
     setIsLoading(true);
     setStatusMessage("");
-    
+
     if (!puzzle) {
       setStatusMessage("❌ Security verification failed. Please try again.");
       setIsLoading(false);
       setTimeout(() => setStatusMessage(""), 5000);
       return;
     }
-    
+
     console.log("Form submitted:", formData);
-    
+
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -97,9 +97,9 @@ const ContactUsSection = () => {
       // Generate new puzzle on error
       setPuzzle(generatePuzzle());
     }
-    
+
     setIsLoading(false);
-    
+
     // Clear message after 5 seconds
     setTimeout(() => setStatusMessage(""), 5000);
   };
@@ -228,7 +228,7 @@ const ContactUsSection = () => {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="px-8 py-4 text-white bg-[#007DFE] hover:bg-[#0056b3] transition-colors duration-300 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-8 py-4 text-white bg-[#0A0F8F] hover:bg-[#0056b3] transition-colors duration-300 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isLoading ? "Submitting..." : "Submit"}
                 </Button>

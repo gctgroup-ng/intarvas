@@ -231,7 +231,7 @@ export default function PBX() {
               <Button
                 variant="hero"
                 size="lg"
-                className="hover:scale-105 transition-transform duration-300"
+                className="hover:scale-105 transition-transform duration-300 border-[#0A0F8F]"
               >
                 Contact Us
               </Button>
@@ -279,7 +279,7 @@ export default function PBX() {
             </p>
             <div className="mt-6">
               <Link href="/contact">
-                <Button variant="hero" size="lg" className="hover:scale-105 transition-transform duration-300">
+                <Button variant="hero" size="lg" className="hover:scale-105 transition-transform duration-300 border-[#0A0F8F]">
                   Contact Us
                 </Button>
               </Link>

@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/intarvasfavicon.svg",
+        url: "/intarvasfaviconblue.svg",
         type: "image/svg+xml",
       },
     ],
-    shortcut: "/intarvasfavicon.svg",
-    apple: "/intarvasfavicon.svg",
+    shortcut: "/intarvasfaviconblue.svg",
+    apple: "/intarvasfaviconblue.svg",
   },
 };
 

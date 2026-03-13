@@ -97,7 +97,7 @@ export default function ServicesShowcase() {
           {/* <span className="inline-block px-3 md:px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-xs md:text-sm font-medium mb-4">
             Our services
           </span> */}
-          <span className="inline-block px-3 md:px-4 py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#007DFE] rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-3 md:px-4 py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#0A0F8F] rounded-full text-sm font-medium mb-4">
             Our services
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -113,11 +113,10 @@ export default function ServicesShowcase() {
           {SERVICES.map((service, index) => (
             <div
               key={index}
-              className={`bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-1000 flex flex-col ${
-                visibleCards.includes(index)
+              className={`bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-1000 flex flex-col ${visibleCards.includes(index)
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-8 scale-95"
-              }`}
+                }`}
             >
               {/* Service Content */}
               <div className="p-6 md:p-9">
@@ -138,11 +137,10 @@ export default function ServicesShowcase() {
               {/* Phone Mockup */}
               <div className="px-6 md:px-9 flex mt-auto items-end justify-center">
                 <div
-                  className={`transition-all duration-1000 delay-300 ${
-                    visibleImages.includes(index)
+                  className={`transition-all duration-1000 delay-300 ${visibleImages.includes(index)
                       ? "opacity-100 translate-y-0 scale-100"
                       : "opacity-0 translate-y-8 scale-95"
-                  }`}
+                    }`}
                 >
                   <img
                     src={service.img}
