@@ -443,7 +443,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
+                    <span className="text-[#DFE0F8] font-medium transition-all duration-300 hover:text-blue-600">
                       Assign Extensions
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -475,7 +475,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
+                    <span className="text-[#DFE0F8] font-medium transition-all duration-300 hover:text-blue-600">
                       Call Recording
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -507,7 +507,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
+                    <span className="text-[#DFE0F8] font-medium transition-all duration-300 hover:text-blue-600">
                       Analytics & Reporting
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -539,7 +539,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
+                    <span className="text-[#DFE0F8] font-medium transition-all duration-300 hover:text-blue-600">
                       Call Forwarding & Routing
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">

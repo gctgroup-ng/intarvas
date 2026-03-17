@@ -87,7 +87,7 @@ const Hero2 = ({
 
         {/* Dashboard image */}
         <div className="w-full max-w-7xl mx-auto my-14">
-          <img src="/hero-animate/dashboard.svg" alt={imageAlt} className="w-full object-cover object-top block" loading="eager" />
+          <img src="/hero-animate/dashboard.svg" alt={imageAlt} className="w-full object-cover object-top block" loading="lazy" />
         </div>
       </div>
     </section>
