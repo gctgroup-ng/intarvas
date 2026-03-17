@@ -125,59 +125,59 @@ export default function Numbers() {
       </div> */}
 
       {/* Hero Section */}
-      <section className="bg-background pt-32 md:py-20 mb-10 h-screen">
-        <div className="container mx-auto px-4 h-full">
-          <div className="grid md:gap-12 md:grid-cols-12 md:items-center h-full">
-            <div className="col-span-5">
-              <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
+      <section className="bg-background py-16 md:py-20 mb-10">
+        <div className="container mx-auto px-4">
+          <div className="grid gap-10 md:grid-cols-12 md:items-center">
+            
+            {/* TEXT SECTION */}
+            <div className="md:col-span-5 text-center md:text-left">
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
                 Vanity and Toll-free numbers
               </h1>
-              <p className="mt-4 text-lg text-muted-foreground">
+
+              <p className="mt-4 text-base sm:text-lg text-muted-foreground">
                 Give your business a professional edge with numbers that
                 customers can trust and recall easily
               </p>
-              <div className="my-4 md:my-8">
+
+              <div className="mt-6 md:mt-8">
                 <Link href="/contact">
-                  <Button size="lg">Contact Us</Button>
+                  <Button size="lg" className="w-full sm:w-auto">
+                    Contact Us
+                  </Button>
                 </Link>
               </div>
             </div>
-            <div className="col-span-7 animate-enter grid grid-cols-2 gap-4 md:py-12 md:h-full ">
-              <div>
+
+            {/* IMAGE SECTION */}
+            <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <div className="h-64 sm:h-80 md:h-full">
                 <img
-                  src={"/images/number1.png"}
-                  alt=""
-                  className="w-full h-full object-fill"
-                  style={{
-                    objectPosition: "top",
-                    objectFit: "cover",
-                    borderRadius: "24px",
-                  }}
+                  src="/images/number1.png"
+                  alt="Vanity number"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
 
-              <div className="flex flex-col justify-between gap-4">
-                <img
-                  src={"/images/number2.png"}
-                  alt=""
-                  className="w-full h-full object-fill"
-                  style={{
-                    objectPosition: "top",
-                    objectFit: "cover",
-                    borderRadius: "24px",
-                  }}
-                />
-                <img
-                  src={"/images/manonphone.png"}
-                  alt=""
-                  className="w-full h-full object-fill"
-                  style={{
-                    objectPosition: "top",
-                    objectFit: "cover",
-                    borderRadius: "24px",
-                  }}
-                />
+              <div className="flex flex-col gap-4">
+                <div className="h-40 sm:h-48 md:h-1/2">
+                  <img
+                    src="/images/number2.png"
+                    alt="Toll free number"
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                </div>
+
+                <div className="h-40 sm:h-48 md:h-1/2">
+                  <img
+                    src="/images/manonphone.png"
+                    alt="Customer using phone"
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                </div>
               </div>
+
             </div>
           </div>
         </div>

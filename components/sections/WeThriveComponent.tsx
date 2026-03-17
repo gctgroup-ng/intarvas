@@ -41,13 +41,13 @@ const SERVICES: Service[] = [
     img: "/about-thrive/about-5.png",
     href: "/services/bulk-messaging",
   },
-  {
-    icon: "/intarvas-logo.svg",
-    title: "inVAS",
-    description: "Our messaging solution encompasses a comprehensive suite of messaging services, catering to both person-to-person (P2P) and Application-to-Person (A2P) communication needs.",
-    img: "/about-thrive/about-5.png",
-    href: "/services/invas",
-  },
+  // {
+  //   icon: "/intarvas-logo.svg",
+  //   title: "inVAS",
+  //   description: "Our messaging solution encompasses a comprehensive suite of messaging services, catering to both person-to-person (P2P) and Application-to-Person (A2P) communication needs.",
+  //   img: "/about-thrive/about-5.png",
+  //   href: "/services/invas",
+  // },
 ];
 
 const ANIMATION_DELAYS = { header: 0, cards: [200, 400, 600, 800], images: [600, 700, 800, 900] };
@@ -86,11 +86,7 @@ export default function ServicesShowcase() {
   }, [handleIntersection]);
 
   return (
-    <section
-      ref={sectionRef}
-      id="services-showcase-section"
-      className="bg-[#F6F6F6] py-16 md:py-20 lg:py-24 px-6 md:px-8"
-    >
+    <section ref={sectionRef} id="services-showcase-section" className="bg-[#F6F6F6] py-16 md:py-20 lg:py-24 px-6 md:px-8">
       <div className="max-w-7xl mx-auto" id="services-showcase">
         {/* Header */}
         <div className="mb-12 md:mb-16 animate-fade-in">
@@ -113,10 +109,12 @@ export default function ServicesShowcase() {
           {SERVICES.map((service, index) => (
             <div
               key={index}
-              className={`bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-1000 flex flex-col ${visibleCards.includes(index)
+              className={`bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-1000 flex flex-col
+                ${visibleCards.includes(index)
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-8 scale-95"
-                }`}
+                }`
+              }
             >
               {/* Service Content */}
               <div className="p-6 md:p-9">
@@ -145,7 +143,7 @@ export default function ServicesShowcase() {
                   <img
                     src={service.img}
                     alt={`Mockup`}
-                    className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                    className="hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>

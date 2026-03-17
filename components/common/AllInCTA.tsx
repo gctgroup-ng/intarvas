@@ -201,7 +201,7 @@ const AllInOneCTA = () => {
               <div className="w-full lg:max-w-sm space-y-4">
                 <Button
                   variant="hero"
-                  className="w-full h-[52px] rounded-md text-lg hover:scale-105 transition-transform duration-300"
+                  className="w-full h-[52px] rounded-xl text-lg hover:scale-105 transition-transform duration-300"
                 >
                   Get Started
                 </Button>

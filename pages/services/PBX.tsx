@@ -422,7 +422,7 @@ export default function PBX() {
             }`}
           >
             {/* Feature List */}
-            <div className={`bg-[#0C0C0C] rounded-3xl p-8 space-y-8 h-[400px] flex flex-col justify-center hover:scale-105 transition-all duration-1000 ${
+            <div className={`bg-gray-900 rounded-3xl p-8 space-y-8 h-[400px] flex flex-col justify-center hover:scale-105 transition-all duration-1000 ${
               isLaptopSectionVisible 
                 ? "opacity-100 transform translate-x-0" 
                 : "opacity-0 transform -translate-x-20"
@@ -430,7 +430,7 @@ export default function PBX() {
               {/* Feature 1 */}
               <div className="flex relative items-center gap-4 group">
                 {/* Icon */}
-                <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
+                <div className="bg-[#DFE0F8] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/correctpuzlleicon.svg"
                     alt=""
@@ -443,7 +443,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
+                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
                       Assign Extensions
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -454,7 +454,7 @@ export default function PBX() {
 
                 {/* Connector Line */}
                 <div
-                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-blue-500 animate-pulse-slow"
+                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-[#DFE0F8] animate-pulse-slow"
                   style={{ marginLeft: "-16px" }}
                 ></div>
               </div>
@@ -462,7 +462,7 @@ export default function PBX() {
               {/* Feature 2 */}
               <div className="flex relative items-center gap-4 group">
                 {/* Icon */}
-                <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
+                <div className="bg-[#DFE0F8] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/callrecordicon.svg"
                     alt=""
@@ -475,7 +475,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
+                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
                       Call Recording
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -486,7 +486,7 @@ export default function PBX() {
 
                 {/* Connector Line */}
                 <div
-                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-blue-500 animate-pulse-slow"
+                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-[#DFE0F8] animate-pulse-slow"
                   style={{ marginLeft: "-16px" }}
                 ></div>
               </div>
@@ -494,7 +494,7 @@ export default function PBX() {
               {/* Feature 3 */}
               <div className="flex relative items-center gap-4 group">
                 {/* Icon */}
-                <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
+                <div className="bg-[#DFE0F8] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/analysicreporticon.svg"
                     alt=""
@@ -507,7 +507,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
+                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
                       Analytics & Reporting
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -518,7 +518,7 @@ export default function PBX() {
 
                 {/* Connector Line */}
                 <div
-                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-blue-500 animate-pulse-slow"
+                  className="absolute top-[-7px] left-[39px] mt-16 w-0.5 h-8 border-l-2 border-dashed border-[#DFE0F8] animate-pulse-slow"
                   style={{ marginLeft: "-16px" }}
                 ></div>
               </div>
@@ -526,7 +526,7 @@ export default function PBX() {
               {/* Feature 4 */}
               <div className="flex relative items-center gap-4 group">
                 {/* Icon */}
-                <div className="bg-[#1F2228] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
+                <div className="bg-[#DFE0F8] w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-110 hover:bg-[#2A2D35]">
                   <img
                     src="/addplus.svg"
                     alt=""
@@ -539,7 +539,7 @@ export default function PBX() {
                 {/* Text */}
                 <div className="flex-1">
                   <h3 className="text-lg transition-all duration-300 hover:text-white">
-                    <span className="text-blue-500 font-medium transition-all duration-300 hover:text-blue-400">
+                    <span className="text-blue-700 font-medium transition-all duration-300 hover:text-blue-600">
                       Call Forwarding & Routing
                     </span>
                     <span className="text-gray-300 ml-2 transition-all duration-300 hover:text-gray-200">
@@ -556,7 +556,7 @@ export default function PBX() {
                 ? "opacity-100 transform translate-x-0" 
                 : "opacity-0 transform translate-x-20"
             }`}>
-              <div className="bg-[#0C0C0C] rounded-3xl p-8 flex justify-center items-center h-[400px] hover:scale-105 transition-transform duration-300">
+              <div className="bg-gray-900 rounded-3xl p-8 flex justify-center items-center h-[400px] hover:scale-105 transition-transform duration-300">
                 <img
                   src="/laptopimg.svg"
                   alt=""

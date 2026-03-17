@@ -204,7 +204,7 @@ export default function About() {
           <div className={`transition-all duration-1000 ${isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
             }`}>
             <h1 className="text-[32px] md:text-[64px] max-w-md md:max-w-xl mx-auto font-inter font-extrabold text-white text-center leading-[1.2] px-4 mb-2">
-              About <span className={`bg-[#0A0F8F] rounded-md p-2 transition-all duration-1000 ${showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
+              About <span className={`bg-blue-800 rounded-md p-2 transition-all duration-1000 ${showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
                 }`}>IntarvAS</span>{" "}
               Communications
             </h1>

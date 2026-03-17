@@ -52,17 +52,17 @@ export default function SiteHeader() {
             const active = isActive(path);
             let colorClass: string;
             if (active) {
-                colorClass = "text-[#0A0F8F] font-semibold";
+                colorClass = "text-blue-800 font-semibold";
             } else if (isScrolled) {
                 colorClass = "text-black";
             } else if (shouldUseBlackLogo) {
                 colorClass = "text-black";
             } else {
-                colorClass = "text-[#A3A9B6]";
+                colorClass = "text-white";
             }
             return `flex items-center gap-1 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
                 ${colorClass} 
-                ${active ? "" : "hover:text-[#0A0F8F]"}
+                ${active ? "" : "hover:text-blue-600"}
                 ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
         [isActive, isScrolled]
@@ -80,7 +80,7 @@ export default function SiteHeader() {
             }
             return `text-2xl font-semibold transition-colors relative inline-block 
             ${colorClass} 
-            ${active ? "" : "hover:text-[#0A0F8F]"}
+            ${active ? "" : "hover:text-blue-600"}
             after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 
             ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
@@ -108,7 +108,7 @@ export default function SiteHeader() {
                 <div className="flex items-center gap-8 py-3">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                        <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/images/Logo.svg"} alt="Logo" className="h-8 w-[200px]" />
+                        <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/intarvaslogowhite.svg"} alt="Logo" className="h-8 w-[200px]" />
                     </Link>
 
                 </div>
@@ -136,7 +136,7 @@ export default function SiteHeader() {
 
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex items-center gap-3">
-                    <Button variant="outline" asChild className="rounded-full bg-transparent border border-black transition-all duration-300 ease-in-out shadow-lg">
+                    <Button variant="outline" asChild className={`rounded-full bg-transparent transition-all duration-300 ease-in-out shadow-lg ${shouldUseBlackLogo ? "text-black border-black " : "text-white border-white"}`}>
                         <Link href="/about#services-showcase">
                             Explore Services
                         </Link>

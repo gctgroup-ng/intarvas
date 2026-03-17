@@ -30,7 +30,7 @@ const MessagingPlatformSection = () => {
       description:
         "Track message delivery, failure diagnostics and campaign performance in real time.",
       imgSrc: "/images/bulk3.png",
-      text: "Connected: Contatces synced automatically ",
+      text: "Connected: Contacts synced automatically ",
       overlayPosition: { bottom: "30%", right: "10%", transform: "none" },
       mobilePosition: { bottom: "25%", right: "8%", transform: "none" },
     },
@@ -64,7 +64,7 @@ const MessagingPlatformSection = () => {
   ];
 
   return (
-    <section className="bg-black text-white min-h-screen py-16 px-8">
+    <section className="bg-black text-white py-16 px-8">
       <div className="max-w-[85rem] mx-auto">
         {/* Header */}
         <div className="mb-16">
@@ -88,7 +88,7 @@ const MessagingPlatformSection = () => {
           {/* Left Side - Features List */}
           <div className="space-y-4">
             {features.map((feature, index) => (
-              <div key={index}>
+              <div key={index.toFixed()}>
                 <div
                   onMouseEnter={() => setActiveFeature(index)}
                   onClick={() => setActiveFeature(index)}

@@ -98,7 +98,7 @@ export default function Navbar({ children }: Readonly<NavbarProps>) {
                     <div className="flex items-center gap-8 py-3">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                            <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/images/Logo.svg"} alt="" className="h-8 w-[200px]" />
+                            <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/intarvaslogowhite.svg"} alt="" className="h-8 w-[200px]" />
                         </Link>
 
                         {/* Desktop Navigation */}

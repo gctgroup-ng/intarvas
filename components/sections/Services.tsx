@@ -45,7 +45,7 @@ const GROUP_COLORS = {
     "Bulk Messaging": { accent: "#00B87A", light: "#E6F9F3" },
     "All-in-One": { accent: "#8B5CF6", light: "#F3EEFF" },
     "Smart Numbers": { accent: "#F97316", light: "#FFF3EB" },
-    "Invas": { accent: "#3038A2", light: "#cdd0ffff" },
+    "Invas": { accent: "#353ca1ff", light: "#cdd0ffff" },
 };
 
 // Group apps
@@ -73,16 +73,16 @@ export default function Services() {
     }, []);
 
     return (
-        <div ref={imageRef} className="relative z-10 flex justify-center px-4 pb-16 mt-auto bg-[#DFE0F8]  ">
-            <div className="w-full max-w-5xl mt-10 overflow-hidden">
+        <div ref={imageRef} className="relative z-10 flex justify-center px-4 pb-16 mt-auto bg-white">
+            <div className="w-full max-w-5xl min-h-screen mt-10 overflow-hidden">
                 {/* Header pill */}
-                <p className="text-[16px] text-[#0A0F8F] text-center font-semibold tracking-wider bg-white/90 p-2 max-w-sm mx-auto rounded-full mb-6">
+                <p className="text-[16px] text-[#0A0F8F] text-center font-semibold tracking-wider bg-[#DFE0F8] p-2 max-w-sm mx-auto rounded-full mb-6">
                     Explore our products &amp; services
                     {/* → */}
                 </p>
 
                 {/* Grouped sections */}
-                <div className="mx-3 space-y-5">
+                <div className="mx-3 space-y-5 my-3">
                     {Object.entries(grouped).map(([groupName, apps]) => {
                         const { accent, light } = GROUP_COLORS[groupName];
                         return (
