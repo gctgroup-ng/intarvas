@@ -16,7 +16,7 @@ const CustomQuoteBanner = () => {
           <div className="relative p-12 text-center">
             {/* Badge */}
             <div className="inline-block mb-6">
-              <span className="px-4 py-2 bg-[#E5F2FF] backdrop-blur-sm text-[#007DFE] rounded-full text-sm font-medium border border-[#C6E2FF]">
+              <span className="px-4 py-2 bg-[#E5F2FF] backdrop-blur-sm text-[#0A0F8F] rounded-full text-sm font-medium border border-[#C6E2FF]">
                 Tailored Pricing
               </span>
             </div>

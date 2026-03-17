@@ -12,9 +12,9 @@ const FeaturesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
-  
-  const isAnimatingRef = useRef(false);
+  // const tabSequenceRef = useRef<string[]>(["pbx", "allinone", "messaging", "numbers"]);
+
+  // const isAnimatingRef = useRef(false);
 
   const pbxFeatures = [
     {
@@ -340,20 +340,20 @@ const FeaturesSection = () => {
   // Handle manual tab clicks
   const handleTabClick = (tab: string) => {
     // if (isAnimatingRef.current) return;
-    
+
     setActiveTab(tab);
-    
+
     // if (sectionRef.current) {
     //   const tabIndex = tabSequenceRef.current.indexOf(tab);
     //   const sectionHeight = sectionRef.current.offsetHeight;
-      
+
     //   // Calculate scroll position based on tab index
     //   const scrollProgress = tabIndex / (tabSequenceRef.current.length - 1);
     //   const scrollDistance = sectionHeight * tabSequenceRef.current.length;
     //   const scrollPosition = sectionRef.current.offsetTop + (scrollProgress * scrollDistance);
-      
+
     //   isAnimatingRef.current = true;
-      
+
     //   gsap.to(window, {
     //     duration: 0.8,
     //     scrollTo: {
@@ -400,7 +400,7 @@ const FeaturesSection = () => {
 
   // const tabs = tabSequenceRef.current;
   // const sectionHeight = sectionRef.current.offsetHeight;
-  
+
   // // Kill any existing ScrollTriggers to avoid conflicts
   // ScrollTrigger.getAll().forEach(trigger => {
   //   if (trigger.trigger === sectionRef.current) {
@@ -474,27 +474,24 @@ const FeaturesSection = () => {
   return (
     <div ref={sectionRef} className="bg-black text-white px-3 py-10 md:py-20 relative overflow-hidden">
       {/* Header Navigation */}
-      <div className={`flex sm:max-w-md md:max-w-[43rem]  mx-auto md:p-1 rounded-full md:flex-wrap bg-[#1A1A1A] items-center justify-around md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${
-          isVisible
-            ? "opacity-100 transform translate-y-0"
-            : "opacity-0 transform translate-y-8"
+      <div className={`flex sm:max-w-md md:max-w-[43rem]  mx-auto md:p-1 rounded-full md:flex-wrap bg-[#1A1A1A] items-center justify-around md:gap-8 mb-10 md:mb-20 transition-all duration-1000 ${isVisible
+          ? "opacity-100 transform translate-y-0"
+          : "opacity-0 transform translate-y-8"
         }`}
       >
         <button
-          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-            activeTab === "pbx"
-              ? "bg-[#007DFE] text-white"
+          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "pbx"
+              ? "bg-[#0A0F8F] text-white"
               : "text-gray-400 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleTabClick("pbx")}
         >
           <span className="hidden sm:inline">IntarvAS PBX</span>
           <span className="sm:hidden">PBX</span>
         </button>
-        <button className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 truncate ${
-            activeTab === "allinone"
-              ? "bg-[#007DFE] text-white"
-              : "text-gray-400 hover:text-white"
+        <button className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 truncate ${activeTab === "allinone"
+            ? "bg-[#0A0F8F] text-white"
+            : "text-gray-400 hover:text-white"
           }`}
           onClick={() => handleTabClick("allinone")}
         >
@@ -502,21 +499,19 @@ const FeaturesSection = () => {
           <span className="sm:hidden">AIO</span>
         </button>
         <button
-          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-            activeTab === "messaging"
-              ? "bg-[#007DFE] text-white"
+          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "messaging"
+              ? "bg-[#0A0F8F] text-white"
               : "text-gray-400 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleTabClick("messaging")}
         >
           Bulk Messaging
         </button>
         <button
-          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${
-            activeTab === "numbers"
-              ? "bg-[#007DFE] text-white"
+          className={`md:px-6 md:py-2 py-1 px-3 rounded-full text-[12px] md:text-sm transition-all duration-300 ${activeTab === "numbers"
+              ? "bg-[#0A0F8F] text-white"
               : "text-gray-400 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleTabClick("numbers")}
         >
           <span className="hidden sm:inline">0700 & 0800</span>
@@ -527,19 +522,17 @@ const FeaturesSection = () => {
       {/* Main Content */}
       <div
         ref={contentRef}
-        className={`max-w-7xl mx-auto hidden md:grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 ${
-          isVisible
+        className={`max-w-7xl mx-auto hidden md:grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 ${isVisible
             ? "opacity-100 transform translate-y-0"
             : "opacity-0 transform translate-y-12"
-        }`}
+          }`}
       >
         {/* Left Side - Features List */}
         <div
-          className={`bg-[#1A1A1A]  rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${
-            isVisible
+          className={`bg-[#1A1A1A]  rounded-3xl p-8 space-y-8 h-[600px] flex flex-col justify-center transition-all duration-1000 ${isVisible
               ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform -translate-x-12"
-          }`}
+            }`}
         >
           {getCurrentFeatures().map((feature, index) => (
             <div
@@ -579,11 +572,10 @@ const FeaturesSection = () => {
 
         {/* Right Side - Dynamic Image */}
         <div
-          className={`bg-[#1A1A1A]  rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${
-            isVisible
+          className={`bg-[#1A1A1A]  rounded-3xl p-8 flex justify-center items-center h-[600px] transition-all duration-1000 ${isVisible
               ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform translate-x-12"
-          }`}
+            }`}
         >
           <img
             key={activeTab}
@@ -598,11 +590,10 @@ const FeaturesSection = () => {
         {/* Mobile View */}
         <div className="md:hidden mt-10">
           <div
-            className={`flex flex-col items-center space-y-8 transition-all duration-1000 ${
-              isVisible
+            className={`flex flex-col items-center space-y-8 transition-all duration-1000 ${isVisible
                 ? "opacity-100 transform translate-y-0"
                 : "opacity-0 transform translate-y-12"
-            }`}
+              }`}
           >
             <img
               key={activeTab}

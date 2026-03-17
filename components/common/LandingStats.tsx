@@ -104,44 +104,41 @@ const ProvenResultsSection = () => {
   return (
     <div ref={sectionRef} className="bg-[#F6F6F6] flex items-center justify-center p-4 sm:p-6 md:p-8 py-12 md:py-16 lg:py-20 overflow-visible">
       <div className="w-full max-w-[1275px] bg-[#00000040] rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl p-1 overflow-visible" style={{ position: 'relative' }}>
-          {/* <div className="relative z-20 w-svw h-svw">
+        {/* <div className="relative z-20 w-svw h-svw">
             <Noise patternSize={250} patternScaleX={1} patternScaleY={1} patternRefreshInterval={1} patternAlpha={15} />
           </div> */}
-        <div className="w-full bg-[#1E1E1E] rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 z-10 relative overflow-visible">
+        <div className="w-full bg-black rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 z-10 relative overflow-visible">
           {/* Content */}
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-              
+
               {/* Left Column */}
               <div
-                className={`space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 transition-all duration-1000 overflow-visible ${
-                  isVisible
+                className={`space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 transition-all duration-1000 overflow-visible ${isVisible
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-10"
-                }`}
+                  }`}
               >
                 {/* Badge */}
                 <div
-                  className={`transition-all duration-700 delay-200 overflow-visible ${
-                    isVisible
+                  className={`transition-all duration-700 delay-200 overflow-visible ${isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-4"
-                  }`}
+                    }`}
                 >
-                  <Button className="px-3 sm:px-4 py-1.5 sm:py-2 bg-[#38526D] text-[#C1DFFD] rounded-full text-xs sm:text-sm font-medium border border-[#79B8FA] hover:bg-blue-600/30 transition-all duration-300 hover:scale-105 text-nowrap overflow-visible">
+                  <Button className="px-3 sm:px-4 py-1.5 sm:py-2 bg-[#38526D] text-[#DFE0F8] rounded-full text-xs sm:text-sm font-medium border border-[#DFE0F8] hover:bg-[#DFE0F8]/30 transition-all duration-300 hover:scale-105 text-nowrap overflow-visible">
                     Why Us?
                   </Button>
                 </div>
 
                 {/* Heading */}
                 <div
-                  className={`transition-all duration-700 delay-400 overflow-visible ${
-                    isVisible
+                  className={`transition-all duration-700 delay-400 overflow-visible ${isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-6"
-                  }`}
+                    }`}
                 >
-                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white leading-tight sm:leading-tight md:leading-tight overflow-visible">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font- text-[#DFE0F8] leading-tight sm:leading-tight md:leading-tight overflow-visible">
                     Proven Results.
                     <br />
                     Measurable Impact
@@ -150,11 +147,10 @@ const ProvenResultsSection = () => {
 
                 {/* Description */}
                 <div
-                  className={`transition-all duration-700 delay-600 overflow-visible ${
-                    isVisible
+                  className={`transition-all duration-700 delay-600 overflow-visible ${isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-6"
-                  }`}
+                    }`}
                 >
                   <p className="text-[#E6E6E6] text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed w-full lg:w-5/6 overflow-visible">
                     Trusted by businesses and government agencies across Nigeria.
@@ -163,14 +159,13 @@ const ProvenResultsSection = () => {
 
                 {/* CTA Button */}
                 <div
-                  className={`transition-all duration-700 delay-800 overflow-visible ${
-                    isVisible
+                  className={`transition-all duration-700 delay-800 overflow-visible ${isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-6"
-                  }`}
+                    }`}
                 >
                   <Link href={"/about"}>
-                    <Button className="px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 bg-gradient-to-r from-[#208DFE] to-[#1670D8] text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-[0px_0px_0px_1px_#007DFEB8,0px_1px_2px_0px_#007DFEA6] text-sm sm:text-base overflow-visible">
+                    <Button className="bg-[#DFE0F8] px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-primary rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-[0px_0px_0px_1px_#0A0F8FB8,0px_1px_2px_0px_#0A0F8FA6] text-sm sm:text-base overflow-visible">
                       Learn More
                     </Button>
                   </Link>
@@ -179,23 +174,21 @@ const ProvenResultsSection = () => {
 
               {/* Right Column - Stats Grid */}
               <div
-                className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 transition-all duration-1000 overflow-visible ${
-                  isVisible
+                className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 transition-all duration-1000 overflow-visible ${isVisible
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-10"
-                }`}
+                  }`}
               >
                 {stats.map((stat, index) => (
                   <div
                     key={index}
-                    className={`space-y-1 sm:space-y-2 md:space-y-3 lg:space-y-4 transition-all duration-700 overflow-visible ${
-                      isVisible
+                    className={`space-y-1 sm:space-y-2 md:space-y-3 lg:space-y-4 transition-all duration-700 overflow-visible ${isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-6"
-                    }`}
+                      }`}
                     style={{ transitionDelay: `${index * 200 + 400}ms` }}
                   >
-                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold transition-all duration-500 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-[#208DFE] to-[#FFFFFF] overflow-visible">
+                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold transition-all duration-500 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-[#DFE0F8] to-[#FFFFFF] overflow-visible">
                       {isVisible ? (
                         <>
                           {index === 0 && `${animatedStats[0]}%`}

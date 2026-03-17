@@ -47,7 +47,7 @@ const MessagingPlatformSectionNumber = () => {
   ];
 
   return (
-    <section className="bg-black text-white min-h-screen py-16 px-8">
+    <section className="bg-black text-white py-16 px-8">
       <div className="max-w-[90rem] mx-auto">
         {/* Header */}
         <div className="mb-16">

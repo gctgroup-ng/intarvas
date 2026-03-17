@@ -81,7 +81,7 @@ export default function About() {
               };
               animate();
             };
-            
+
             setTimeout(() => countUp(99.9, 'uptime', 2000), 300);
             setTimeout(() => countUp(1000000, 'messages', 2000), 500);
             setTimeout(() => countUp(3, 'years', 1500), 700);
@@ -129,15 +129,15 @@ export default function About() {
     const handleScroll = () => {
       const descriptionSection = document.getElementById("about-description-section");
       if (!descriptionSection) return;
-      
+
       const rect = descriptionSection.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      
+
       // Calculate progress based on when the section comes into view
       // Start animation when section is 50% visible, complete when fully scrolled past
       const startPoint = windowHeight * 0.5; // Start when section is 50% visible
       const endPoint = -rect.height; // Complete when section is fully scrolled past
-      
+
       const progress = Math.max(0, Math.min(1, (startPoint - rect.top) / (startPoint - endPoint)));
       setScrollProgress(progress);
     };
@@ -199,15 +199,13 @@ export default function About() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
-        
+
         <div className="relative z-10 pt-20">
-          <div className={`transition-all duration-1000 ${
-            isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
-          }`}>
+          <div className={`transition-all duration-1000 ${isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
+            }`}>
             <h1 className="text-[32px] md:text-[64px] max-w-md md:max-w-xl mx-auto font-inter font-extrabold text-white text-center leading-[1.2] px-4 mb-2">
-              About <span className={`bg-[#007DFE] rounded-md p-2 transition-all duration-1000 ${
-                showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
-              }`}>IntarvAS</span>{" "}
+              About <span className={`bg-blue-800 rounded-md p-2 transition-all duration-1000 ${showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
+                }`}>IntarvAS</span>{" "}
               Communications
             </h1>
             <p className="text-white text-[16px] md:text-[18px] max-w-md mx-auto text-center">
@@ -216,12 +214,10 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className={`container grid grid-cols-2 gap-8 py-12 transition-all duration-1000 delay-300 ${
-          isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
-        }`}>
-          <div className={`hover:scale-105 transition-all duration-1000 flex items-center md:items-center  ${
-            showImages.includes(0) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-8'
+        <div className={`container grid grid-cols-2 gap-8 py-12 transition-all duration-1000 delay-300 ${isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
           }`}>
+          <div className={`hover:scale-105 transition-all duration-1000 flex items-center md:items-center  ${showImages.includes(0) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-8'
+            }`}>
             <img
               src={"/about-thrive/about-us1.jpg"}
               alt=""
@@ -230,18 +226,16 @@ export default function About() {
           </div>
 
           <div className="flex flex-col justify-between gap-4">
-            <div className={`hover:scale-105 transition-all duration-1000 ${
-              showImages.includes(1) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
-            }`}>
+            <div className={`hover:scale-105 transition-all duration-1000 ${showImages.includes(1) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
+              }`}>
               <img
                 src={"/about-thrive/about-us2.jpg"}
                 alt=""
                 className="w-full rounded-[16px] md:rounded-[32px] scale-95"
               />
             </div>
-            <div className={`hover:scale-105 transition-all duration-1000 ${
-              showImages.includes(2) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
-            }`}>
+            <div className={`hover:scale-105 transition-all duration-1000 ${showImages.includes(2) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
+              }`}>
               <img
                 src={"/about-thrive/invas-about-us.jpg"}
                 alt=""
@@ -251,8 +245,8 @@ export default function About() {
           </div>
         </div>
       </section>
-      
-      <AnimatedText descriptionText={descriptionText} textSize="text-[40px]"/>
+
+      <AnimatedText descriptionText={descriptionText} textSize="text-[40px]" />
 
       {/* <section ref={descriptionRef} id="about-description-section" className="bg-muted/30 py-20 md:py-36 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
@@ -375,13 +369,12 @@ export default function About() {
           <div className="absolute top-10 left-4 sm:left-10 w-20 h-20 sm:w-32 sm:h-32 bg-blue-500/5 rounded-full blur-xl animate-pulse"></div>
           <div className="absolute bottom-10 right-4 sm:right-10 w-24 h-24 sm:w-40 sm:h-40 bg-purple-500/5 rounded-full blur-xl animate-pulse delay-1000"></div>
         </div>
-        
+
         {statsItems.map((item, index) => (
-          <div 
+          <div
             key={item.id}
-            className={`transition-all duration-1000 text-center md:text-left ${
-              isStatsVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
-            } ${index === 0 ? 'flex flex-col justify-evenly' : ''}`}
+            className={`transition-all duration-1000 text-center md:text-left ${isStatsVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
+              } ${index === 0 ? 'flex flex-col justify-evenly' : ''}`}
             style={{ transitionDelay: `${item.delay}ms` }}
           >
             <p className="text-3xl sm:text-4xl lg:text-[40px] inline-block bg-gradient-to-br to-[#0B59A9] from-[#53A2F2] bg-clip-text text-transparent font-inter font-[900]">

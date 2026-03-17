@@ -102,7 +102,7 @@ const DeskphonesPricing = () => {
                   </div>
 
                   {/* Buy Now Button */}
-                  <Button className="w-full py-3 mb-6 bg-gradient-to-t from-[#007DFE] to-[#FFFFFF] text-white text-sm font-semibold  hover:from-blue-700 hover:to-blue-600 border-1 rounded-[5px] from-100%">
+                  <Button className="w-full py-3 mb-6 bg-gradient-to-t from-[#0A0F8F] to-[#FFFFFF] text-white text-sm font-semibold  hover:from-blue-700 hover:to-blue-600 border-1 rounded-[5px] from-100%">
                     Buy Now
                   </Button>
 
@@ -112,18 +112,16 @@ const DeskphonesPricing = () => {
                       <div key={idx} className="flex items-start gap-3">
                         <div className="flex-shrink-0 mt-0.5">
                           <CheckCircle2
-                            className={`w-5 h-5 ${
-                              feature.included
+                            className={`w-5 h-5 ${feature.included
                                 ? "text-gray-700"
                                 : "text-gray-300"
-                            }`}
+                              }`}
                             strokeWidth={2.5}
                           />
                         </div>
                         <span
-                          className={`text-sm leading-relaxed ${
-                            feature.included ? "text-gray-700" : "text-gray-400"
-                          }`}
+                          className={`text-sm leading-relaxed ${feature.included ? "text-gray-700" : "text-gray-400"
+                            }`}
                         >
                           {feature.text}
                         </span>

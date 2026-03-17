@@ -39,13 +39,12 @@ const VisionMissionSection = () => {
         {/* Vision Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           {/* Left - Text Content */}
-          <div className={`order-2 lg:order-1 transition-all duration-1000 ${
-            isVisionVisible 
-              ? "opacity-100 transform translate-x-0" 
+          <div className={`order-2 lg:order-1 transition-all duration-1000 ${isVisionVisible
+              ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform -translate-x-8 lg:-translate-x-20"
-          }`}>
+            }`}>
             <div className="mb-4 sm:mb-6">
-              <span className="px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#007DFE] rounded-full text-xs sm:text-sm font-medium">
+              <span className="px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#0A0F8F] rounded-full text-xs sm:text-sm font-medium">
                 Our Vision
               </span>
             </div>
@@ -63,11 +62,10 @@ const VisionMissionSection = () => {
           </div>
 
           {/* Right - Image */}
-          <div className={`order-1 lg:order-2 transition-all duration-1000 ${
-            isVisionVisible 
-              ? "opacity-100 transform translate-x-0" 
+          <div className={`order-1 lg:order-2 transition-all duration-1000 ${isVisionVisible
+              ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform translate-x-8 lg:translate-x-20"
-          }`}>
+            }`}>
             <div className="relative">
               <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-br from-blue-200 to-[#E5F2FF] rounded-xl sm:rounded-2xl lg:rounded-3xl opacity-50"></div>
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
@@ -84,11 +82,10 @@ const VisionMissionSection = () => {
         {/* Mission Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           {/* Left - Image */}
-          <div className={`transition-all duration-1000 ${
-            isMissionVisible 
-              ? "opacity-100 transform translate-x-0" 
+          <div className={`transition-all duration-1000 ${isMissionVisible
+              ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform -translate-x-8 lg:-translate-x-20"
-          }`}>
+            }`}>
             <div className="relative">
               <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-br from-blue-200 to-[#E5F2FF] rounded-xl sm:rounded-2xl lg:rounded-3xl opacity-50"></div>
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
@@ -102,13 +99,12 @@ const VisionMissionSection = () => {
           </div>
 
           {/* Right - Text Content */}
-          <div className={`transition-all duration-1000 ${
-            isMissionVisible 
-              ? "opacity-100 transform translate-x-0" 
+          <div className={`transition-all duration-1000 ${isMissionVisible
+              ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform translate-x-8 lg:translate-x-20"
-          }`}>
+            }`}>
             <div className="mb-4 sm:mb-6">
-              <span className="px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#007DFE] rounded-full text-xs sm:text-sm font-medium">
+              <span className="px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#0A0F8F] rounded-full text-xs sm:text-sm font-medium">
                 Our Mission
               </span>
             </div>

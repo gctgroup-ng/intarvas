@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/intarvasfavicon.svg",
+        url: "/intarvasfaviconblue.svg",
         type: "image/svg+xml",
       },
     ],
-    shortcut: "/intarvasfavicon.svg",
-    apple: "/intarvasfavicon.svg",
+    shortcut: "/intarvasfaviconblue.svg",
+    apple: "/intarvasfaviconblue.svg",
   },
 };
 
@@ -111,6 +111,15 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        <noscript>
+          <iframe
+            title="Google Tag Manager"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5S9FTKDR"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <ClientProviders>
           <ScrollToTop />
           {/* <LoadingScreen /> */}

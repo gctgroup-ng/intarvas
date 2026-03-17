@@ -70,28 +70,26 @@ const AllInOneCTA = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div
-          className={`rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-8 lg:p-16 shadow-2xl transition-all duration-1000 overflow-hidden ${
-            isVisible
+          className={`rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-8 lg:p-16 shadow-2xl transition-all duration-1000 overflow-hidden ${isVisible
               ? "opacity-100 transform translate-y-0"
               : "opacity-0 transform translate-y-8"
-          }`}
+            }`}
           style={{ backgroundColor: "#004B98" }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
             {/* Left Side - Content */}
             <div
-              className={`transition-all duration-1000 ${
-                showLeftContent
+              className={`transition-all duration-1000 ${showLeftContent
                   ? "opacity-100 transform translate-x-0"
                   : "opacity-0 transform -translate-x-8"
-              }`}
+                }`}
             >
               {/* Badge */}
               <div className="inline-block mb-6">
                 <span
                   className="px-6 py-2 bg-white text-gray-900 rounded-full text-sm font-semibold hover:scale-105 transition-transform duration-300"
                   style={{
-                    border: "2px solid #007DFE",
+                    border: "2px solid #0A0F8F",
                     display: "inline-block",
                   }}
                 >
@@ -112,11 +110,10 @@ const AllInOneCTA = () => {
 
               {/* Features Grid */}
               <div
-                className={`grid grid-cols-1 md:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-8 gap-y-4 mb-8 transition-all duration-1000 ${
-                  showFeatures
+                className={`grid grid-cols-1 md:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-8 gap-y-4 mb-8 transition-all duration-1000 ${showFeatures
                     ? "opacity-100 transform translate-y-0"
                     : "opacity-0 transform translate-y-4"
-                }`}
+                  }`}
               >
                 {/* Column 1 */}
                 <div className="space-y-4">
@@ -182,11 +179,10 @@ const AllInOneCTA = () => {
 
             {/* Right Side - Pricing & CTA */}
             <div
-              className={`flex flex-col lg:items-end lg:justify-between lg:h-full transition-all duration-1000 ${
-                showRightContent
+              className={`flex flex-col lg:items-end lg:justify-between lg:h-full transition-all duration-1000 ${showRightContent
                   ? "opacity-100 transform translate-x-0"
                   : "opacity-0 transform translate-x-8"
-              }`}
+                }`}
             >
               {/* Pricing */}
               <div className="text-center lg:text-right mb-8">
@@ -205,7 +201,7 @@ const AllInOneCTA = () => {
               <div className="w-full lg:max-w-sm space-y-4">
                 <Button
                   variant="hero"
-                  className="w-full h-[52px] rounded-md text-lg hover:scale-105 transition-transform duration-300"
+                  className="w-full h-[52px] rounded-xl text-lg hover:scale-105 transition-transform duration-300"
                 >
                   Get Started
                 </Button>

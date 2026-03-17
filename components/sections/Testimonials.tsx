@@ -355,7 +355,7 @@ const TestimonialsSection = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [screenSize, setScreenSize] = useState("desktop");
   const sectionRef = useRef(null);
-  
+
   // Store animation states to maintain position
   const animationStates = useRef({
     mobileRow1: { translateX: 0 },
@@ -428,7 +428,7 @@ const TestimonialsSection = () => {
 
         if (direction === "left") {
           animationStates.current[stateKey].translateX -= (delta * speed);
-          
+
           // Reset position when we've scrolled the full width
           if (Math.abs(animationStates.current[stateKey].translateX) >= totalWidth) {
             animationStates.current[stateKey].translateX += totalWidth;
@@ -436,7 +436,7 @@ const TestimonialsSection = () => {
           element.style.transform = `translateX(${animationStates.current[stateKey].translateX}px)`;
         } else if (direction === "right") {
           animationStates.current[stateKey].translateX += (delta * speed);
-          
+
           // Reset position when we've scrolled the full width in the negative direction
           if (animationStates.current[stateKey].translateX >= -totalWidth) {
             animationStates.current[stateKey].translateX -= totalWidth;
@@ -477,7 +477,7 @@ const TestimonialsSection = () => {
       // Reset positions when switching to mobile
       animationStates.current.mobileRow1.translateX = 0;
       animationStates.current.mobileRow2.translateX = 0;
-      
+
       cleanupFunctions.push(
         animateElement(animationRefs.current.mobileRow1, "left", 0.06, "mobileRow1")
       );
@@ -612,7 +612,7 @@ const TestimonialsSection = () => {
       <div className="max-w-full sm:max-w-2xl lg:max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#007DFE] rounded-full text-xs sm:text-sm font-medium">
+          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 border border-[#C6E2FF] bg-[#E5F2FF] text-[#0A0F8F] rounded-full text-xs sm:text-sm font-medium">
             Testimonials
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 my-3 sm:my-4">
@@ -699,7 +699,7 @@ const TestimonialsSection = () => {
             ))}
           </div>
         )}
-        
+
       </div>
     </section>
   );

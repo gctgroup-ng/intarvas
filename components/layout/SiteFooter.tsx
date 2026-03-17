@@ -76,7 +76,7 @@ const Footer = () => {
               className="md:flex items-center gap-2 font-semibold ml-[-20px]"
             >
               <img
-                src="/images/Logo.svg"
+                src="/intarvaslogowhite.svg"
                 alt="Logo"
                 className="h-8 w-[200px]"
               />
