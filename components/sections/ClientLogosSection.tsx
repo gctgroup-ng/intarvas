@@ -43,7 +43,7 @@ const ClientLogosSection = ({
   ];
 
   return (
-    <section className="bg-white py-12 overflow-hidden">
+    <section className="bg-white border-b border-[#DFE0F8] py-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <p className="mb-8 text-center text-sm font-medium text-muted-foreground animate-fade-in-up">
           {title}
