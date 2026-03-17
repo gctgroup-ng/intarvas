@@ -107,9 +107,9 @@ export default function SiteHeader() {
 
                 <div className="flex items-center gap-8 py-3">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 font-semibold shrink-0">
-                        <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/intarvaslogowhite.svg"} alt="Logo" className="h-8 w-[200px]" />
-                    </Link>
+                <Link href="/" className="flex items-center gap-2 font-semibold shrink-3">
+                    <img src={shouldUseBlackLogo ? "/intervaslogoblue.svg" : "/intarvaslogowhite.svg"} alt="Logo" className="h-6 w-[160px] sm:h-8 sm:w-[200px] pl-4"/>
+                </Link>
 
                 </div>
                 {/* Desktop Navigation */}
@@ -151,17 +151,17 @@ export default function SiteHeader() {
                     <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                         <SheetTrigger asChild>
                             <button className="p-2" aria-label="Toggle menu">
-                                <Menu color="#C2C6CE" className="h-6 w-6" />
+                                <Menu color={shouldUseBlackLogo ? "#0A0F8F" : "#fff"} className="h-6 w-6" />
                             </button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="w-full h-full bg-white/95 backdrop-blur-md p-0 [&>button]:h-8 [&>button]:w-8 [&>button]:text-gray-600 [&>button]:hover:text-gray-800">
+                        <SheetContent side="right" className="w-full h-full bg-white/95 backdrop-blur-md p-0 [&>button]:h-8 [&>button]:w-8 [&>button]:text-[#0A0F8F] [&>button]:hover:text-gray-800 ">
                             <SheetHeader>
                                 <SheetTitle className="sr-only">Header</SheetTitle>
                             </SheetHeader>
                             <div className="flex flex-col h-full">
                                 {/* Mobile Header */}
                                 <div className="flex items-center p-4 border-b border-gray-200 shrink-0">
-                                    <img src="/intervaslogoblue.svg" alt="Logo" className="h-8 w-[200px]" />
+                                    <img src="/intervaslogoblue.svg" alt="Logo" className="h-8 w-[150px]" />
                                 </div>
 
                                 {/* Mobile Navigation */}

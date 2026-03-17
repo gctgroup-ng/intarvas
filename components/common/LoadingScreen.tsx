@@ -31,11 +31,11 @@ const LoadingScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-800 bg-[#001933] ${
+      className={`fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-800 bg-[#0A0F8F] ${
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
-      <div className="flex flex-row items-end space-x-2 md:space-x-4 my-4">
+      <div className="flex flex-row items-end space-x-2 md:space-x-4 my-4 mx-6">
         {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
           <div
             key={index}
