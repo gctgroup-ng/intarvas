@@ -24,13 +24,6 @@ const APPS = [
     { icon: "/invas-campaign.svg", name: "Launch Campaigns", href: "/services/invas", group: "Invas" },
     { icon: "/invas-phonebook.svg", name: "Create Phonebooks", href: "/services/invas", group: "Invas" },
     { icon: "/invas-chatbot.svg", name: "Chatbot Automation", href: "/services/invas", group: "Invas" },
-    // Numbers
-    { icon: "/memorablevanity.svg", name: "Vanity Numbers (0700)", href: "/services/numbers", group: "Smart Numbers" },
-    { icon: "/tollfreeicon.svg", name: "Toll-Free Numbers (0800)", href: "/services/numbers", group: "Smart Numbers" },
-    { icon: "/enhancedtrusticon.svg", name: "Enhanced Customer Trust", href: "/services/numbers", group: "Smart Numbers" },
-    { icon: "/callroutingicon.svg", name: "Call Routing Options", href: "/services/numbers", group: "Smart Numbers" },
-    { icon: "/scalableicon.svg", name: "Scalable for All Businesses", href: "/services/numbers", group: "Smart Numbers" },
-    { icon: "/customeraccessibilityicon.svg", name: "Customer Accessibility", href: "/services/numbers", group: "Smart Numbers" },
     // Bulk Messaging
     { icon: "/bulksmsicon.svg", name: "Bulk SMS Delivery", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/ussdservicesicon.svg", name: "USSD Services", href: "/services/bulk-messaging", group: "Bulk Messaging" },
@@ -38,14 +31,21 @@ const APPS = [
     { icon: "/twowaymessagingicon.svg", name: "Two-way Messaging", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/realtimedeliveryicon.svg", name: "Real-Time Delivery Reports", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/customSIDicon.svg", name: "Custom Sender IDs", href: "/services/bulk-messaging", group: "Bulk Messaging" },
+    // Numbers
+    { icon: "/memorablevanity.svg", name: "Vanity Numbers (0700)", href: "/services/numbers", group: "Smart Numbers" },
+    { icon: "/tollfreeicon.svg", name: "Toll-Free Numbers (0800)", href: "/services/numbers", group: "Smart Numbers" },
+    { icon: "/enhancedtrusticon.svg", name: "Enhanced Customer Trust", href: "/services/numbers", group: "Smart Numbers" },
+    { icon: "/callroutingicon.svg", name: "Call Routing Options", href: "/services/numbers", group: "Smart Numbers" },
+    { icon: "/scalableicon.svg", name: "Scalable for All Businesses", href: "/services/numbers", group: "Smart Numbers" },
+    { icon: "/customeraccessibilityicon.svg", name: "Customer Accessibility", href: "/services/numbers", group: "Smart Numbers" },
 ];
 
 const GROUP_COLORS = {
     "Intarvas PBX": { accent: "#0A0F8F", light: "#EBF4FF" },
     "All-in-One": { accent: "#8B5CF6", light: "#F3EEFF" },
     "Invas": { accent: "#00B87A", light: "#E6F9F3"},
-    "Smart Numbers": { accent: "#F97316", light: "#FFF3EB" },
     "Bulk Messaging": { accent: "#353ca1ff", light: "#eaeafbff" },
+    "Smart Numbers": { accent: "#F97316", light: "#FFF3EB" },
 };
 
 // Group apps
