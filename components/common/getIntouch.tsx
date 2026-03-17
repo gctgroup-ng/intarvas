@@ -5,6 +5,7 @@ import { Headphones, Mail, Clock, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generatePuzzle, type Puzzle } from "@/lib/puzzle";
 import PuzzleModal from "@/components/ui/PuzzleModal";
+import ChatWidget from "@/components/ChatWidget";
 
 const ContactUsSection = () => {
   const [formData, setFormData] = useState({
@@ -333,6 +334,7 @@ const ContactUsSection = () => {
         onClose={handlePuzzleClose}
         onSuccess={handlePuzzleSuccess}
       />
+      <ChatWidget/>
     </section>
   );
 };
