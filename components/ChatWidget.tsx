@@ -5,7 +5,7 @@ export default function ChatWidget() {
                   uuid: "bZekI9a5hM8JHSNTfDxXQoPDqPe0MfgADhZCXzMgV73epkDWze",
                   id: 88,
                   lang: "en",
-                  primary_color: "#007dfe",
+                  primary_color: "#0A0F8F",
                   icon_url: "https://storage.spechy.live/default/images/chat_widget/static_icons/chat-icon-1.svg",
                   launcher_type: "2",
                   launcher_text: "Chat",

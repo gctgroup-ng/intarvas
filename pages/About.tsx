@@ -194,7 +194,7 @@ export default function About() {
   ];
   return (
     <main>
-      <section ref={heroRef} className="relative bg-[#001933] pt-[50px] overflow-hidden">
+      <section ref={heroRef} className="relative bg-black/90 pt-[50px] overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -204,7 +204,7 @@ export default function About() {
           <div className={`transition-all duration-1000 ${isHeroVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
             }`}>
             <h1 className="text-[32px] md:text-[64px] max-w-md md:max-w-xl mx-auto font-inter font-extrabold text-white text-center leading-[1.2] px-4 mb-2">
-              About <span className={`bg-blue-800 rounded-md p-2 transition-all duration-1000 ${showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
+              About <span className={`bg-[#0A0F8F] rounded-md p-2 transition-all duration-1500 ${showTitleHighlight ? 'animate-pulse scale-110' : 'scale-100'
                 }`}>IntarvAS</span>{" "}
               Communications
             </h1>
@@ -377,7 +377,7 @@ export default function About() {
               } ${index === 0 ? 'flex flex-col justify-evenly' : ''}`}
             style={{ transitionDelay: `${item.delay}ms` }}
           >
-            <p className="text-3xl sm:text-4xl lg:text-[40px] inline-block bg-gradient-to-br to-[#0B59A9] from-[#53A2F2] bg-clip-text text-transparent font-inter font-[900]">
+            <p className="text-3xl sm:text-4xl lg:text-[40px] inline-block bg-gradient-to-br to-[#DFE0F8] from-[#0A0F8F] bg-clip-text text-transparent font-inter font-[900]">
               {item.value}
             </p>
             <h5 className="font-inter font-[700] text-lg sm:text-xl lg:text-[20px] mt-2 sm:mt-3">

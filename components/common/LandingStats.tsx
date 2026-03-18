@@ -188,7 +188,7 @@ const ProvenResultsSection = () => {
                       }`}
                     style={{ transitionDelay: `${index * 200 + 400}ms` }}
                   >
-                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold transition-all duration-500 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-[#DFE0F8] to-[#FFFFFF] overflow-visible">
+                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold transition-all duration-500 hover:scale-110 text-transparent bg-clip-text bg-gradient-to-r from-[#0A0F8F] to-[#DFE0F8] overflow-visible">
                       {isVisible ? (
                         <>
                           {index === 0 && `${animatedStats[0]}%`}

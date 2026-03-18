@@ -52,17 +52,21 @@ export default function SiteHeader() {
             const active = isActive(path);
             let colorClass: string;
             if (active) {
-                colorClass = "text-blue-800 font-semibold";
-            } else if (isScrolled) {
-                colorClass = "text-black";
-            } else if (shouldUseBlackLogo) {
-                colorClass = "text-black";
-            } else {
-                colorClass = "text-white";
+                colorClass = "font-semibold text-blue-600 after:bg-[#0A0F8F]";
             }
-            return `flex items-center gap-1 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-[#0A0F8F] after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
+            // else if(path === "/about"){
+            //     colorClass = "text-blue-200 hover:text-blue-100 after:bg-blue-600";
+            // } 
+            else if (isScrolled) {
+                colorClass = "text-black after:bg-[#0A0F8F]";
+            } else if (shouldUseBlackLogo) {
+                colorClass = "text-black after:bg-[#0A0F8F]";
+            } else {
+                colorClass = "text-white hover:text-blue-600 after:bg-blue-600";
+            }
+            return `flex items-center gap-1 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:origin-bottom-right after:transition-transform after:duration-300 transition-colors
                 ${colorClass} 
-                ${active ? "" : "hover:text-blue-600"}
+                ${active ? "" : "hover:text-[#0A0F8F]"}
                 ${active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left"}`;
         },
         [isActive, isScrolled]
