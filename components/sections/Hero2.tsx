@@ -87,7 +87,7 @@ const Hero2 = ({
 
         {/* Dashboard image */}
         <div className="w-full max-w-7xl mx-auto my-14">
-          <img src="/hero-animate/dashboard.svg" alt={imageAlt} className="w-full block" loading="lazy" />
+          <img src="https://res.cloudinary.com/dwpdkfhmv/image/upload/v1773823190/desk-dashboard_mhmz2g.png" alt={imageAlt} className="w-full block" loading="lazy" />
         </div>
       </div>
     </section>

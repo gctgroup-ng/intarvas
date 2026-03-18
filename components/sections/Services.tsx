@@ -19,10 +19,10 @@ const APPS = [
     { icon: "/aianalyticsicon.svg", name: "AI-powered Analytics", href: "/services/all-in-one", group: "All-in-One" },
     //  invax
     { icon: "/invas-whatsapp.svg", name: "WhatsApp Business", href: "/services/invas", group: "Invas" },
+    { icon: "/invas-whatapp-call.svg", name: "WhatsApp Call Center", href: "/services/invas", group: "Invas" },
     { icon: "/invas-template.svg", name: "Create Templates", href: "/services/invas", group: "Invas" },
     { icon: "/invas-chat-advance.svg", name: "Advanced Chatting", href: "/services/invas", group: "Invas" },
     { icon: "/invas-campaign.svg", name: "Launch Campaigns", href: "/services/invas", group: "Invas" },
-    { icon: "/invas-phonebook.svg", name: "Create Phonebooks", href: "/services/invas", group: "Invas" },
     { icon: "/invas-chatbot.svg", name: "Chatbot Automation", href: "/services/invas", group: "Invas" },
     // Bulk Messaging
     { icon: "/bulksmsicon.svg", name: "Bulk SMS Delivery", href: "/services/bulk-messaging", group: "Bulk Messaging" },
