@@ -42,7 +42,7 @@ const MessagingPlatformSectionNumber = () => {
       title: "Cost-effective Communication",
       description:
         "Customers call freely, with a low-cost option for businesses to manage engagement affordably.",
-      imgSrc: "/saving-bottle.jpg",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774349535/saving-bottle_rolucd.jpg",
     },
   ];
 
