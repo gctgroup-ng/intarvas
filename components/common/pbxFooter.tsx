@@ -3,15 +3,13 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Button } from "../ui/button";
 import PBXCarousel from '../PBXCarousel'
-import { DownloadButton } from "@/components/common/DownloadButton";
-import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 
 
 const IMAGES = [
-  { title: 'PBX 1', id: 1, image: "/pbx/pbx-1.svg" },
-  { title: 'PBX 2', id: 2, image: "/pbx/pbx-2.svg" },
-  { title: 'PBX 3', id: 3, image: "/pbx/pbx-3.svg" },
-  { title: 'PBX 4', id: 4, image: "/pbx/pbx-4.svg" }
+  { title: 'PBX 1', id: 1, image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774344921/pbx-1_zbxnew.svg" },
+  { title: 'PBX 2', id: 2, image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774344923/pbx-2_kyvlcd.svg" },
+  { title: 'PBX 3', id: 3, image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774344922/pbx-3_sly1sg.svg" },
+  { title: 'PBX 4', id: 4, image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774344922/pbx-4_tkuvdi.svg" }
 ];
 
 const ANIMATION_DELAYS = { image: 200, content: 400, buttons: 600 };

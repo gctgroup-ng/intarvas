@@ -154,7 +154,7 @@ export default function Numbers() {
               
               <div className="h-64 sm:h-80 md:h-full">
                 <img
-                  src="/images/number1.png"
+                  src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341293/number1_i8cyoe.png"
                   alt="Vanity number"
                   className="w-full h-full object-cover rounded-2xl"
                 />
@@ -163,7 +163,7 @@ export default function Numbers() {
               <div className="flex flex-col gap-4">
                 <div className="h-40 sm:h-48 md:h-1/2">
                   <img
-                    src="/images/number2.png"
+                    src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341271/number2_rpuhvs.png"
                     alt="Toll free number"
                     className="w-full h-full object-cover rounded-2xl"
                   />
@@ -171,7 +171,7 @@ export default function Numbers() {
 
                 <div className="h-40 sm:h-48 md:h-1/2">
                   <img
-                    src="/images/manonphone.png"
+                    src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341254/manonphone_svomo7.png"
                     alt="Customer using phone"
                     className="w-full h-full object-cover rounded-2xl"
                   />

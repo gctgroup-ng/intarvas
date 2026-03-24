@@ -34,11 +34,23 @@ export default function ChatWidget() {
         }
         })();
     `;
+    // const crmScript = `
+    //     (function(a,m,o,c,r,m){
+    //         a[m]={id:"1070019",hash:"e98b7011d9d3caf18059389cf0f599ff0440ff44468ae7d9fabd87a8158a979d",
+    //         locale:"en",setMeta:function(p){this.params=(this.params||[]).concat([p])}};
+    //         a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};
+    //         var d=a.document,s=d.createElement('script');
+    //         s.async=true;s.id=m+'_script';
+    //         s.src='https://gso.kommo.com/js/button.js';
+    //         d.head&&d.head.appendChild(s)
+    //     }(window,0,'crmPlugin',0,0,'crm_plugin')
+    // );`;
 
     return (
         <div>
-        <script dangerouslySetInnerHTML={{ __html: configScript }} />
-        <script dangerouslySetInnerHTML={{ __html: loaderScript }} />
+            {/* <script dangerouslySetInnerHTML={{ __html: crmScript }} /> */}
+            <script dangerouslySetInnerHTML={{ __html: configScript }} />
+            <script dangerouslySetInnerHTML={{ __html: loaderScript }} />
         </div>
     );
 }

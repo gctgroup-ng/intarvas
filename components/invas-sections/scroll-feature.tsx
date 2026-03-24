@@ -20,42 +20,42 @@ export function ScrollFeature() {
       title: "Create Templates",
       name: "create-templates",
       description: "Save time and ensure consistency in your WhatsApp messages by creating customized templates tailored to your needs.",
-      image: "/invas/template_builder.png",
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341297/template_builder_kxqfww.png",
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Launch Campaigns",
       name: "launch-campaigns",
       description: "Our solution lets you create, manage, and automate personalized campaigns—whether for promotions, updates, or customer engagement.",
-      image: "/invas/launch_campaign.png",
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341243/launch_campaign_ymythq.png",
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Create Phonebooks",
       name: "create-phonebooks",
       description: "Create customized phonebooks tailored to your needs, making it easy to manage and reach out to your contacts efficiently.",
-      image: "/invas/phonebooks.png"
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341276/phonebooks_gv7hrp.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Advanced Chatting",
       name: "advanced-chatting",
       description: "Lets you send rich, interactive messages—like buttons, product lists, quick replies, and forms—that go far beyond the basic text and media options in the WhatsApp Business app.",
-      image: "/invas/advanced_chatting.png"
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341247/advanced_chatting_ys8t4a.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Chatbot Automation",
       name: "chatbot-automation",
       description: "Allows you to set up predefined conversation flows that automatically respond to customer messages.",
-      image: "/invas/chatbot_automation.png"
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341285/chatbot_automation_gtzgbp.png"
     },
     {
       icon: <Clipboard className="w-6 h-6" />,
       title: "Live Analytics",
       name: "live-analytics",
       description: "Live monitoring and analytics let you track conversations and performance in real time, measuring engagement and response to optimize results.",
-      image: "/invas/live_analytics.png"
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341242/live_analytics_g6tl69.png"
     }
 
   ];

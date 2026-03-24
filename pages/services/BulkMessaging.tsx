@@ -230,7 +230,7 @@ export default function BulkMessaging() {
           }`}
         >
           <img
-            src={"/images/bulkMessagingHeroImg.png"}
+            src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341284/bulkMessagingHeroImg_ovzcn0.png"}
             alt=""
             className="w-full rounded-[32px] hover:scale-105 transition-transform duration-500"
           />

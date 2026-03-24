@@ -10,9 +10,9 @@ interface BusinessComProps {
 }
 
 export default function BusinessCom({
-  dashboardImage = "/images/CommDashboard.png",
+  dashboardImage = "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341230/CommDashboard_votlbe.png",
   backgroundFrame,
-}: BusinessComProps) {
+}: Readonly<BusinessComProps>) {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -38,7 +38,7 @@ export default function BusinessCom({
       <Noise patternSize={250} patternScaleX={1} patternScaleY={1} patternRefreshInterval={1} patternAlpha={15} />
       <div>
         {/* Background */}
-        <img className="absolute inset-0 w-full h-full object-cover" src="/images/BG.svg" alt=""/>
+        <img className="absolute inset-0 w-full h-full object-cover" src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774344456/BG_gaikwe.svg" alt=""/>
 
         {/* Content */}
         {/* Text */}

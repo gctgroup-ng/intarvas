@@ -51,7 +51,7 @@ export function CallingSection() {
 
           {/* Right - Image */}
           <div className="flex justify-center">
-            <img src="/invas/monitor_calls.png" alt="Calling solutions interface" className="w-full max-w-2xl rounded-lg object-cover"/>
+            <img src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341264/monitor_calls_po1356.png" alt="Calling solutions interface" className="w-full max-w-2xl rounded-lg object-cover"/>
           </div>
         </div>
       </div>

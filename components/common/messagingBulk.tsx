@@ -12,31 +12,31 @@ const MessagingPlatformSectionNumber = () => {
       title: "Memorable Numbers",
       description:
         "Make it easy for customers to remember your business. With our numbers, your brand stays top of mind and instantly recognizable.",
-      imgSrc: "/bulk-sms/memorable-numbers.jpg",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341265/memorable-numbers_cqvbdu.jpg",
     },
     {
       title: "Professional Image",
       description:
         "Project credibility and trust with numbers associated with established organizations, benefit from perception of professionalism.",
-      imgSrc: "/professional.jpg",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348450/professional_aerqpg.jpg",
     },
     {
       title: "Flexible Management",
       description:
         "Route calls to different departments, teams or location using one central number. Ensure every customer reaches the right person.",
-      imgSrc: "/bulk-sms/image-numbers.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348283/image-numbers_dovjyo.png",
     },
     {
       title: "Nationwide Accessibility",
       description:
         "Give your customers a single number they can call from anywhere in Nigeria. No matter the region, you remain accessible and consistent.",
-      imgSrc: "/bulk-sms/connectivity.jpg",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348445/connectivity_xcfk2g.jpg",
     },
     {
       title: "Scalable",
       description:
         "As your business expands, our numbers scale with you. Supporting advanced telecom features.",
-      imgSrc: "/bulk-sms/image-numbers.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348283/image-numbers_dovjyo.png",
     },
     {
       title: "Cost-effective Communication",

@@ -11,7 +11,7 @@ const MessagingPlatformSection = () => {
       title: "Bulk Campaigns",
       description:
         "Reach thousands (or millions) with marketing messages and promotions in a few clicks.",
-      imgSrc: "/images/bulk1.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341259/bulk1_fqpgyp.png",
       text: "Flash offer! Get 18% off on items, today only. shop now.",
       overlayPosition: { bottom: "25%", right: "10%", transform: "none" },
       mobilePosition: { bottom: "20%", right: "8%", transform: "none" },
@@ -20,7 +20,7 @@ const MessagingPlatformSection = () => {
       title: "OTP Messaging",
       description:
         "Send one-time passwords, verification codes and alerts instantly with high deliverability.",
-      imgSrc: "/images/bulk2.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348138/bulk2_uginpi.png",
       text: "Your login code is 452817. Do not share this code with anyone",
       overlayPosition: { bottom: "28%", right: "12%", transform: "none" },
       mobilePosition: { bottom: "22%", right: "10%", transform: "none" },
@@ -29,7 +29,7 @@ const MessagingPlatformSection = () => {
       title: "Analytics & Reporting",
       description:
         "Track message delivery, failure diagnostics and campaign performance in real time.",
-      imgSrc: "/images/bulk3.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348124/bulk3_rwjmgq.png",
       text: "Connected: Contacts synced automatically ",
       overlayPosition: { bottom: "30%", right: "10%", transform: "none" },
       mobilePosition: { bottom: "25%", right: "8%", transform: "none" },
@@ -38,7 +38,7 @@ const MessagingPlatformSection = () => {
       title: "Compliance & Regulatory",
       description:
         "Fully compliant with NCC rules, spam filters and opt-in/out policies.",
-      imgSrc: "/images/bulk4.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348123/bulk4_swmdud.png",
       text: "This message is fully DND-compliant and follows NCC regulations",
       overlayPosition: { bottom: "26%", right: "10%", transform: "none" },
       mobilePosition: { bottom: "21%", right: "8%", transform: "none" },
@@ -47,7 +47,7 @@ const MessagingPlatformSection = () => {
       title: "API & Integration",
       description:
         "Easily integrate messaging into your apps for automation and scheduling.",
-      imgSrc: "/images/bulk5.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348139/bulk5_qqztbq.png",
       text: "Connect to us via API, send messages auto-trigger when leads are updated",
       overlayPosition: { bottom: "29%", right: "11%", transform: "none" },
       mobilePosition: { bottom: "23%", right: "9%", transform: "none" },
@@ -56,7 +56,7 @@ const MessagingPlatformSection = () => {
       title: "Cost Efficiency",
       description:
         "Competitive pricing for large volumes, with scalable infrastructure to handle growth.",
-      imgSrc: "/images/bulk6.png",
+      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348132/bulk6_b9vb6b.png",
       text: "Save up to 35% on messaging costs with optimized delivery routes",
       overlayPosition: { bottom: "27%", right: "10%", transform: "none" },
       mobilePosition: { bottom: "22%", right: "8%", transform: "none" },

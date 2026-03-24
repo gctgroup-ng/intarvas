@@ -86,7 +86,7 @@ export function HeroSection() {
               : "opacity-0 transform translate-y-8"
           }`}
         >
-          <img src={"/about-thrive/invas-about-us.jpg"} alt="" className="w-full max-w-4xl mx-auto rounded-[32px] hover:scale-105 hover:rotate-1 shadow-2xl transition-transform duration-500" />
+          <img src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341237/invas-about-us_1_xfrsju.jpg"} alt="" className="w-full max-w-4xl mx-auto rounded-[32px] hover:scale-105 hover:rotate-1 shadow-2xl transition-transform duration-500" />
         </div>
       </section>
     </>

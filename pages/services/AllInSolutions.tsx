@@ -34,7 +34,7 @@ export default function AllInSolutions() {
       name: "crm",
       description:
         "Personalize every customer interaction with a smart, unified CRM that keeps your history organized.",
-      image:  "/intarvas-feat-2.jpg",
+      image:  "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341235/intarvas-feat-2_hqyick.jpg",
     },
     {
       icon: "/icon/tick.svg",
@@ -42,7 +42,7 @@ export default function AllInSolutions() {
       name: "security",
       description:
         "We use enterprise-grade encryption, guarantee 99.9% uptime, and are fully compliant with telecom standards.",
-      image: "/intarvas-feat-1.jpg",
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341234/intarvas-feat-1_exdpds.jpg",
     },
     {
       icon: "/icon/ticket.svg",
@@ -50,7 +50,7 @@ export default function AllInSolutions() {
       name: "ticketing",
       description:
         "Automate repetitive tasks and streamline your support process with our advanced ticketing system.",
-      image: "/images/ticketingimg.svg",
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341293/ticketingimg_zwwdkt.svg",
     },
     {
       icon: "/icon/headset.svg",
@@ -58,7 +58,7 @@ export default function AllInSolutions() {
       name: "omnichannel",
       description:
         "Provide seamless support across voice, chat, email, and social media from a single platform.",
-      image: "/images/omniimg.svg",
+      image: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341272/omniimg_ouc1ss.svg",
     },
   ];
 
@@ -325,7 +325,7 @@ export default function AllInSolutions() {
           }`}
         >
           <img
-            src={"/images/allinsoluheroimg.png"}
+            src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341330/allinsoluheroimg_s3d5kj.png"}
             alt="image"
             className="w-full rounded-[32px] hover:scale-105 transition-transform duration-500"
           />
@@ -388,8 +388,8 @@ export default function AllInSolutions() {
       <AllInOneCTA />
       <TestimonialsSection />
       <BusinessCom 
-        dashboardImage="/images/allinonedashboard.svg" 
-        backgroundFrame="/images/bgframe.svg"
+        dashboardImage="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341285/allinonedashboard_ribsst.svg" 
+        backgroundFrame="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774347188/bgframe_jwlyxr.svg"
       />
 
       {/* CSS for card animations */}

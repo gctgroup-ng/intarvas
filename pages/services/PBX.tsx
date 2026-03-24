@@ -249,7 +249,7 @@ export default function PBX() {
 
             {/* Animated image */}
           <img
-            src={"/images/pbxHeroImg.png"}
+            src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341285/pbxHeroImg_ylhjg5.png"}
             alt=""
             className="w-full rounded-[32px] relative z-10 transform transition-all duration-700 hover:scale-105 hover:rotate-1 shadow-2xl hover:shadow-lg"
           />
@@ -307,7 +307,7 @@ export default function PBX() {
                 }
                 title="Call Recording"
                 description="Securely record and store customer conversations, ensuring accountability, training opportunities, and compliance with industry standards."
-                img={"/images/callrecording.png"}
+                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341260/callrecording_ei5qfl.png"}
               />
             </div>
 
@@ -330,7 +330,7 @@ export default function PBX() {
                 }
                 title="Analytics"
                 description="Track call volumes, duration, and performance in real time with clear dashboards that help you make smarter business decisions."
-                img={"/images/analytics.png"}
+                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341248/analytics_htnlaw.png"}
               />
             </div>
 
@@ -353,7 +353,7 @@ export default function PBX() {
                 }
                 title="Extensions"
                 description="Give every team member a professional business line with unique extensions, whether they're in the office or working remotely."
-                img={"/images/extensions.png"}
+                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341231/extensions_kiomsm.png"}
               />
             </div>
 
@@ -376,7 +376,7 @@ export default function PBX() {
                 }
                 title="Scalability"
                 description="Start small and expand seamlessly. Add or remove lines as your business grows, without costly hardware or downtime."
-                img={"/images/sclimage.svg"}
+                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341280/sclimage_buejmq.svg"}
               />
             </div>
           </div>
@@ -558,7 +558,7 @@ export default function PBX() {
             }`}>
               <div className="bg-gray-900 rounded-3xl p-8 flex justify-center items-center h-[400px] hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/laptopimg.svg"
+                  src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341240/laptopimg_pssimn.svg"
                   alt=""
                   className="w-[500px] h-full object-contain transition-all duration-500 ease-in-out hover:scale-105"
                 />
@@ -588,58 +588,3 @@ export default function PBX() {
     </main>
   );
 }
-
-//       {/* Description Section */}
-//       <section 
-//         id="description-section"
-//         className="bg-muted/30 py-36 relative overflow-hidden"
-//       >
-//         {/* Animated background elements */}
-//         <div className="absolute inset-0 overflow-hidden">
-//           <div className="absolute top-10 left-20 w-64 h-64 bg-blue-500/5 rounded-full blur-2xl animate-bounce"></div>
-//           <div className="absolute bottom-10 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-2xl animate-bounce delay-1000"></div>
-//           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-cyan-500/3 rounded-full blur-2xl animate-bounce delay-2000"></div>
-//         </div>
-
-//         <div className="container mx-auto px-4 relative z-10">
-//           <div
-//             className="transition-all duration-1000 opacity-100 transform translate-y-0"
-//           >
-//             <p className="mx-auto font-inter text-[35px] font-[600] max-w-4xl text-center text-1.1xl leading-[1.2] hover:scale-105 transition-all duration-500 cursor-default">
-//               {descriptionWords.map((word, index) => {
-//                 // Only apply scroll-based color transition after mount to prevent hydration mismatch
-//                 // Default to grey color on server-side render
-//                 const greyR = 133, greyG = 141, greyB = 157;
-//                 const darkR = 0, darkG = 25, darkB = 51;
-                
-//                 let currentR = greyR;
-//                 let currentG = greyG;
-//                 let currentB = greyB;
-                
-//                 if (isMounted) {
-//                   // Calculate color progress for each word based on scroll position
-//                   // Use a multiplier to ensure we reach the end of the text
-//                   const wordProgress = Math.max(0, Math.min(1, (scrollProgress * descriptionWords.length * 1.2) - index));
-                  
-//                   currentR = Math.round(greyR + (darkR - greyR) * wordProgress);
-//                   currentG = Math.round(greyG + (darkG - greyG) * wordProgress);
-//                   currentB = Math.round(greyB + (darkB - greyB) * wordProgress);
-//                 }
-                
-//                 return (
-//                   <span
-//                     key={index}
-//                     className="transition-colors duration-300"
-//                     style={{
-//                       color: `rgb(${currentR}, ${currentG}, ${currentB})`
-//                     }}
-//                   >
-//                     {word}{" "}
-//                   </span>
-//                 );
-//               })}
-//             </p>
-
-//           </div>
-//         </div>
-//       </section>
