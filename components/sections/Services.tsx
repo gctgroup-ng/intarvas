@@ -26,9 +26,9 @@ const APPS = [
     { icon: "/invas-chatbot.svg", name: "Chatbot Automation", href: "/services/invas", group: "Invas" },
     // Bulk Messaging
     { icon: "/bulksmsicon.svg", name: "Bulk SMS Delivery", href: "/services/bulk-messaging", group: "Bulk Messaging" },
-    { icon: "/ussdservicesicon.svg", name: "USSD Services", href: "/services/bulk-messaging", group: "Bulk Messaging" },
+    // { icon: "/ussdservicesicon.svg", name: "USSD Services", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/a2pmessagingicon.svg", name: "A2P Messaging APIs", href: "/services/bulk-messaging", group: "Bulk Messaging" },
-    { icon: "/twowaymessagingicon.svg", name: "Two-way Messaging", href: "/services/bulk-messaging", group: "Bulk Messaging" },
+    // { icon: "/twowaymessagingicon.svg", name: "Two-way Messaging", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/realtimedeliveryicon.svg", name: "Real-Time Delivery Reports", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     { icon: "/customSIDicon.svg", name: "Custom Sender IDs", href: "/services/bulk-messaging", group: "Bulk Messaging" },
     // Numbers
@@ -55,7 +55,7 @@ const grouped = APPS.reduce((acc: Record<string, typeof APPS[0][]>, app) => {
     return acc;
 }, {} as Record<string, typeof APPS[0][]>);
 
-export default function Services() {
+export default function  Services() {
 
     const imageRef = useRef<HTMLDivElement>(null);
 
