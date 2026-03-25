@@ -8,7 +8,7 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 // import SupportWidget from "@/components/common/SupportWidget";
-import ScrollToTop from "@/components/ScrollToTop";
+// import ScrollToTop from "@/components/ScrollToTop";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
@@ -121,7 +121,7 @@ export default function RootLayout({
           />
         </noscript>
         <ClientProviders>
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
           {/* <LoadingScreen /> */}
           <Toaster />
           <Sonner />

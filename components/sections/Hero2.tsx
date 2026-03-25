@@ -76,8 +76,8 @@ const Hero2 = ({
         </p>
 
         <div ref={buttonsRef} className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center">
-          <Button onClick={onPrimaryClick} variant="hero" size="lg" className="rounded-full transition-all duration-300 ease-in-out hover:scale-105 shadow-md hover:bg-[#0A0F8F]/10 hover:text-[#001933] border-[#0A0F8F]">
-            <Link href="/about#services-showcase">{primaryButtonText}</Link>
+          <Button variant="hero" size="lg" className="rounded-full transition-all duration-300 ease-in-out hover:scale-105 shadow-md hover:bg-[#0A0F8F]/10 hover:text-[#001933] border-[#0A0F8F]">
+            <Link href="/about#services-showcase-section">{primaryButtonText}</Link>
           </Button>
 
           <Button onClick={onSecondaryClick} variant="outline" size="lg" className="rounded-full bg-transparent border border-black transition-all duration-300 ease-in-out hover:scale-105 shadow-md">
