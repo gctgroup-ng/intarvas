@@ -13,7 +13,7 @@ export default function ChatWidget() {
                   platform: "1", 
                   chat_height: "50",
                   name_surname: "",
-                  phone_number: "",
+                  phone_number: "+234 ",
                   email_address: "",
                   auto_start: 0,
                 };
