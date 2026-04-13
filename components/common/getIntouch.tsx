@@ -7,19 +7,31 @@ import { generatePuzzle, type Puzzle } from "@/lib/puzzle";
 import PuzzleModal from "@/components/ui/PuzzleModal";
 import ChatWidget from "@/components/ChatWidget";
 
+interface ServiceItem {
+  name: string;
+  value: string;
+}
+const SERVICES: ServiceItem[] = [
+  { name: "IntarvAS PBX", value: "pbx" },
+  { name: "All In one Solution", value: "all-in-solution" },
+  { name: "inVAS", value: "invas" },
+  { name: "Bulk Messaging", value: "bulk-messaging" },
+  { name: "Vanity & toll free numbers", value: "numbers" },
+];
+
 const ContactUsSection = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     subject: "",
+    service: "",
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [showPuzzleModal, setShowPuzzleModal] = useState(false);
-  const [puzzleAnswer, setPuzzleAnswer] = useState<number | null>(null);
 
   // Generate puzzle on component mount
   useEffect(() => {
@@ -42,9 +54,6 @@ const ContactUsSection = () => {
   const handlePuzzleSuccess = async (answer: number) => {
     // Close modal
     setShowPuzzleModal(false);
-
-    // Store the answer
-    setPuzzleAnswer(answer);
 
     // Now submit the form
     setIsLoading(true);
@@ -82,10 +91,10 @@ const ContactUsSection = () => {
           email: "",
           phone: "",
           subject: "",
+          service: "",
           message: "",
         });
         // Reset puzzle and generate a new one
-        setPuzzleAnswer(null);
         setPuzzle(generatePuzzle());
       } else {
         setStatusMessage(`❌ ${result.message || "Failed to send message. Please try again."}`);
@@ -135,10 +144,11 @@ const ContactUsSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Full Name */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
                   Full Name
                 </label>
                 <input
+                  id="fullName"
                   type="text"
                   name="fullName"
                   value={formData.fullName}
@@ -152,10 +162,11 @@ const ContactUsSection = () => {
 
               {/* Email Address */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Email Address
                 </label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   value={formData.email}
@@ -163,16 +174,17 @@ const ContactUsSection = () => {
                   placeholder="example@intarvas.com"
                   required
                   disabled={isLoading}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
 
               {/* Phone Number */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                   Phone Number
                 </label>
                 <input
+                  id="phone"
                   type="tel"
                   name="phone"
                   value={formData.phone}
@@ -183,12 +195,36 @@ const ContactUsSection = () => {
                 />
               </div>
 
+              {/* Services */}
+              <div>
+                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                  Services
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  disabled={isLoading}
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                >
+                  <option value="">Select a service</option>
+                  {SERVICES.map((service) => (
+                    <option key={service.name} value={service.name}>
+                      {service.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
               {/* Subject */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                   Subject
                 </label>
                 <input
+                  id="subject"
                   type="text"
                   name="subject"
                   value={formData.subject}
@@ -202,10 +238,11 @@ const ContactUsSection = () => {
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Your Message
                 </label>
                 <textarea
+                  id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}

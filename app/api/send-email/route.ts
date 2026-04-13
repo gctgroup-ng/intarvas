@@ -7,7 +7,7 @@ const resend = new Resend("re_Tadpj79T_27eSiFhauRax21Qpv3wVmTgL");
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { fullName, email, phone, subject, message, puzzleQuestion, puzzleAnswer } = body;
+    const { fullName, email, phone, subject, service, message, puzzleQuestion, puzzleAnswer } = body;
 
     // Validate puzzle answer (bot protection)
     if (!puzzleQuestion || puzzleAnswer === undefined) {
@@ -37,9 +37,10 @@ export async function POST(req: Request) {
           <h2>New Message from ${fullName}</h2>
           <p><strong>Email:</strong> ${email}</p>
           ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
+          ${service ? `<p><strong>Service:</strong> ${service}</p>` : ''}
           ${subject ? `<p><strong>Subject:</strong> ${subject}</p>` : ''}
           <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
+          <p>${message.replaceAll('\n', '<br>')}</p>
           <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;" />
           <p style="color: #666; font-size: 12px;">
             This message was sent from the IntarvAS contact form.<br/>
