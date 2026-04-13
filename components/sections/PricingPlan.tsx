@@ -9,13 +9,14 @@ import {
   Calendar,
   Phone,
 } from "lucide-react";
+import ConsultationDialog from "../pbxForm";
 
 const PricingPlans = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
-  const [titleText, setTitleText] = useState("");
-  const [subtitleText, setSubtitleText] = useState("");
-  const [isTitleComplete, setIsTitleComplete] = useState(false);
+  // const [titleText, setTitleText] = useState("");
+  // const [subtitleText, setSubtitleText] = useState("");
+  // const [isTitleComplete, setIsTitleComplete] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -209,7 +210,7 @@ const PricingPlans = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {plans.map((plan, index) => (
             <div
-              key={index}
+              key={index.toFixed()}
               className={`relative bg-white rounded-2xl overflow-hidden transition-all duration-700 hover:shadow-xl hover:scale-105 ${plan.popular
                   ? "border-2 border-blue-500 shadow-lg scale-105"
                   : "border border-gray-200 hover:border-blue-300"
@@ -256,7 +257,13 @@ const PricingPlans = () => {
                 </div>
 
                 {/* CTA Button */}
-                <a href="/contact">
+                <ConsultationDialog triggerLabel={plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`} 
+                  triggerClassName={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${plan.popular
+                        ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
+                        : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
+                      }`}
+                />
+                {/* <a href="/contact">
                   <button
                     className={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${plan.popular
                         ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
@@ -266,13 +273,13 @@ const PricingPlans = () => {
 
                     {plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`}
                   </button>
-                </a>
+                </a> */}
 
                 {/* Features List */}
                 <div className="space-y-4">
                   {plan.features.map((feature, idx) => (
                     <div
-                      key={idx}
+                      key={idx.toFixed()}
                       className={`flex items-start gap-3 transition-all duration-300 hover:translate-x-1 ${visibleCards.includes(index)
                           ? 'opacity-100 transform translate-x-0'
                           : 'opacity-0 transform translate-x-4'

@@ -37,7 +37,7 @@ export async function POST(req: Request) {
           <h2>New Message from ${fullName}</h2>
           <p><strong>Email:</strong> ${email}</p>
           ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
-          ${service ? `<p><strong>Service:</strong> ${service}</p>` : ''}
+          ${service ? `<p><strong>Service:</strong> ${service.join(', ')}</p>` : ''}
           ${subject ? `<p><strong>Subject:</strong> ${subject}</p>` : ''}
           <p><strong>Message:</strong></p>
           <p>${message.replaceAll('\n', '<br>')}</p>

@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { PricingPlan as PricingPlans, Testimonials as TestimonialsSection } from "@/components/sections";
 import AllInSolutionCard from "@/components/card/AllInSolution";
 import PbxFooter from "@/components/common/pbxFooter";
@@ -9,7 +7,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedText from "@/components/AnimatedText";
-
+import ConsultationDialog from "@/components/pbxForm";
 
 // Register ScrollTrigger plugin
 if (globalThis.window !== undefined) {
@@ -227,7 +225,8 @@ export default function PBX() {
             customers, and partners with ease.
           </p>
           <div className="mt-8 animate-fade-in-up delay-500">
-            <Link href="/contact">
+            <ConsultationDialog  />
+            {/* <Link href="/contact">
               <Button
                 variant="hero"
                 size="lg"
@@ -235,7 +234,7 @@ export default function PBX() {
               >
                 Contact Us
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -278,11 +277,7 @@ export default function PBX() {
               These critical features are essential for any business, regardless of size.
             </p>
             <div className="mt-6">
-              <Link href="/contact">
-                <Button variant="hero" size="lg" className="hover:scale-105 transition-transform duration-300 border-[#0A0F8F]">
-                  Contact Us
-                </Button>
-              </Link>
+              <ConsultationDialog triggerLabel="Contact Us"  />
             </div>
           </div>
 

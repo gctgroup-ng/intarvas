@@ -38,9 +38,19 @@ const ContactUsSection = () => {
     setPuzzle(generatePuzzle());
   }, []);
 
+  const [selectedServices, setSelectedServices] = useState([]);
+
+  const toggleService = (serviceName) => {
+    setSelectedServices(prev =>
+      prev.includes(serviceName)
+        ? prev.filter(s => s !== serviceName)
+        : [...prev, serviceName]
+    );
+  };
   const handleChange = (e) => {
     setFormData({
       ...formData,
+      // service: selectedServices,
       [e.target.name]: e.target.value,
     });
   };
@@ -76,6 +86,7 @@ const ContactUsSection = () => {
         },
         body: JSON.stringify({
           ...formData,
+          service: selectedServices,
           puzzleQuestion: puzzle.question,
           puzzleAnswer: answer,
         }),
@@ -197,25 +208,46 @@ const ContactUsSection = () => {
 
               {/* Services */}
               <div>
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                  Services
+                <label htmlFor="serivces" className="block text-sm font-medium text-gray-700 mb-2">
+                  Service <span className="text-xs text-gray-500">(Select what you are interested in)</span>
                 </label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  required
-                  disabled={isLoading}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
-                >
-                  <option value="">Select a service</option>
-                  {SERVICES.map((service) => (
-                    <option key={service.name} value={service.name}>
-                      {service.name}
-                    </option>
-                  ))}
-                </select>
+                <div className="border border-gray-200 rounded-lg overflow-hidden grid grid-cols-2">
+                  {SERVICES.map((service) => {
+                    const isSelected = selectedServices.includes(service.name);
+                    return (
+                      <button
+                        key={service.name}
+                        type="button"
+                        disabled={isLoading}
+                        onClick={() => toggleService(service.name)}
+                        className={`w-full flex items-center justify-between px-4 py-3 text-sm text-left transition-colors border border-gray-100
+                          disabled:cursor-not-allowed disabled:opacity-50
+                          ${isSelected
+                            ? "bg-blue-50 text-blue-700 font-medium"
+                            : "bg-white text-gray-700 hover:bg-gray-50"
+                          }`}
+                      >
+                        <span>{service.name}</span>
+                        {isSelected && (
+                          <svg className="w-4 h-4 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {selectedServices.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {selectedServices.map(s => (
+                      <span key={s} className="inline-flex items-center gap-1 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                        {s}
+                        <button type="button" onClick={() => toggleService(s)} className="hover:text-blue-900">✕</button>
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Subject */}
