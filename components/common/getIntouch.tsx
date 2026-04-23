@@ -17,6 +17,7 @@ const SERVICES: ServiceItem[] = [
   { name: "inVAS", value: "invas" },
   { name: "Bulk Messaging", value: "bulk-messaging" },
   { name: "Vanity & toll free numbers", value: "numbers" },
+  // { name: "Others", value: "others" },
 ];
 
 const ContactUsSection = () => {
@@ -41,6 +42,7 @@ const ContactUsSection = () => {
   const [selectedServices, setSelectedServices] = useState([]);
 
   const toggleService = (serviceName) => {
+    setStatusMessage("");
     setSelectedServices(prev =>
       prev.includes(serviceName)
         ? prev.filter(s => s !== serviceName)
@@ -57,6 +59,13 @@ const ContactUsSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (selectedServices.length === 0) {
+      setStatusMessage("❌ Please select at least one service.");
+      setTimeout(() => setStatusMessage(""), 5000);
+      return;
+    }
+
     // Show puzzle modal before submitting
     setShowPuzzleModal(true);
   };
@@ -156,7 +165,7 @@ const ContactUsSection = () => {
               {/* Full Name */}
               <div>
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name
+                  Full Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   id="fullName"
@@ -174,7 +183,7 @@ const ContactUsSection = () => {
               {/* Email Address */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
+                  Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
                   id="email"
@@ -208,8 +217,8 @@ const ContactUsSection = () => {
 
               {/* Services */}
               <div>
-                <label htmlFor="serivces" className="block text-sm font-medium text-gray-700 mb-2">
-                  Service <span className="text-xs text-gray-500">(Select what you are interested in)</span>
+                <label htmlFor="services" className="block text-sm font-medium text-gray-700 mb-2">
+                  Services <span className="text-red-500">*</span> <span className="text-xs text-gray-500">(Select what you are interested in)</span>
                 </label>
                 <div className="border border-gray-200 rounded-lg overflow-hidden grid grid-cols-2">
                   {SERVICES.map((service) => {
@@ -253,7 +262,7 @@ const ContactUsSection = () => {
               {/* Subject */}
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
+                  Subject <span className="text-red-500">*</span>
                 </label>
                 <input
                   id="subject"
@@ -271,7 +280,7 @@ const ContactUsSection = () => {
               {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Message
+                  Your Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
