@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClientProviders } from "@/components/providers/ClientProviders";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import MetaPixelProvider from "@/components/providers/MetaPixelProvider";
 // import LoadingScreen from "@/components/common/LoadingScreen";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -42,6 +43,25 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             })(window,document,'script','dataLayer','GTM-5S9FTKDR');`,
           }}
         />
+        {/* Meta Pixel Snippet */}
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1614061226591922');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
       </head>
       <body>
         {/* GTM Body Fallback */}
@@ -54,8 +74,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        {/* Meta Pixel Body Fallback */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1614061226591922&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
 
         <ClientProviders>
+          <MetaPixelProvider />
           <Toaster />
           <Sonner />
           <SiteHeader />
