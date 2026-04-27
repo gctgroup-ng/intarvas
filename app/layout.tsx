@@ -26,91 +26,25 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      {/* <head>
-        <script
+      <head>
+        {/* GTM Head Snippet */}
+        <Script
+          id="gtm-head"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `
-              // Force scroll to top immediately on page load
-              if ('scrollRestoration' in history) {
-                history.scrollRestoration = 'manual';
-              }
-
-              // Scroll to top immediately and repeatedly
-              window.scrollTo(0, 0);
-
-              // Prevent any scroll restoration during initial load
-              let scrollLocked = true;
-              let lockTimer = null;
-
-              const unlockScroll = function() {
-                scrollLocked = false;
-              };
-
-              // Aggressively lock scroll position at top during initial page load
-              const enforceTop = function() {
-                if (scrollLocked) {
-                  window.scrollTo(0, 0);
-                }
-              };
-
-              window.addEventListener('scroll', enforceTop, { passive: false });
-
-              // Force scroll to top every 50ms for the first 1.5 seconds
-              const forceInterval = setInterval(function() {
-                if (scrollLocked) {
-                  window.scrollTo(0, 0);
-                }
-              }, 50);
-
-              // Unlock scroll after 1.5 seconds (giving ScrollTrigger time to fully initialize)
-              const unlockAfterDelay = function() {
-                setTimeout(function() {
-                  scrollLocked = false;
-                  clearInterval(forceInterval);
-                  window.scrollTo(0, 0); // One final scroll to top
-                }, 1500);
-              };
-
-              // Start unlock timer on DOMContentLoaded
-              document.addEventListener('DOMContentLoaded', function() {
-                window.scrollTo(0, 0);
-                unlockAfterDelay();
-              });
-
-              // Fallback unlock on load event
-              window.addEventListener('load', function() {
-                if (scrollLocked) {
-                  unlockAfterDelay();
-                }
-              });
-            `,
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5S9FTKDR');`,
           }}
         />
-      </head> */}
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9XZQ2FFR5J"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-9XZQ2FFR5J');
-          `}
-        </Script>
       </head>
       <body>
+        {/* GTM Body Fallback */}
         <noscript>
           <iframe
             title="Google Tag Manager"
@@ -120,12 +54,10 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+
         <ClientProviders>
-          {/* <ScrollToTop /> */}
-          {/* <LoadingScreen /> */}
           <Toaster />
           <Sonner />
-          {/* <SupportWidget /> */}
           <SiteHeader />
           {children}
           <SiteFooter />
