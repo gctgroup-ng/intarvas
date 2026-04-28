@@ -1,11 +1,6 @@
 "use client";
 
-import React from "react";
 import {
-  Check,
-  Award,
-  Crown,
-  CheckCircle,
   CheckCircle2,
   Star,
   Trophy,
@@ -19,7 +14,7 @@ const DeskphonesPricing = () => {
       icon: <Star size={20} />,
       price: "99,999",
       features: [
-        { text: "One Yearly or Toll-free number", included: true },
+        { text: "One Vanity (0700) or Toll Free (0800) Number", included: true },
         { text: "Eligible for one IVR", included: true },
         { text: "Pro Desk phone", included: true },
         { text: "One year free subscription", included: true },
@@ -35,7 +30,7 @@ const DeskphonesPricing = () => {
       icon: <Trophy size={20} />,
       price: "149,999",
       features: [
-        { text: "One Yearly or Toll-free number", included: true },
+        { text: "One Vanity (0700) or Toll Free (0800) Number", included: true },
         { text: "Eligible for one IVR", included: true },
         { text: "Ultra Premium Desk phone", included: true },
         { text: "One year free subscription", included: true },
@@ -81,7 +76,7 @@ const DeskphonesPricing = () => {
             <div className="flex flex-col md:flex-row gap-2 md:gap-6">
               {plans.map((plan, index) => (
                 <div
-                  key={index}
+                  key={index.toFixed()}
                   className="bg-white md:w-[380px] min-h-[561px] rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow"
                 >
                   {/* Badge */}
@@ -109,7 +104,7 @@ const DeskphonesPricing = () => {
                   {/* Features List */}
                   <div className="space-y-3 flex flex-col justify-evenly gap-3">
                     {plan.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
+                      <div key={idx.toFixed()} className="flex items-start gap-3">
                         <div className="flex-shrink-0 mt-0.5">
                           <CheckCircle2
                             className={`w-5 h-5 ${feature.included
