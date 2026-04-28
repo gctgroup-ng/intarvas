@@ -12,7 +12,7 @@ const DeskphonesPricing = () => {
     {
       badge: "Value",
       icon: <Star size={20} />,
-      price: "99,999",
+      price: <span>149,999<sup className="text-[12px] text-gray-600">.99</sup></span>,
       features: [
         { text: "One Vanity (0700) or Toll Free (0800) Number", included: true },
         { text: "Eligible for one IVR", included: true },
@@ -28,11 +28,12 @@ const DeskphonesPricing = () => {
     {
       badge: "Premium",
       icon: <Trophy size={20} />,
-      price: "149,999",
+      price: <span>199,999<sup className="text-[12px] text-gray-600">.99</sup></span>,
       features: [
         { text: "One Vanity (0700) or Toll Free (0800) Number", included: true },
         { text: "Eligible for one IVR", included: true },
         { text: "Ultra Premium Desk phone", included: true },
+        { text: "Pick your Own Number", included: true },
         { text: "One year free subscription", included: true },
         { text: "Subscription after first year ₦ 20,000/year", included: true },
         {
