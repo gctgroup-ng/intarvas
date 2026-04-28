@@ -5,11 +5,10 @@ import { ClientProviders } from "@/components/providers/ClientProviders";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import MetaPixelProvider from "@/components/providers/MetaPixelProvider";
-// import LoadingScreen from "@/components/common/LoadingScreen";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-// import SupportWidget from "@/components/common/SupportWidget";
-// import ScrollToTop from "@/components/ScrollToTop";
+import SupportWidget from "@/components/common/SupportWidget";
+import WhatsAppWidget from "@/components/common/WhatappWidget";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
@@ -86,12 +85,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </noscript>
 
         <ClientProviders>
+          <SupportWidget />
+          <WhatsAppWidget/>
           <MetaPixelProvider />
           <Toaster />
           <Sonner />
           <SiteHeader />
           {children}
           <SiteFooter />
+          <SupportWidget />
         </ClientProviders>
       </body>
     </html>
