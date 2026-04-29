@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Headphones, Mail, Clock, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generatePuzzle, type Puzzle } from "@/lib/puzzle";
 import PuzzleModal from "@/components/ui/PuzzleModal";
-import ChatWidget from "@/components/ChatWidget";
+// import ChatWidget from "@/components/ChatWidget";
 
 interface ServiceItem {
   name: string;
@@ -412,7 +412,7 @@ const ContactUsSection = () => {
         onClose={handlePuzzleClose}
         onSuccess={handlePuzzleSuccess}
       />
-      <ChatWidget/>
+      {/* <ChatWidget/> */}
     </section>
   );
 };

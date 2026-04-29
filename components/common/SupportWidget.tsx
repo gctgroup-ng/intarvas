@@ -17,7 +17,6 @@ const SupportWidget = () => {
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.async = true;
-    script.charset = "utf-8";
     script.src = WIDGET_SCRIPT_SRC;
 
     script.onload = () =>
