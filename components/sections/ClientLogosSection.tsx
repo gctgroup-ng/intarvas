@@ -14,7 +14,7 @@ const ClientLogosSection = ({
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341287/airtel_wx2njt.svg", alt: "Airtel", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341230/fcmb_bbfrx6.svg", alt: "FCMB", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341245/mafab_vhhycq.svg", alt: "Mafab", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341243/lotus_xv1fvk.svg", alt: "Lotus Bank", large: false },
+    // { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341243/lotus_xv1fvk.svg", alt: "Lotus Bank", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341231/aero-logo_lqynkp.svg", alt: "Aero", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341234/ICN_rugpf5.svg", alt: "ICN", large: true },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341236/Klayed_cvnfnf.svg", alt: "Klayed", large: false },
@@ -22,7 +22,7 @@ const ClientLogosSection = ({
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341257/Monieswitch_xmbjak.svg", alt: "Monieswitch", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341259/NMRC-Logo_miba24.svg", alt: "NMRC", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341266/Paycelar_cyix8r.svg", alt: "Paycelar", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341274/Renmoney_cv9wf1.svg", alt: "Renmoney", large: false },
+    // { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341274/Renmoney_cv9wf1.svg", alt: "Renmoney", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341245/bazeuniversityhospitallogo_yx8hzh.svg", alt: "Baze University Hospital", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341232/globacomlogo_b49ows.svg", alt: "Globacom", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341286/TelkoMS_tuahiu.svg", alt: "TelkoMS", large: true },
@@ -36,6 +36,20 @@ const ClientLogosSection = ({
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341294/xrnet-logo_unusd3.svg", alt: "XRNet", large: true },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341280/SUNTRUST-LOGO_s7ljn5.png", alt: "Suntrust", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341277/ruut_csm-_l5jnsg.png", alt: "Ruut CSM", large: false },
+
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100384/lottomaina_aopvfi.webp", alt: "Lottomania", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779102577/green_lotto_1_evwkmb.png", alt: "Green Lotto", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/vehicular_lmy9hn.png", alt: "Vehicular", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/providus_eyo9ji.svg", alt: "Providus Bank", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/risktech_rlc220.svg", alt: "RiskTech Advisory", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/MSA_fx0mjw.svg", alt: "MyServiceAgent", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/STN_vedozi.png", alt: "STN (Swift Telephone Network)", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100384/maekandex_mfnne0.png", alt: "Maekandex", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/twin-ai_smyceo.svg", alt: "Twin AI", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100388/altersupport_hkhbda.png", alt: "AlterSupport Technologies Limited", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100385/ZeroHassle_pbqui5.jpg", alt: "ZeroHassle", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779101051/makesales_xrnlum.svg", alt: "Makesales", large: false },
+
   ];
 
   return (
