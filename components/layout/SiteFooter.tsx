@@ -54,7 +54,8 @@ import React, { useState } from "react";
 // import { FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { DownloadButton } from "@/components/common/DownloadButton";
-import { FaGooglePlay, FaAppStoreIos, FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaGooglePlay, FaAppStoreIos, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+// import { FaXTwitter, FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -94,7 +95,7 @@ const Footer = () => {
                 SOCIAL MEDIA
               </h3>
               <div className="flex gap-3">
-                <button
+                {/* <button
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
                   aria-label="Facebook"
                   disabled
@@ -106,8 +107,8 @@ const Footer = () => {
                   aria-label="Twitter"
                   disabled
                 >
-                  <FaTwitter className="w-5 h-5 text-black" />
-                </button>
+                  <FaXTwitter className="w-5 h-5 text-black" />
+                </button>*/}
                 <a
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="LinkedIn"
