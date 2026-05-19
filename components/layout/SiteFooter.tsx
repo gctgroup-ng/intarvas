@@ -50,10 +50,11 @@
 // }
 
 import React, { useState } from "react";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+// import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+// import { FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { DownloadButton } from "@/components/common/DownloadButton";
-import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+import { FaGooglePlay, FaAppStoreIos, FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -98,28 +99,28 @@ const Footer = () => {
                   aria-label="Facebook"
                   disabled
                 >
-                  <Facebook className="w-5 h-5 text-black" />
+                  <FaFacebook className="w-5 h-5 text-black" />
                 </button>
                 <button
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-not-allowed opacity-60"
                   aria-label="Twitter"
                   disabled
                 >
-                  <Twitter className="w-5 h-5 text-black" />
+                  <FaTwitter className="w-5 h-5 text-black" />
                 </button>
                 <a
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="LinkedIn"
                   href="https://www.linkedin.com/company/intarvas/" target="_blank" rel="noopener noreferrer"
                 >
-                  <Linkedin className="w-5 h-5 text-black" />
+                  <FaLinkedinIn className="w-5 h-5 text-black" />
                 </a>
                 <a
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors opacity-60"
                   aria-label="Instagram"
                   href="https://www.instagram.com/intarvas/" target="_blank" rel="noopener noreferrer"
                 >
-                  <Instagram className="w-5 h-5 text-black" />
+                  <FaInstagram className="w-5 h-5 text-black" />
                 </a>
               </div>
             </div>
@@ -254,7 +255,7 @@ const Footer = () => {
       <div className=" border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-8 py-6">
           <p className="text-center text-gray-400 text-sm">
-            © All rights reserved by IntarvAS.
+            © All rights reserved by intarvAS.
           </p>
         </div>
       </div>
