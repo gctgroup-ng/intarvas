@@ -49,7 +49,8 @@ const ClientLogosSection = ({
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100388/altersupport_hkhbda.png", alt: "AlterSupport Technologies Limited", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100385/ZeroHassle_pbqui5.jpg", alt: "ZeroHassle", large: false },
     { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779101051/makesales_xrnlum.svg", alt: "Makesales", large: false },
-
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779181801/JA-nigeria-1_oifasz.svg", alt: "JA Nigeria", large: false },
+    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779181416/bestline_fmcana.webp", alt: "BestLine Shipping Company LTD", large: false },
   ];
 
   return (
