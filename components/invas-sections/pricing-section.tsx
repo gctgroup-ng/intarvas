@@ -72,7 +72,7 @@ export function PricingSection() {
         currency: "NGN",
         description: "Everything in Growth Pack +",
         features: {
-          "WHATSAPP CALL CENTER": "✓",
+          "Whatsapp Call Center": "✓",
           "10 Users/Agents": "✓",
           "Premium Dedicated Support": "✓",
           "Advanced Flow Automation": "✓",
@@ -159,9 +159,14 @@ export function PricingSection() {
               <div className="space-y-3 border-t pt-6">
                 <p className="text-[#0A0F8F] font-semibold">{plan.description}</p>
                 {Object.keys(plan.features).map((feature, fIndex) => (
+
                   <div key={fIndex.toFixed()} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#0e8d17] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">{feature}</span>
+                    {feature === "Whatsapp Call Center" ?
+                      <span className="text-sm font-bold text-gray-700">{feature} <span className="bg-[#0A0F8F] rounded-lg text-white p-1 ml-10">Exclusive</span></span> :
+                      <span className="text-sm text-gray-700">{feature}</span> 
+                    }
+                    {/* <span className="text-sm text-gray-700">{feature}</span> */}
                   </div>
                 ))}
               </div>
