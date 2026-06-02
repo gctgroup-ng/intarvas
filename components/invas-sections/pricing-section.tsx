@@ -15,65 +15,6 @@ export interface PLAN {
 }
 
 export function PricingSection() {
-  // const plans = [
-  //   {
-  //     name: "Starter",
-  //     price: "₦80,659",
-  //     period: "/month",
-  //     description: "Essentials to start messaging at scale.",
-  //     features: [
-  //       "PhoneBooks Manipulation",
-  //       "Template Management",
-  //       "Bulk Messaging",
-  //       "Campaign Statistics",
-  //       "Chatting System",
-  //       "Live History",
-  //       "Standard ticketing support",
-  //       "Calls & Notifications",
-  //       "1,000 Bot Sessions",
-  //       "5 GB Cloud Storage",
-  //     ],
-  //     cta: "Get Starter",
-  //     highlight: false,
-  //   },
-  //   {
-  //     name: "Growth",
-  //     price: "₦135,342",
-  //     period: "/month",
-  //     badge: "Most Popular",
-  //     description: "Everything in Starter Pack +",
-  //     features: [
-  //       "Roles & Permissions",
-  //       "Leads Management",
-  //       "API Endpoints",
-  //       "Message Scheduling",
-  //       "Catalog Management",
-  //       "Advanced ticketing support",
-  //       "Basic Flows",
-  //       "5,000 Bot Sessions",
-  //       "10 GB Cloud Storage",
-  //     ],
-  //     cta: "Choose Growth",
-  //     highlight: true,
-  //   },
-  //   {
-  //     name: "Premium",
-  //     price: "₦340,407",
-  //     period: "/month",
-  //     description: "Everything in Growth Pack +",
-  //     features: [
-  //       "Order Manipulation",
-  //       "Call Center",
-  //       "Advanced Flows",
-  //       "Premium Customer Support",
-  //       "10,000 Chatbot Sessions",
-  //       "15 GB Cloud Storage",
-  //     ],
-  //     cta: "Go Premium",
-  //     highlight: false,
-  //   },
-  // ];
-  
   const getDemoPlans = [
     {
         id: "plan_starter",
@@ -83,13 +24,17 @@ export function PricingSection() {
         duration: 30,
         currency: "NGN",
         features: {
-        "Launching Campaigns": "✓",
-        "1,000 ChatBot Sessions Monthly": "✓",
-        "Live Analytics & Statistics": "✓",
-        "1 Team Member": "✓",
-        "Chatbot Factory": "✓",
-        "Phone Books": "✓",
-        "5 GB Cloud Storage": "✓",
+          "1 User/Agent": "✓",
+          "Phonebooks Manipulation": "✓",
+          "Template Management": "✓",
+          "Bulk Messaging": "✓",
+          "Campaign Statistics": "✓",
+          "Chatting System Management": "✓",
+          "Bot Factory": "✓",
+          "Standard Ticketing Support": "✓",
+          "Calls and Notifications": "✓",
+          "1,000 Bot Sessions Monthly": "✓",
+          "5GB Cloud Storage": "✓",
         },
         isActive: true,
         cta: "Get Starter",
@@ -103,13 +48,16 @@ export function PricingSection() {
         currency: "NGN",
         description: "Everything in Starter Pack +",
         features: {
-        "Leads Management": "✓",
-        "5,000 ChatBot Sessions": "✓",
-        "Product Catalogue": "✓",
-        "5 Team Members": "✓",
-        "Message Scheduling": "✓",
-        "Send Template API": "✓",
-        "10 GB Cloud Storage": "✓",
+          "5 Users/Agents": "✓",
+          "Roles and Permissions": "✓",
+          "Leads Management": "✓",
+          "API Endpoints": "✓",
+          "Message Scheduling": "✓",
+          "Catalog Management": "✓",
+          "Advanced Ticketing Support": "✓",
+          "Basic Flows": "✓",
+          "5,000 Bot Sessions Monthly": "✓",
+          "10GB Cloud Storage": "✓",
         },
         isActive: true,
         isPopular: true,
@@ -124,12 +72,12 @@ export function PricingSection() {
         currency: "NGN",
         description: "Everything in Growth Pack +",
         features: {
-          "Flow Automation": "✓",
-          "10,000 ChatBot Sessions": "✓",
-          "Order Management": "✓",
-          "10 Team Members": "✓",
-          "Dedicated Support": "✓",
-          "BlueTick Verification": "✓",
+          "WHATSAPP CALL CENTER": "✓",
+          "10 Users/Agents": "✓",
+          "Premium Dedicated Support": "✓",
+          "Advanced Flow Automation": "✓",
+          "Business Verification": "✓",
+          "10,000 Bot Sessions Monthly": "✓",
           "15 GB Cloud Storage": "✓",
         },
         isActive: true,
@@ -145,7 +93,7 @@ export function PricingSection() {
             Simple, transparent pricing
           </h2> */}
           <h3 className="font-inter text-[38px] md:text-[42px] font-[600] leading-[1.2]">
-            Simple, transparent pricing
+            Simple, Transparent Plans
           </h3>
           <p className="text-gray-600 text-lg mb-8">
             Pick a plan that fits today, and scale whenever you need.
@@ -192,7 +140,7 @@ export function PricingSection() {
                 {/* <span className="text-4xl text-[#0e8d17] font-bold">₦ {(plan.amount).toLocaleString()}</span>  */}
                 {/* <span className="text-gray-600 ml-2">{plan.period}</span>*/}
               </div>
-              <p className="text-gray-600 text-medium mb-6">{plan.description}</p>
+              <p className="text-[#0A0F8F] font-medium mb-6">Pay yearly and save 17%.</p>
 
               <Link href={`https://invas.me/plans`} >
               <Button variant={"hero"} size={"lg"}
@@ -209,6 +157,7 @@ export function PricingSection() {
               </Link>
 
               <div className="space-y-3 border-t pt-6">
+                <p className="text-[#0A0F8F] font-semibold">{plan.description}</p>
                 {Object.keys(plan.features).map((feature, fIndex) => (
                   <div key={fIndex.toFixed()} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#0e8d17] flex-shrink-0 mt-0.5" />

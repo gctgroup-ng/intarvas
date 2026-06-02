@@ -427,7 +427,6 @@ export default function WhatsappCalling() {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                {/* Starter */}
                 <div className="rounded-2xl p-8 border border-gray-200 bg-white flex flex-col gap-5">
                     <div>
                     <h3 className="text-2xl font-black text-[#111]">Starter Plan</h3>
