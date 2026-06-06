@@ -11,46 +11,46 @@ const ClientLogosSection = ({
 }: ClientLogosSectionProps) => {
   // Array of client logos - updated with actual client logos from images folder
   const logos = [
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341287/airtel_wx2njt.svg", alt: "Airtel", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341230/fcmb_bbfrx6.svg", alt: "FCMB", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341245/mafab_vhhycq.svg", alt: "Mafab", large: false },
-    // { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341243/lotus_xv1fvk.svg", alt: "Lotus Bank", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341231/aero-logo_lqynkp.svg", alt: "Aero", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341234/ICN_rugpf5.svg", alt: "ICN", large: true },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341236/Klayed_cvnfnf.svg", alt: "Klayed", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341248/MiGO-Mobile-Black-Logo_mc9fxd.svg", alt: "MiGO Mobile", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341257/Monieswitch_xmbjak.svg", alt: "Monieswitch", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341259/NMRC-Logo_miba24.svg", alt: "NMRC", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341266/Paycelar_cyix8r.svg", alt: "Paycelar", large: false },
-    // { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341274/Renmoney_cv9wf1.svg", alt: "Renmoney", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341245/bazeuniversityhospitallogo_yx8hzh.svg", alt: "Baze University Hospital", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341232/globacomlogo_b49ows.svg", alt: "Globacom", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341286/TelkoMS_tuahiu.svg", alt: "TelkoMS", large: true },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341293/WGC_xzc4p3.svg", alt: "Winner Golden Chance", large: true },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341265/capital_metriq_pdjnlf.svg", alt: "Capital Metriq", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341227/christian_association_of_nigeria_ghlr4r.svg", alt: "Christian Association of Nigeria", large: false,},
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341242/logo-rapidbts_hd0vkk.svg", alt: "RapidBTS", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341276/rubies-logo_mtrbxd.svg", alt: "Rubies", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341278/sendtruly_bob18y.svg", alt: "SendTruly", large: true },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341289/travna-logo_vugqtv.svg", alt: "Travna", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341294/xrnet-logo_unusd3.svg", alt: "XRNet", large: true },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341280/SUNTRUST-LOGO_s7ljn5.png", alt: "Suntrust", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341277/ruut_csm-_l5jnsg.png", alt: "Ruut CSM", large: false },
+    { src: "/image/clients/airtel.svg", alt: "Airtel", large: false },
+    { src: "/image/clients/fcmb.svg", alt: "FCMB", large: false },
+    { src: "/image/clients/mafab.svg", alt: "Mafab", large: false },
+    // { src: "/image/clients/Lotus-Bank-Logo.png", alt: "Lotus Bank", large: false },
+    { src: "/image/clients/aero-logo.svg", alt: "Aero", large: false },
+    { src: "/image/clients/ICN.svg", alt: "ICN", large: true },
+    { src: "/image/clients/klayed.svg", alt: "Klayed", large: false },
+    { src: "/image/clients/MiGO-Mobile-Black-Logo.svg", alt: "MiGO Mobile", large: false },
+    { src: "/image/clients/monieswitch.svg", alt: "Monieswitch", large: false },
+    { src: "/image/clients/NMRC-Logo.svg", alt: "NMRC", large: false },
+    { src: "/image/clients/Paycelar.svg", alt: "Paycelar", large: false },
+    // { src: "/image/clients/renmoney.png", alt: "Renmoney", large: false },
+    { src: "/image/clients/bazeuniversityhospitallogo.svg", alt: "Baze University Hospital", large: false },
+    { src: "/image/clients/globacomlogo.svg", alt: "Globacom", large: false },
+    { src: "/image/clients/TelkoMS.svg", alt: "TelkoMS", large: true },
+    { src: "/image/clients/WGC.svg", alt: "Winner Golden Chance", large: true },
+    { src: "/image/clients/capital metriq.svg", alt: "Capital Metriq", large: false },
+    { src: "/image/clients/christian association of nigeria.svg", alt: "Christian Association of Nigeria", large: false,},
+    { src: "/image/clients/logo-rapidbts.svg", alt: "RapidBTS", large: false },
+    { src: "/image/clients/rubies-logo.svg", alt: "Rubies", large: false },
+    { src: "/image/clients/sendtruly.svg", alt: "SendTruly", large: true },
+    { src: "/image/clients/travna-logo.svg", alt: "Travna", large: false },
+    { src: "/image/clients/xrnet-logo.svg", alt: "XRNet", large: true },
+    { src: "/image/clients/SUNTRUST-LOGO.png", alt: "Suntrust", large: false },
+    { src: "/image/clients/ruut_csm-.png", alt: "Ruut CSM", large: false },
+    { src: "/image/clients/lottomaina.webp", alt: "Lottomania", large: false },
+    { src: "/image/clients/green-lotto-1.png", alt: "Green Lotto", large: false },
+    { src: "/image/clients/vehicular.png", alt: "Vehicular", large: false },
+    { src: "/image/clients/providus.svg", alt: "Providus Bank", large: false },
+    { src: "/image/clients/risktech.svg", alt: "RiskTech Advisory", large: false },
+    { src: "/image/clients/MSA.svg", alt: "MyServiceAgent", large: false },
+    { src: "/image/clients/STN.png", alt: "STN (Swift Telephone Network)", large: false },
+    { src: "/image/clients/maekandex.png", alt: "Maekandex", large: false },
+    { src: "/image/clients/twin-ai.svg", alt: "Twin AI", large: false },
+    { src: "/image/clients/altersupport.png", alt: "AlterSupport Technologies Limited", large: false },
+    { src: "/image/clients/ZeroHassle.jpg", alt: "ZeroHassle", large: false },
 
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100384/lottomaina_aopvfi.webp", alt: "Lottomania", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779102577/green_lotto_1_evwkmb.png", alt: "Green Lotto", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/vehicular_lmy9hn.png", alt: "Vehicular", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/providus_eyo9ji.svg", alt: "Providus Bank", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/risktech_rlc220.svg", alt: "RiskTech Advisory", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/MSA_fx0mjw.svg", alt: "MyServiceAgent", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/STN_vedozi.png", alt: "STN (Swift Telephone Network)", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100384/maekandex_mfnne0.png", alt: "Maekandex", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100383/twin-ai_smyceo.svg", alt: "Twin AI", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100388/altersupport_hkhbda.png", alt: "AlterSupport Technologies Limited", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779100385/ZeroHassle_pbqui5.jpg", alt: "ZeroHassle", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779101051/makesales_xrnlum.svg", alt: "Makesales", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779181801/JA-nigeria-1_oifasz.svg", alt: "JA Nigeria", large: false },
-    { src: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1779181416/bestline_fmcana.webp", alt: "BestLine Shipping Company LTD", large: false },
+    { src: "/image/clients/makesales.svg", alt: "Makesales", large: false },
+    { src: "/image/clients/JA-nigeria-1.svg", alt: "JA Nigeria", large: false },
+    { src: "/image/clients/bestline.webp", alt: "BestLine Shipping Company LTD", large: false },
   ];
 
   return (
@@ -75,7 +75,7 @@ const ClientLogosSection = ({
               >
                 <img
                   src={logo.src}
-                  alt={"logo"}
+                  alt={logo.alt}
                   className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                   loading="lazy"
                 />
@@ -96,7 +96,7 @@ const ClientLogosSection = ({
               >
                 <img
                   src={logo.src}
-                  alt={"logo"}
+                  alt={logo.alt}
                   className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                   loading="lazy"
                 />

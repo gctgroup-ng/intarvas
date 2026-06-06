@@ -219,7 +219,7 @@ export default function About() {
           <div className={`hover:scale-105 transition-all duration-1000 flex items-center md:items-center  ${showImages.includes(0) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-8'
             }`}>
             <img
-              src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341247/about-us1_lfvgzd.jpg"}
+              src={"/about-thrive/about-us1.jpg"}
               alt=""
               className="w-auto rounded-[16px] md:rounded-[32px] scale-105"
             />
@@ -229,7 +229,7 @@ export default function About() {
             <div className={`hover:scale-105 transition-all duration-1000 ${showImages.includes(1) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
               }`}>
               <img
-                src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341256/about-us2_it53te.jpg"}
+                src={"/about-thrive/about-us2.jpg"}
                 alt=""
                 className="w-full rounded-[16px] md:rounded-[32px] scale-95"
               />
@@ -237,7 +237,7 @@ export default function About() {
             <div className={`hover:scale-105 transition-all duration-1000 ${showImages.includes(2) ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
               }`}>
               <img
-                src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341237/invas-about-us_1_xfrsju.jpg"}
+                src={"/about-thrive/invas-about-us.jpg"}
                 alt=""
                 className="w-full md:w-auto rounded-[16px] md:rounded-[32px] scale-95"
               />

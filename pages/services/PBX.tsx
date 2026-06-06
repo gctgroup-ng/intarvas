@@ -248,7 +248,7 @@ export default function PBX() {
 
             {/* Animated image */}
           <img
-            src={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341285/pbxHeroImg_ylhjg5.png"}
+            src={"/image/pbx/pbxHeroImg.png"}
             alt=""
             className="w-full rounded-[32px] relative z-10 transform transition-all duration-700 hover:scale-105 hover:rotate-1 shadow-2xl hover:shadow-lg"
           />
@@ -302,7 +302,7 @@ export default function PBX() {
                 }
                 title="Call Recording"
                 description="Securely record and store customer conversations, ensuring accountability, training opportunities, and compliance with industry standards."
-                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341260/callrecording_ei5qfl.png"}
+                img={"/images/callrecording.png"}
               />
             </div>
 
@@ -325,7 +325,7 @@ export default function PBX() {
                 }
                 title="Analytics"
                 description="Track call volumes, duration, and performance in real time with clear dashboards that help you make smarter business decisions."
-                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341248/analytics_htnlaw.png"}
+                img={"/images/analytics.png"}
               />
             </div>
 
@@ -348,7 +348,7 @@ export default function PBX() {
                 }
                 title="Extensions"
                 description="Give every team member a professional business line with unique extensions, whether they're in the office or working remotely."
-                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341231/extensions_kiomsm.png"}
+                img={"/images/extensions.png"}
               />
             </div>
 
@@ -371,7 +371,7 @@ export default function PBX() {
                 }
                 title="Scalability"
                 description="Start small and expand seamlessly. Add or remove lines as your business grows, without costly hardware or downtime."
-                img={"https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341280/sclimage_buejmq.svg"}
+                img={"/images/sclimage.svg"}
               />
             </div>
           </div>
@@ -553,7 +553,7 @@ export default function PBX() {
             }`}>
               <div className="bg-gray-900 rounded-3xl p-8 flex justify-center items-center h-[400px] hover:scale-105 transition-transform duration-300">
                 <img
-                  src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341240/laptopimg_pssimn.svg"
+                  src="/laptopimg.svg"
                   alt=""
                   className="w-[500px] h-full object-contain transition-all duration-500 ease-in-out hover:scale-105"
                 />

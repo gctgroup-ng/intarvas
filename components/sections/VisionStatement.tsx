@@ -70,7 +70,7 @@ const VisionMissionSection = () => {
               <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-br from-blue-200 to-[#E5F2FF] rounded-xl sm:rounded-2xl lg:rounded-3xl opacity-50"></div>
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
                 <img
-                  src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341293/vision-intarvas_vyeo03.png"
+                  src="/vision-intarvas.png"
                   alt=""
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-contain"
                 />
@@ -90,7 +90,7 @@ const VisionMissionSection = () => {
               <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-br from-blue-200 to-[#E5F2FF] rounded-xl sm:rounded-2xl lg:rounded-3xl opacity-50"></div>
               <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl">
                 <img
-                  src="https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341261/mission-intarvas_c9bbba.png"
+                  src="/mission-intarvas.png"
                   alt=""
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-contain"
                 />

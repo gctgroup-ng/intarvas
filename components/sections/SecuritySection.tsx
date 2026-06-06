@@ -10,7 +10,8 @@ interface SecuritySectionProps {
 
 const SecuritySection = ({
   title = "Built on a foundation of security and compliance.",
-  certificationImageSrc = "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341292/CertLogos_mc1szz.png",
+  // certificationImageSrc = "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341292/CertLogos_mc1szz.png",
+  certificationImageSrc = "/image/CertLogos.png",
   certificationImageAlt = "Security certifications"
 }: SecuritySectionProps) => {
   const [isVisible, setIsVisible] = useState(false);

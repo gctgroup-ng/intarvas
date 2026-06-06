@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import { CheckCircle } from "lucide-react";
-import MessagingPlatformSection from "./messaging";
+import { useState } from "react";
 
 const MessagingPlatformSectionNumber = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -12,37 +10,37 @@ const MessagingPlatformSectionNumber = () => {
       title: "Memorable Numbers",
       description:
         "Make it easy for customers to remember your business. With our numbers, your brand stays top of mind and instantly recognizable.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341265/memorable-numbers_cqvbdu.jpg",
+      imgSrc: "/bulk-sms/memorable-numbers.jpg",
     },
     {
       title: "Professional Image",
       description:
         "Project credibility and trust with numbers associated with established organizations, benefit from perception of professionalism.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348450/professional_aerqpg.jpg",
+      imgSrc: "/professional.jpg",
     },
     {
       title: "Flexible Management",
       description:
         "Route calls to different departments, teams or location using one central number. Ensure every customer reaches the right person.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348283/image-numbers_dovjyo.png",
+      imgSrc: "/bulk-sms/image-numbers.png",
     },
     {
       title: "Nationwide Accessibility",
       description:
         "Give your customers a single number they can call from anywhere in Nigeria. No matter the region, you remain accessible and consistent.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348445/connectivity_xcfk2g.jpg",
+      imgSrc: "/bulk-sms/connectivity.jpg",
     },
     {
       title: "Scalable",
       description:
         "As your business expands, our numbers scale with you. Supporting advanced telecom features.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774348283/image-numbers_dovjyo.png",
+      imgSrc: "/bulk-sms/image-numbers.png",
     },
     {
       title: "Cost-effective Communication",
       description:
         "Customers call freely, with a low-cost option for businesses to manage engagement affordably.",
-      imgSrc: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774349535/saving-bottle_rolucd.jpg",
+      imgSrc: "/saving-bottle.jpg",
     },
   ];
 

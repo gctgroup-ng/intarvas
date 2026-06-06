@@ -191,42 +191,42 @@ const TestimonialsSection = () => {
       text: "My experience with your platform has been great so far. The interface is user-friendly, responses are fast, and the customer support team is helpful and professional. I appreciate the efficiency and look forward to seeing more improvements and new features",
       name: "Adesoji Emmanuel",
       company: "XRNET Technologies LTD",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341294/xrnet-logo_unusd3.svg",
+      avatar: "/image/clients/xrnet-logo.svg",
       rating: 4
     },
     {
       text: "I'll give them 5 stars, their service has been great, and the support from the Intarvas team has been outsatnding so far",
       name: "Olakunle Opajobi",
       company: "Winners Golden Chance Group",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341293/WGC_xzc4p3.svg",
+      avatar: "/image/clients/WGC.svg",
       rating: 5
     },
     {
       text: "My experience using the IntarvAS PBX has been smooth so far.",
       name: "Kpejoh Tamara",
       company: "XRNET Technologies LTD",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341294/xrnet-logo_unusd3.svg",
+      avatar: "/image/clients/xrnet-logo.svg",
       rating: 4
     },
     {
       text: "Intarvas has been an incredible partner for us. Their PBX and SMS solutions were exactly what we needed, and they ensured our onboarding process was smooth and hassle-free. The team has been consistently responsive and supportive every step of the way.",
       name: "Emmanuel Ezeani",
       company: "Ruut CSM",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341277/ruut_csm-_l5jnsg.png",
+      avatar: "/image/clients/ruut_csm-.png",
       rating: 5
     },
     {
       text: "It's swift and friendly.",
       name: "Marian Omon Adebayo-Adeola",
       company: "Aero Contractors",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341231/aero-logo_lqynkp.svg",
+      avatar: "/image/clients/aero-logo.svg",
       rating: 4
     },
     {
       text: "The onboarding was great, and the team has been very helpful to us with using and trying to work around the app.",
       name: "Temitayo Akure",
       company: "Suntrust Bank",
-      avatar: "https://res.cloudinary.com/dlgrqik0s/image/upload/v1774341280/SUNTRUST-LOGO_s7ljn5.png",
+      avatar: "/image/clients/SUNTRUST-LOGO.png",
       rating: 4
     }
   ];
