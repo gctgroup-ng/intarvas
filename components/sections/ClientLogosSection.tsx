@@ -11,9 +11,9 @@ const ClientLogosSection = ({
 }: ClientLogosSectionProps) => {
   // Array of client logos - updated with actual client logos from images folder
   const logos = [
-    { src: "/image/clients/airtel.svg", alt: "Airtel", large: false },
+    { src: "/image/clients/airtel.svg", alt: "Airtel", large: false,},
     { src: "/image/clients/fcmb.svg", alt: "FCMB", large: false },
-    { src: "/image/clients/mafab.svg", alt: "Mafab", large: false },
+    { src: "/image/clients/mafab-1.svg", alt: "Mafab", large: false },
     // { src: "/image/clients/Lotus-Bank-Logo.png", alt: "Lotus Bank", large: false },
     { src: "/image/clients/aero-logo.svg", alt: "Aero", large: false },
     { src: "/image/clients/ICN.svg", alt: "ICN", large: true },
@@ -25,17 +25,17 @@ const ClientLogosSection = ({
     // { src: "/image/clients/renmoney.png", alt: "Renmoney", large: false },
     { src: "/image/clients/bazeuniversityhospitallogo.svg", alt: "Baze University Hospital", large: false },
     { src: "/image/clients/globacomlogo.svg", alt: "Globacom", large: false },
-    { src: "/image/clients/TelkoMS.svg", alt: "TelkoMS", large: true },
+    { src: "/image/clients/TelkoMS.svg", alt: "TelkoMS", large: true, increaseSize: true },
     { src: "/image/clients/WGC.svg", alt: "Winner Golden Chance", large: true },
     { src: "/image/clients/capital metriq.svg", alt: "Capital Metriq", large: false },
-    { src: "/image/clients/christian association of nigeria.svg", alt: "Christian Association of Nigeria", large: false,},
-    { src: "/image/clients/logo-rapidbts.svg", alt: "RapidBTS", large: false },
-    { src: "/image/clients/rubies-logo.svg", alt: "Rubies", large: false },
+    { src: "/image/clients/christian association of nigeria.svg", alt: "Christian Association of Nigeria", large: false, increaseSize: true,},
+    { src: "/image/clients/logo-rapidbts.svg", alt: "RapidBTS", large: false, increaseSize: true, },
+    { src: "/image/clients/rubies-logo.svg", alt: "Rubies", large: false, increaseSize: true, },
     { src: "/image/clients/sendtruly.svg", alt: "SendTruly", large: true },
     { src: "/image/clients/travna-logo.svg", alt: "Travna", large: false },
     { src: "/image/clients/xrnet-logo.svg", alt: "XRNet", large: true },
-    { src: "/image/clients/SUNTRUST-LOGO.png", alt: "Suntrust", large: false },
-    { src: "/image/clients/ruut_csm-.png", alt: "Ruut CSM", large: false },
+    { src: "/image/clients/SUNTRUST-LOGO.png", alt: "Suntrust", large: false, },
+    { src: "/image/clients/ruut_csm-.png", alt: "Ruut CSM", large: true, increaseSize: true },
     { src: "/image/clients/lottomaina.webp", alt: "Lottomania", large: false },
     { src: "/image/clients/green-lotto-1.png", alt: "Green Lotto", large: false },
     { src: "/image/clients/vehicular.png", alt: "Vehicular", large: false },
@@ -49,8 +49,9 @@ const ClientLogosSection = ({
     { src: "/image/clients/ZeroHassle.jpg", alt: "ZeroHassle", large: false },
 
     { src: "/image/clients/makesales.svg", alt: "Makesales", large: false },
-    { src: "/image/clients/JA-nigeria-1.svg", alt: "JA Nigeria", large: false },
+    { src: "/image/clients/JA-nigeria-1.svg", alt: "JA Nigeria", large: false, increaseSize: true, },
     { src: "/image/clients/bestline.webp", alt: "BestLine Shipping Company LTD", large: false },
+    { src: "/image/clients/alx-1.svg", alt: "ALX Africa", large: false },
   ];
 
   return (
@@ -76,7 +77,9 @@ const ClientLogosSection = ({
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                  className={`w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 
+                    ${logo.increaseSize ? "scale-150" : ""}
+                  `}
                   loading="lazy"
                 />
                 <span className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-[100] shadow-lg">
@@ -97,7 +100,9 @@ const ClientLogosSection = ({
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                  className={`w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 
+                    ${logo.increaseSize ? "scale-150" : ""}
+                  `}
                   loading="lazy"
                 />
                 <span className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-[100] shadow-lg">
