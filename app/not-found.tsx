@@ -2,8 +2,8 @@ import NotFoundSection from "@/components/common/notfound";
 
 export default function NotFound() {
         return (
-            <main>
+            <div>
                 <NotFoundSection/>
-            </main>
+            </div>
     );
 }
