@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 import { validatePuzzleAnswer } from '@/lib/puzzle'
 import { intarvasEmailTemplate } from '@/lib/email-template'
+import { appendNewContactToSheet } from '@/lib/googleSheet'
 
 const transporter = nodemailer.createTransport({
   host: process.env.MAIL_HOST,
@@ -67,6 +68,7 @@ export async function POST(req: Request) {
     })
 
     console.log('Email sent:', info.messageId)
+    await appendNewContactToSheet({fullname: fullName, email, phone, subject, service, message})
 
     return NextResponse.json({
       success: true,

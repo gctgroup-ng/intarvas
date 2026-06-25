@@ -42,7 +42,7 @@ export default function Navbar({ children }: Readonly<NavbarProps>) {
 
     const shouldUseBlackLogo = useMemo(
         () =>
-            pathname.includes("/services") || pathname === "/contact" || pathname === "/privacy" || isScrolled,
+            pathname.includes("/services") || pathname === "/contact" || pathname === "/blog" || pathname === "/privacy" || isScrolled,
         [pathname, isScrolled]
     );
     // const shouldUseBlackLogo = useMemo(
@@ -121,6 +121,7 @@ export default function Navbar({ children }: Readonly<NavbarProps>) {
                             </div>
                             <Link href="/about" className={getLinkClass("/about")}> About Us </Link>
                             <Link href="/contact" className={getLinkClass("/contact")}> Contact Us </Link>
+                            <Link href="/blog" className={getLinkClass("/blog")}> Blog </Link>
                         </nav>
                     </div>
 
@@ -182,6 +183,9 @@ export default function Navbar({ children }: Readonly<NavbarProps>) {
                                         </div>
                                         <div>
                                             <Link href="/contact" className={getMobileLinkClass("/contact")} onClick={() => setIsMobileMenuOpen(false)}> Contact Us </Link>
+                                        </div>
+                                        <div>
+                                            <Link href="/blog" className={getMobileLinkClass("/blog")} onClick={() => setIsMobileMenuOpen(false)}> Blog </Link>
                                         </div>
                                     </nav>
 

@@ -38,7 +38,7 @@ export default function SiteHeader() {
 
     const shouldUseBlackLogo = useMemo(
         () =>
-            pathname.includes("/services") || pathname === "/contact" || pathname === "/" || pathname === "/privacy" || isScrolled,
+            pathname.includes("/services") || pathname === "/contact" || pathname === "/blog" || pathname === "/" || pathname === "/privacy" || isScrolled,
         [pathname, isScrolled]
     );
 
@@ -136,6 +136,7 @@ export default function SiteHeader() {
                     </div>
                     <Link href="/about" className={getLinkClass("/about")}> About Us </Link>
                     <Link href="/contact" className={getLinkClass("/contact")}> Contact Us </Link>
+                    <Link href="/blog" className={getLinkClass("/blog")}> Blog </Link>
                 </nav>
 
                 {/* Desktop Buttons */}
@@ -196,6 +197,9 @@ export default function SiteHeader() {
                                     </div>
                                     <div>
                                         <Link href="/contact" className={getMobileLinkClass("/contact")} onClick={() => setIsMobileMenuOpen(false)}> Contact Us </Link>
+                                    </div>
+                                    <div>
+                                        <Link href="/blog" className={getMobileLinkClass("/blog")} onClick={() => setIsMobileMenuOpen(false)}> Blog </Link>
                                     </div>
                                 </nav>
 

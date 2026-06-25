@@ -114,6 +114,7 @@ const ContactUsSection = () => {
           service: "",
           message: "",
         });
+        setSelectedServices([]);
         // Reset puzzle and generate a new one
         setPuzzle(generatePuzzle());
       } else {
@@ -139,7 +140,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-20 px-8">
+    <section className="bg-gray-50 py-20 px-8 md:pt-32 pt-24">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16">

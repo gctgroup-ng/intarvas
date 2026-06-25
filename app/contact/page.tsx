@@ -5,7 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Contact() {
   return (
-    <main className="pt-20">
+    <main className="">
       <ContactUsSection />
       <ScrollToTop />
     </main>
