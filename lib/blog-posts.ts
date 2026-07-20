@@ -292,4 +292,111 @@ export const posts: Post[] = [
         }
     }
     },
+    /* {
+        "id": "invas-whatsapp-infrastructure",
+        "date": "15 July 2026",
+        "author": "IntarvAS Marketing Team",
+        "read_time": "7 min read",
+        "title": "InvAS: A Better WhatsApp Infrastructure for Customer Engagement and Automation",
+        "excerpt": "For many businesses, customer engagement ends in the comment section but that is roughly 5% of the customer's journey. For millions of Nigerian consumers, the system that carries the rest of that journey is WhatsApp — and INVAS turns it into an elite, automated customer engagement and support tool.",
+        "cta_label": "Book a demo",
+        "cover_image": {
+            "src": "",
+            "alt": "InvAS WhatsApp customer engagement and automation dashboard",
+            "description": "Placeholder for a cover image representing the InvAS WhatsApp infrastructure"
+        },
+        "type": "case_study",
+        "content": {
+            "intro": "Customer engagement is the front end of your business interaction that keeps your customers connected to your brand. It shows up on different levels such as consistent conversations and chats, inquiries and complaints, community, sales funnel integrations and conversation strategies.\n\nA modern business keeps the customer engaged from the first interaction to the end point of conversion. Even after the sale is complete, customer engagement continues in the form of after sales service, follow-ups and informational updates, and social media engagement.\n\nA well thought out customer engagement infrastructure provides a connected system that gives you easy access to relevant information about your audience and leaves little to no room for missed opportunities or inconsistencies. For millions of Nigerian consumers, that system is WhatsApp.",
+            "challenge": {
+                "heading": "The Evolution of WhatsApp as a Business Communication Tool",
+                "description": "Recently, WhatsApp has been experimenting with structural updates, including the highly discussed rollout of unique usernames designed to let users chat without sharing their mobile numbers, and everybody is excited because an improved WhatsApp interface is a huge business opportunity for Nigerians.\n\nBut long before this update, a good number of business owners have been making the most use of WhatsApp through the INVAS WhatsApp API. A single phone number tied to a physical device cannot handle hundreds of daily inquiries.",
+                "pain_points": [
+                    {
+                        "title": "Messages Get Missed",
+                        "detail": "A single phone number tied to a physical device cannot handle hundreds of daily inquiries, leading to missed messages during peak engagement."
+                    },
+                    {
+                        "title": "Fragmented Data Across Employee Phones",
+                        "detail": "Without a centralized system, customer data becomes fragmented across employee phones, making it difficult to maintain a single, reliable record of engagement."
+                    },
+                    {
+                        "title": "No Coordinated Campaigns",
+                        "detail": "Relying on a single device tied to one number makes launching coordinated customer campaigns impossible."
+                    }
+                ]
+            },
+            "solution": {
+                "heading": "The Solution: InvAS, an Elite Automated Customer Engagement Platform",
+                "description": "Intarvas has built a telecommunication powerhouse called InvAS which transforms WhatsApp from a simple chat app into an elite, automated customer engagement and support tool that integrates a call center, booking management, phone book, automated messaging, call routing and marketing campaigns in one platform.",
+                "pillars": [
+                    {
+                        "number": 1,
+                        "title": "Unlocking Efficiency with InvAS Chatbot Automation",
+                        "detail": "One of the most powerful elements of the InvAS WhatsApp Business solution is advanced chatbot automation. Imagine a scenario where a customer messages your brand at 2:00 AM asking about pricing, delivery options, or basic troubleshooting. Instead of leaving them waiting until business hours, an intelligent InvAS chatbot can immediately and politely answer their questions, and guide them through a predefined workflow.\n\nThis automation does not replace the human element; it enhances it. By handling repetitive, low-level FAQs automatically, your support agents are freed up to tackle complex customer problems that require real human empathy and critical thinking. InvAS allows you to build custom workflows that mirror your business processes, ensuring that every automated interaction feels natural, on-brand, and highly efficient."
+                    },
+                    {
+                        "number": 2,
+                        "title": "Elevating Customer Support into a WhatsApp Call Center",
+                        "detail": "While text-based chatting is perfect for quick updates and order tracking, complex inquiries often require a voice conversation. InvAS bridges this gap completely by turning your digital setup into a fully functional WhatsApp Call Center, which is recorded as the first ever WhatsApp call center in Nigeria.\n\nThrough this system, your teams can handle both advanced chatting and direct voice interactions natively within a unified omnichannel framework and respond to a number of calls at the same time using Interactive Voice Response, Call Routing and Queuing. This means your staff can all have access to a single WhatsApp profile from where they interact with your customers, and everyone can see the conversations and respond accordingly."
+                    },
+                    {
+                        "number": 3,
+                        "title": "Launching Targeted Campaigns and Template Creation with InvAS",
+                        "detail": "Beyond reactive customer support, proactive engagement is what drives revenue. InvAS empowers business owners to take the offensive by launching high-impact marketing and notification campaigns. Whether you are announcing a weekend flash sale, sending automated payment reminders, or distributing shipping updates, the platform provides the infrastructure to broadcast messages safely and effectively to thousands of customers at the same time.\n\nTo ensure strict compliance with global communication standards, InvAS features robust tools to create templates. These approved templates allow you to reach out to your database at scale, complete with real-time delivery reports so you can track precisely how your campaigns are performing. With IntarvAS already trusted to deliver over 1 million messages daily across its cloud-powered infrastructure, you can be rest assured that your high-volume broadcasts will be fast, secure, and reliable."
+                    },
+                    {
+                        "number": 4,
+                        "title": "Streamlining Operations with InVAS Booking Management",
+                        "detail": "This is one of the best features on the InvAS platform. Friction in the scheduling process costs businesses high-value clients. InVAS Booking Management bridges the gap between customer engagement and instant conversion by allowing clients to book, reschedule, or cancel appointments directly within WhatsApp.\n\nInstead of forcing customers to navigate external links or wait for manual email confirmations, your team can present real-time calendar availability natively in the chat. This eliminates double-booking errors, drastically reduces no-shows with automated reminders, and frees your front-desk staff from endless scheduling loops. By securing your appointments where the conversation is already happening, you keep your sales pipeline moving efficiently 24/7."
+                    },
+                    {
+                        "number": 5,
+                        "title": "Mastering Quality Assurance with Management Insights",
+                        "detail": "Managing a high-volume customer service team requires absolute clarity, not guesswork. InVAS Management Insights provides complete conversational intelligence, allowing you to track which calls were missed and ensure they are assigned for immediate follow-up. Managers can monitor how staff interact with customers, viewing the progression of chats and calls from initial inquiry to resolution.\n\nFurthermore, with advanced live Call Whispering, supervisors can silently listen in and coach agents mid-conversation without the customer ever knowing. This total oversight guarantees brand consistency, improves staff accountability, and turns raw interaction data into actionable business intelligence."
+                    }
+                ],
+                "infrastructure_diagram": {
+                    "label": "InvAS Engine",
+                    "outputs": [
+                        "WhatsApp Chatbot Automation (24/7 FAQ Handling & Custom Workflows)",
+                        "WhatsApp Call Center (IVR, Call Routing & Queuing, Shared Profile Access)",
+                        "Campaigns & Templates (Bulk Broadcasts, Compliance Templates, Delivery Reports)",
+                        "Booking Management (In-Chat Scheduling, Automated Reminders)",
+                        "Management Insights (Missed Call Tracking, Conversation Monitoring, Call Whispering)"
+                    ]
+                }
+            },
+            "results": {
+                "heading": "The Result: A Connected, Scalable WhatsApp Engagement System",
+                "description": "By unifying chatbot automation, voice, campaigns, booking, and oversight into one platform, InvAS turns WhatsApp into the backbone of a business's customer engagement strategy rather than a fragmented, single-device liability.",
+                "outcomes": [
+                    {
+                        "title": "Reliable, Round-the-Clock Engagement",
+                        "detail": "Chatbot automation ensures no inquiry goes unanswered, even outside business hours, while freeing agents to focus on complex issues requiring human empathy."
+                    },
+                    {
+                        "title": "Unified Team Access",
+                        "detail": "A single WhatsApp profile shared across staff means every team member can see conversations and respond accordingly, eliminating fragmented, device-locked communication."
+                    },
+                    {
+                        "title": "High-Volume, Compliant Broadcasts",
+                        "detail": "With IntarvAS already trusted to deliver over 1 million messages daily across its cloud-powered infrastructure, businesses can run large-scale, compliant campaigns with real-time delivery reporting."
+                    },
+                    {
+                        "title": "Frictionless Scheduling",
+                        "detail": "In-chat booking management eliminates double-booking errors and reduces no-shows through automated reminders, keeping the sales pipeline moving 24/7."
+                    },
+                    {
+                        "title": "Total Operational Oversight",
+                        "detail": "Management Insights and live Call Whispering give supervisors complete conversational intelligence, improving accountability and turning interaction data into actionable business intelligence."
+                    }
+                ]
+            },
+            "cta": {
+                "heading": "Don't Miss the Opportunity to Streamline Your Operations",
+                "body": "Don't miss the opportunity to streamline your operations and protect your profits.\n\nBook a demo at Intarvas.com to get started."
+            }
+        }
+    } */
 ]

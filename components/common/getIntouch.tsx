@@ -7,6 +7,12 @@ import { generatePuzzle, type Puzzle } from "@/lib/puzzle";
 import PuzzleModal from "@/components/ui/PuzzleModal";
 // import ChatWidget from "@/components/ChatWidget";
 
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
+
 interface ServiceItem {
   name: string;
   value: string;
@@ -104,6 +110,14 @@ const ContactUsSection = () => {
       const result = await response.json();
 
       if (response.ok && result.success) {
+        // Fire Google Ads conversion event after successful form submission
+        try {
+          window.gtag("event", "conversion", {
+            send_to: "AW-17496437144",
+          });
+        } catch (error) {
+          console.error("Error triggering Google Ads conversion:", error);
+        }
         setStatusMessage("✅ Message sent successfully!");
         // Reset form
         setFormData({

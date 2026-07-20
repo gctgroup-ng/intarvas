@@ -78,7 +78,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17496437144"></Script>
         <Script
-          id="ga-config"
+          id="gads-config"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
