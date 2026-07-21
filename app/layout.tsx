@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           }}
         />
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17496437144"></Script>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17496437144"></Script>
         <Script
           id="gads-config"
           strategy="afterInteractive"
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               gtag('config', 'AW-17496437144');
             `,
           }}
-        />
+        /> */}
       </head>
       <body>
         {/* GTM Body Fallback */}
