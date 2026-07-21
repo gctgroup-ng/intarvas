@@ -10,6 +10,7 @@ import PuzzleModal from "@/components/ui/PuzzleModal";
 declare global {
   interface Window {
     gtag: (...args: unknown[]) => void;
+    dataLayer: Record<string, unknown>[];
   }
 }
 
@@ -110,13 +111,16 @@ const ContactUsSection = () => {
       const result = await response.json();
 
       if (response.ok && result.success) {
-        // Fire Google Ads conversion event after successful form submission
+        // Push custom event to dataLayer for GTM to fire the Google Ads Conversion tag
         try {
-          window.gtag("event", "conversion", {
-            send_to: "AW-17496437144",
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "contact_form_success",
+            formName: "Contact Us",
+            formEmail: formData.email,
           });
         } catch (error) {
-          console.error("Error triggering Google Ads conversion:", error);
+          console.error("Error pushing dataLayer event:", error);
         }
         setStatusMessage("✅ Message sent successfully!");
         // Reset form
