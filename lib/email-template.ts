@@ -3,6 +3,7 @@ export interface ContactEmailProps {
   email: string
   phone?: string
   subject?: string
+  industry: string[]
   service?: string[]
   message: string
 }
@@ -12,6 +13,7 @@ export function intarvasEmailTemplate({
   email,
   phone,
   subject,
+  industry,
   service,
   message,
 }: ContactEmailProps): string {
@@ -32,6 +34,16 @@ export function intarvasEmailTemplate({
   const servicesList =
     service && service.length > 0
       ? service
+          .map(
+            (s) =>
+              `<span style="display:inline-block;background:#D0D0EB;color:#0A108F;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin:2px 3px;">${s}</span>`
+          )
+          .join('')
+      : null
+
+  const industryList =
+    industry && industry.length > 0
+      ? industry
           .map(
             (s) =>
               `<span style="display:inline-block;background:#D0D0EB;color:#0A108F;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin:2px 3px;">${s}</span>`
@@ -133,6 +145,9 @@ export function intarvasEmailTemplate({
 
               <!-- Subject field (conditional) -->
               ${subject ? field('Subject', subject) : ''}
+
+             <!-- Industry (conditional) -->
+             ${industryList? field('Industry', industryList): ''}
 
               <!-- Services (conditional) -->
               ${

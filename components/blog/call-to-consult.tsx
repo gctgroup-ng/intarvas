@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function CallToConsult() {
     return (
-        <section className="py-16 px-5 bg-gray-50">
+        <section className="py-32 px-5 bg-gray-50">
             <div className="container mx-auto px-4 text-center flex flex-col items-center gap-4 sm:gap-6">
                 <h1 className="text-2xl sm:text-3xl md:text-[44px] font-inter font-semibold tracking-tight leading-tight animate-fade-in-up">
-                Ready to improve your business connectivity
+                    Ready to improve your business connectivity
                 </h1>
             
                 <p className="max-w-xl sm:max-w-2xl md:max-w-3xl text-base sm:text-lg text-muted-foreground animate-fade-in-up delay-300">

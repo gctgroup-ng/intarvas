@@ -23,8 +23,8 @@ export default function Blog() {
 
     return (
         <main className="pt-20">
-        <ViewPost key={post.id} post={post} />
-        <ScrollToTop />
+            <ViewPost key={post.id} post={post} />
+            <ScrollToTop />
         </main>
     );
 }

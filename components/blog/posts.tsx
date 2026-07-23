@@ -2,71 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
-
-type Feature = {
-    name: string;
-    detail: string;
-};
-
-type Pillar = {
-    number: number;
-    title: string;
-    detail?: string;
-    description?: string;
-    features?: Feature[];
-};
-
-type PainPoint = {
-    title: string;
-    detail: string;
-};
-
-type Outcome = {
-    title: string;
-    detail: string;
-};
-
-type Post = {
-    id: string;
-    date: string;
-    title: string;
-    read_time: string;
-    author: string;
-    excerpt: string;
-    cta_label: string;
-    cover_image: {
-        src?: string;
-        alt: string;
-        description: string;
-    };
-    type: "case_study" | "article";
-    content: {
-        intro: string;
-        challenge?: {
-        heading: string;
-        description: string;
-        pain_points: PainPoint[];
-        };
-        solution: {
-        heading: string;
-        description?: string;
-        infrastructure_diagram?: {
-            label: string;
-            outputs: string[];
-        };
-        pillars: Pillar[];
-        };
-        results?: {
-        heading: string;
-        description: string;
-        outcomes: Outcome[];
-        };
-        cta: {
-        heading: string;
-        body: string;
-        };
-    };
-};
+import { Post } from "@/components/blog/type"
 
 const SingleBlog = ({ post }: { post: Post }) => {
     const router = useRouter();
@@ -107,7 +43,7 @@ const SingleBlog = ({ post }: { post: Post }) => {
                 />
                 </button>
             </div>
-</div>
+        </div>
         </>
     );
 };

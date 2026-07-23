@@ -23,6 +23,7 @@ export async function POST(req: Request) {
       phone,
       subject,
       service,
+      industry,
       message,
       puzzleQuestion,
       puzzleAnswer,
@@ -62,13 +63,14 @@ export async function POST(req: Request) {
         email,
         phone,
         subject,
+        industry,
         service,
         message,
       }),
     })
 
     console.log('Email sent:', info.messageId)
-    await appendNewContactToSheet({fullname: fullName, email, phone, subject, service, message})
+    await appendNewContactToSheet({fullname: fullName, email, phone, subject, service, message, industry})
 
     return NextResponse.json({
       success: true,

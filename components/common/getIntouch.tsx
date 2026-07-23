@@ -27,6 +27,31 @@ const SERVICES: ServiceItem[] = [
   // { name: "Others", value: "others" },
 ];
 
+const INDUSTRIES: string[] = [
+  "REAL ESTATE",
+  "NGO",
+  "ECOMMERCE",
+  "CONSTRUCTION AND ENGINEERING",
+  "FINTECH",
+  "SHIPPING",
+  "LOGISTICS",
+  "COSMETICS AND PERSONAL CARE",
+  "EDU TECH",
+  "AGRITECH",
+  "ENTERTAINMENT AND SPORTS",
+  "EDUCATION",
+  "MANUFACTURING",
+  "ISP",
+  "TRAVEL AND TOURS",
+  "OIL AND GAS",
+  "HEALTH CARE",
+  "E HAILING",
+  "INTERIOR DECOR",
+  "ICT",
+  "SERVICES",
+  "Others",
+];
+
 const ContactUsSection = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -34,12 +59,23 @@ const ContactUsSection = () => {
     phone: "",
     subject: "",
     service: "",
+    industry: "",
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [showPuzzleModal, setShowPuzzleModal] = useState(false);
+  const [selectedIndustries, setSelectedIndustries] = useState<string[]>([]);
+
+  const toggleIndustry = (industry: string) => {
+    setStatusMessage("");
+    setSelectedIndustries((prev) =>
+      prev.includes(industry)
+        ? prev.filter((i) => i !== industry)
+        : [...prev, industry]
+    );
+  };
 
   // Generate puzzle on component mount
   useEffect(() => {
@@ -73,6 +109,12 @@ const ContactUsSection = () => {
       return;
     }
 
+    if (selectedIndustries.length === 0) {
+      setStatusMessage("❌ Please select at least one industry.");
+      setTimeout(() => setStatusMessage(""), 5000);
+      return;
+    }
+
     // Show puzzle modal before submitting
     setShowPuzzleModal(true);
   };
@@ -92,7 +134,11 @@ const ContactUsSection = () => {
       return;
     }
 
-    console.log("Form submitted:", formData);
+    console.log(
+      { ...formData,
+          service: selectedServices,
+          industry: selectedIndustries}
+    );
 
     try {
       const response = await fetch("/api/send-email", {
@@ -103,6 +149,7 @@ const ContactUsSection = () => {
         body: JSON.stringify({
           ...formData,
           service: selectedServices,
+          industry: selectedIndustries,
           puzzleQuestion: puzzle.question,
           puzzleAnswer: answer,
         }),
@@ -111,7 +158,6 @@ const ContactUsSection = () => {
       const result = await response.json();
 
       if (response.ok && result.success) {
-        // Push custom event to dataLayer for GTM to fire the Google Ads Conversion tag
         try {
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
@@ -130,9 +176,11 @@ const ContactUsSection = () => {
           phone: "",
           subject: "",
           service: "",
+          industry: "",
           message: "",
         });
         setSelectedServices([]);
+        setSelectedIndustries([]);
         // Reset puzzle and generate a new one
         setPuzzle(generatePuzzle());
       } else {
@@ -143,7 +191,6 @@ const ContactUsSection = () => {
     } catch (error) {
       console.error("Error sending email:", error);
       setStatusMessage("❌ Failed to send message. Please try again.");
-      // Generate new puzzle on error
       setPuzzle(generatePuzzle());
     }
 
@@ -277,6 +324,60 @@ const ContactUsSection = () => {
                   </div>
                 )}
               </div>
+              
+              {/* Industries */}
+                <div>
+                  <label htmlFor="industries" className="block text-sm font-medium text-gray-700 mb-2">
+                    Industry <span className="text-red-500">*</span>{" "}
+                    <span className="text-xs text-gray-500">(Select what applies to you)</span>
+                  </label>
+                  <div className="border border-gray-200 rounded-lg overflow-hidden grid grid-cols-2 max-h-64 overflow-y-auto">
+                    {INDUSTRIES.map((industry) => {
+                      const isSelected = selectedIndustries.includes(industry);
+                      return (
+                        <button
+                          key={industry}
+                          type="button"
+                          disabled={isLoading}
+                          onClick={() => toggleIndustry(industry)}
+                          className={`w-full flex items-center justify-between px-4 py-3 text-sm text-left transition-colors border border-gray-100
+                            disabled:cursor-not-allowed disabled:opacity-50
+                            ${isSelected
+                              ? "bg-blue-50 text-blue-700 font-medium"
+                              : "bg-white text-gray-700 hover:bg-gray-50"
+                            }`}
+                        >
+                          <span>{industry}</span>
+                          {isSelected && (
+                            <svg className="w-4 h-4 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                              <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 3.293 9.879a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {selectedIndustries.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {selectedIndustries.map((i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center gap-1 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                        >
+                          {i}
+                          <button type="button" onClick={() => toggleIndustry(i)} className="hover:text-blue-900">
+                            ✕
+                          </button>
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
               {/* Subject */}
               <div>
