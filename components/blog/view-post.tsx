@@ -39,7 +39,7 @@ const BlockView = ({ block }: { block: ContentBlock }) => {
         return (
             <div>
             {block.heading && (
-                <h3 className="text-base sm:text-lg font-bold text-[#0A0F8F] mb-2">{block.heading}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0A0F8F] mb-2">{block.heading}</h3>
             )}
             <Paragraphs paragraphs={block.paragraphs} />
             </div>
@@ -52,7 +52,7 @@ const BlockView = ({ block }: { block: ContentBlock }) => {
         const { heading, paragraphs, diagram, numbered, layout, items } = block;
         return (
             <div>
-            {heading && <h3 className="text-base sm:text-lg font-bold text-[#0A0F8F] mb-2">{heading}</h3>}
+            {heading && <h3 className="text-xl sm:text-2xl font-bold text-[#0A0F8F] mb-2">{heading}</h3>}
             {paragraphs && <div className="mb-4"><Paragraphs paragraphs={paragraphs} /></div>}
             {diagram && <DiagramView label={diagram.label} outputs={diagram.outputs} />}
 
@@ -71,7 +71,7 @@ const BlockView = ({ block }: { block: ContentBlock }) => {
                 <div className="space-y-5 mt-4">
                 {items.map((item, i) => (
                     <div key={i} className={numbered ? undefined : "pl-3 sm:pl-4 border-l-2 border-[#0A0F8F]/20"}>
-                    <p className="font-semibold text-[#1a1a4e] mb-1 text-sm sm:text-base">
+                    <p className="font-semibold text-[#0A0F8F] mb-1 text-sm sm:text-base">
                         {numbered && <span className="text-[#0A0F8F] mr-1">{i + 1}.</span>}
                         {item.title}
                     </p>
@@ -105,7 +105,7 @@ const BlockView = ({ block }: { block: ContentBlock }) => {
         return (
             <div className="border-t border-gray-200 pt-5">
             {block.heading && (
-                <h3 className="text-sm sm:text-base font-bold text-[#0A0F8F] mb-2">{block.heading}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0A0F8F] mb-2">{block.heading}</h3>
             )}
             <Paragraphs paragraphs={block.paragraphs} className="text-gray-600 text-sm sm:text-base" />
             </div>

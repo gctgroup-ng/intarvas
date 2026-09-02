@@ -3,7 +3,7 @@ import { Post } from "@/components/blog/type";
 export const posts: Post[] = [
     {
         id: "vehiculars-cloud-pbx",
-        date: "24 June 2026",
+        date: "22nd June 2026",
         author: "IntarvAS Marketing Team",
         read_time: "6 min read",
         title:
@@ -172,7 +172,7 @@ export const posts: Post[] = [
 
     {
         id: "nigerian-businesses-poor-communication",
-        date: "23 June 2026",
+        date: "29th June 2026",
         author: "IntarvAS Technical Team",
         read_time: "5 min read",
         title: "How Nigerian Businesses Lose Customers Through Poor Communication Systems",
@@ -471,7 +471,7 @@ export const posts: Post[] = [
 
     {
         id: "seven-reasons-all-in-one-system",
-        date: "23rd July 2026",
+        date: "27th July 2026",
         author: "IntarvAS Marketing Team",
         read_time: "5 min read",
         title: "7 Reasons Why Large-Scale Enterprises Are Adopting the All-In-One system",
@@ -565,4 +565,358 @@ export const posts: Post[] = [
         ],
         },
     },
+
+    // 31st August 2026
+    {
+        id: "outdated-crm-weak-conversion",
+        date: "17th August 2026",
+        author: "IntarvAS Marketing Team",
+        read_time: "3 min read",
+        title: "Could an Outdated CRM Be Responsible for Your Weak Conversion?",
+        excerpt:
+        "High ad spend and steady traffic won't grow your sales on their own. If your customer engagement structure is broken, converting leads will always be an uphill battle.",
+        cta_label: "Read full article",
+        cover_image: {
+        src: "/image/team-fix.jpeg",
+        alt: "Sales team analyzing a broken conversion funnel on a dashboard",
+        description: "A visual representation of a leaking sales funnel caused by disconnected engagement tools."
+        },
+        type: "article",
+        content: {
+        intro: [
+            "High ad spend, steady Google web traffic, and an eager sales team will not automatically improve your sales. If you do not have a seamless customer support and engagement structure to support your sales funnel, converting all those leads will be difficult. Growing your numbers is an interactive process that sometimes looks like a phone call from a random user who saw your number on Google, an Instagram DM from your customers asking where they can easily find your products, or an email reaching out to get a breakdown of how to adopt your service for their brand.",
+            "If your business's daily activities and routines include lead generation, lead nurturing, and constant communication with your customers to confirm inquiries and troubleshoot errors, then you already know what an outdated customer engagement tool looks like."
+        ],
+        blocks: [
+            {
+            type: "item_group",
+            heading: "",
+            numbered: false,
+            layout: "list",
+            items: [
+                {
+                title: "Data Silos",
+                description:
+                    "When information stays trapped in separate departments like sales, support, and marketing, your team loses the full picture. Team members waste precious time hunting for history across multiple tools. This disconnection can frustrate your customers, who are forced to repeat their issues, causing friction and could ultimately lead to a lost lead."
+                },
+                {
+                title: "Manual Workflows",
+                description:
+                    "Relying on hand-typed entries, spreadsheets, and manual reminders slows down your response time. In a fast-paced market, hot leads freeze over while your team handles tedious paperwork. Forgetting to follow up promptly due to a lack of automation directly causes lost sales opportunities."
+                },
+                {
+                title: "Poor Reporting",
+                description:
+                    "Waiting for weekly or monthly manual spreadsheets means you miss critical, real-time drop-off points in your sales funnel. Without live dashboards, you cannot spot disengaged buyers or fix failing strategies quickly enough. You are left guessing why your traffic fails to convert."
+                },
+                {
+                title: "Blast Messages",
+                description:
+                    "Sending identical, generic emails to your entire list instead of highly personalized offers drives modern buyers away. Customers expect communications tailored to their specific behavior and actions. Irrelevant, one-size-fits-all messaging signals that you do not care, causing them to disengage entirely."
+                }
+            ]
+            },
+            {
+            type: "prose",
+            heading: "The IntarvAS Core Conversion & Retention Engine: IntarvAS PBX + All-in-One Solution (CRM)",
+            paragraphs: [
+                "Customer engagement relies heavily on context and speed. A sales team manager needs to know exactly who is calling, their conversation history, and what touchpoints they have already encountered across email, social media, or chat. When the IntarvAS PBX system meets an all-in-one Customer Relationship Management (CRM) platform, they work together to provide a seamless flow into your business's offerings.",
+                "The PBX handles direct, high-intent voice interactions, while the CRM captures and organizes messages, complaints, and inquiries received across different platforms. Together, they provide the instant insight required to guide a lead smoothly down the sales funnel, track customer behavior, and boost conversion rates.",
+                "To eliminate these communication gaps, IntarvAS delivers two distinct, specialized systems that work together to improve your customer engagement and communication."
+            ]
+            },
+            {
+            type: "item_group",
+            numbered: true,
+            layout: "list",
+            items: [
+                {
+                title: "IntarvAS PBX Services",
+                description:
+                    "This virtual phone system enables employees within a business to make calls to each other and connect to external telephone lines, routing incoming and outgoing voice traffic efficiently across the entire organization.",
+                features: [
+                    {
+                    name: "Total Communication Visibility",
+                    detail: "Gain real-time management visibility into all incoming and outgoing calls via a centralized Live Ops Dashboard."
+                    },
+                    {
+                    name: "Advanced Call Monitoring",
+                    detail: "Listen in on active customer calls to ensure your team maintains corporate communication standards."
+                    },
+                    {
+                    name: "Call Whispering",
+                    detail: "Coach agents with live, mid-call advice that only the employee can hear, without the customer ever knowing."
+                    },
+                    {
+                    name: "Intelligent Call Routing & IVR",
+                    detail: "Guide callers automatically using Interactive Voice Response to ensure hot leads are instantly sent to the right department."
+                    }
+                ]
+                },
+                {
+                title: "All-in-One Solution",
+                description:
+                    "This unified workspace aggregates your digital conversations, marketing outreach, and data operations into a single platform.",
+                features: [
+                    {
+                    name: "All-in-One Social Dashboard",
+                    detail: "Merge your Live Chat, Instagram DMs, Facebook, and Email into a single, unified conversation view."
+                    },
+                    {
+                    name: "Ticket Management System",
+                    detail: "Automatically convert complex incoming inquiries into trackable tickets using a dedicated Ticket Dashboard."
+                    },
+                    {
+                    name: "Structured Workflows",
+                    detail: "Assign automated tasks, set operational reminders, and manage customer records using built-in Contacts and Companies directories."
+                    },
+                    {
+                    name: "High-Deliverability Campaigns",
+                    detail: "Deploy targeted outbound marketing using high-deliverability A2P Bulk SMS and structured Deal Management funnels."
+                    },
+                    {
+                    name: "Live Performance Analytics",
+                    detail: "Ditch manual spreadsheets for real-time reporting that tracks agent performance and campaign conversion metrics as they happen."
+                    }
+                ]
+                }
+            ]
+            },
+            {
+            type: "cta",
+            heading: "Update Your Engagement Engine for 2026",
+            paragraphs: [
+                "If your business is struggling with high customer drop-offs, stop tweaking your sales scripts and start upgrading your communication setup. Modern buyers expect speed, continuity, and zero friction.",
+                "Growing your customer base is already hard enough. Let IntarvAS give your team the infrastructure they need to keep them.",
+                "👉 Ready for a CRM upgrade? Sign up for 7 days free trial at intarvas.com"
+            ]
+            }
+        ]
+        }
+    },
+
+    {
+        id: "what-to-look-out-for-choosing-crm",
+        date: "24th August 2026",
+        author: "IntarvAS Team",
+        read_time: "4 min read",
+        title: "What to Look Out for When Choosing Your Next CRM System",
+        excerpt:
+        "Every provider promises \"all-in-one\" convenience and \"AI-powered\" everything. Here's what actually matters when evaluating a CRM for your business.",
+        cta_label: "Read full article",
+        cover_image: {
+        src: "/image/nothing-falls-through.jpeg",
+        alt: "Checklist for evaluating a CRM system on a laptop screen",
+        description: "A decision-maker comparing CRM features against a checklist before signing up for a demo."
+        },
+        type: "article",
+        content: {
+        intro: [
+            "Choosing a CRM system for your business is one of those decisions that look simple on paper but gets complicated in practice. Every provider promises \"all-in-one\" convenience, \"seamless\" integration, and \"AI-powered\" everything. But not every CRM is built for how your team actually works, and the wrong choice will cost you on both sides, wasted subscription fee and lost leads.",
+            "Before you sign up for the next demo, here's what actually matters when evaluating a CRM for your business."
+        ],
+        blocks: [
+            {
+            type: "item_group",
+            numbered: true,
+            layout: "list",
+            items: [
+                {
+                title: "Is the PBX Built for Scale?",
+                detail: [
+                    "If your business relies on phone support or sales calls, the capacity of your telecommunication system isn't something you can afford to overlook. A single-line or single-SIM setup might work fine at low volume, but the moment demand spikes, whether from a promotion, a seasonal rush, or simple growth, busy signals start costing you sales in real time.",
+                    "At this point you should look out for a Cloud PBX that can route unlimited concurrent calls, distribute them intelligently across available agents, and queue overflow instead of dropping it. This is infrastructure, not a nice-to-have feature, and it should come with a memorable enterprise number (0700/0800-style) that consolidates every branch and rep under one unified, brand-authoritative line."
+                ]
+                },
+                {
+                title: "Smart IVR",
+                detail: [
+                    "Many PBX systems offer call routing but very few of them can get callers to the right department on the first attempt, every time, without manual transfers. A Smart IVR should route calls dynamically based on intent, cutting down on dropped calls, wasted agent time, and the kind of first-call experience that feels like a maze instead of a straight line to the right person.",
+                    "This is also where you should be asking about live call whispering and monitoring, a feature most CRMs don't offer at all. This lets a supervisor coach an agent in real time, guiding them mid-call without the customer ever hearing it. That's the difference between a new hire fumbling through their first month and one who's closing deals within weeks, because training is happening live instead of in a post-call review nobody has time for."
+                ]
+                },
+                {
+                title: "Can It Deliver A2P SMS Instantly?",
+                detail: [
+                    "An OTP that arrives 45 seconds late isn't a minor inconvenience, it's a lost sign-up. Many SMS providers route messages through shared, congested gateways that slow down during high-traffic periods, exactly when reliability matters most.",
+                    "Ask specifically about direct carrier routing. This is what separates providers who can promise fast delivery from ones who can actually guarantee it, keeping verification codes and transactional alerts landing within seconds even during peak load, so a critical message is never the reason a customer abandons your platform mid-signup."
+                ]
+                },
+                {
+                title: "A Bot Factory, or Just a Basic Chatbot?",
+                detail: [
+                    "Customer inquiries don't stop at 5pm, but most support teams do. A CRM worth choosing should include real automation for after-hours coverage, not a generic chatbot that loops customers in circles and frustrates more than it helps.",
+                    "Look for a proper Bot Factory: intelligent bots capable of resolving routine queries, qualifying leads, and processing inquiries around the clock, ideally handling the majority of standard questions without human intervention. That's not just cost savings, it's a business that never technically closes, even when the team logs off for the night."
+                ]
+                },
+                {
+                title: "A Unified System, or Several Tools Wearing One Login?",
+                detail: [
+                    "Your customers don't think in channels. They message you on WhatsApp, comment on Instagram, call your hotline, and expect all of it to feel like one conversation. A lot of systems claim multi-channel support but only handle two or three platforms well, leaving your team to patch the rest together manually across separate apps and devices.",
+                    "Before committing, ask directly: does this system bring WhatsApp, Instagram, Facebook, TikTok, Email, SMS, and Voice into a single dashboard with full conversation history? If a customer messaged your Instagram last week and calls your hotline today, would the person answering the phone know that? If the answer is no, you have a fragmentation problem, and your customers are the ones absorbing the cost of it every time they have to explain themselves twice.",
+                    "A truly unified system also means real-time visibility and response times. If you can't see how your team is performing right now, you're not managing, you're guessing."
+                ]
+                }
+            ]
+            },
+            {
+            type: "cta",
+            heading: "The Bottom Line",
+            paragraphs: [
+                "The right CRM isn't the one with the longest feature list, it's the one that removes friction for both your team and your customers. Before you commit to any system, map out where your current setup breaks down: dropped calls, slow verification, no after-hours coverage, fragmented histories, blind spots in performance. Then choose a CRM built to close those specific gaps, not one that adds a new set of features you'll never fully use.",
+                "Ready to see what a properly unified engagement system looks like in practice?",
+                "Book a free demo at intarvas.com and see how much friction exists in your process"    
+            ]
+            }
+        ]
+        }
+    },
+
+    {
+        id: "modern-businesses-transforming-engagement-2026",
+        date: "31st August 2026",
+        author: "IntarvAS Team",
+        read_time: "5 min read",
+        title: "How Modern Businesses Are Transforming Their Customer Engagement with Advanced CRM in 2026",
+        excerpt:
+        "In 2026, engagement is defined by one relentless standard: speed and continuity. Here's how to tell if your business has outgrown its current CRM setup.",
+        cta_label: "Read More Here",
+        cover_image: {
+            src: "/image/legacy-operations-vs-what-your-modern-competitors-doing.jpeg",
+            alt: "Legacy Operations Vs What Your Modern Competitors Is Doing",
+            description: "Legacy Operations Vs What Your Modern Competitors Is Doing"
+        },
+        type: "case_study",
+        content: {
+            intro: [
+                "At its core, customer engagement is the ongoing emotional and transactional relationship between a business and its audience across every single point of interaction. It spans the entire customer journey: from the moment a prospect sends a curiosity DM on Instagram, to receiving an OTP verification SMS during an app sign-up, to speaking with a support representative on a phone line, to receiving post-purchase updates on WhatsApp.",
+                "In 2026, engagement is defined by one relentless standard: speed and continuity. While market leaders use real-time, automated engagement engines, many businesses still rely on traditional telecom setups."
+            ],
+        blocks: [
+            {
+                type: "item_group",
+                heading: "How to Know If Your Business Has Outgrown Its Current CRM Setup",
+                paragraphs: [
+                    "Most businesses don't realize how much they've grown, or how reactive their systems have become, until the cracks are already costing them customers.",
+                    "Here are 5 major indicators of an outdated CRM model. If any of these sound familiar, then maybe it's time for an upgrade."
+                ],
+                numbered: true,
+                layout: "list",
+                items: [
+                    {
+                    title: "Your phone lines are busy during your busiest hours",
+                    description:
+                        "If peak seasons and after-hours periods are when you experience the greatest losses due to a busy tone, you're losing sales at the exact moment you should be capturing the most revenue."
+                    },
+                    {
+                    title: "Your team is juggling multiple devices to manage one conversation",
+                    description:
+                        "A handheld WhatsApp phone here, a browser tab for Instagram there, another for SMS. If your reps need three screens open to serve one customer, your systems are working against your team, not for them."
+                    },
+                    {
+                    title: "You have no visibility into what's actually happening on calls or chats",
+                    description:
+                        "If you can't answer \"how fast are we responding?\" or \"how many leads did we convert last week?\" with real data, you are leaving a lot of money on the table."
+                    },
+                    {
+                    title: "Customers regularly have to repeat themselves",
+                    description:
+                        "If a customer's history isn't visible to whoever picks up next, your team is solving the same problem from scratch every time, and your customer is doing unpaid admin work for you."
+                    },
+                    {
+                    title: "Your brand looks fragmented from the outside",
+                    description:
+                        "Different phone numbers for different branches or staff members make even an established business look scattered and hard to trust at a glance."
+                    }
+                ]
+            },
+            {
+                type: "prose",
+                paragraphs: [
+                    "If this list feels uncomfortably familiar, congratulations, you're putting in the work it takes to grow. But a poor communication structure could jeopardize all your efforts."
+                ]
+            },
+            {
+                type: "item_group",
+                heading: "Legacy Operations vs. What Your Modern Competitors Are Doing",
+                numbered: false,
+                layout: "list",
+                items: [
+                    {
+                    title: "Call Routing & Capacity",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Single mobile SIMs or landlines causing endless busy signals during peak hours." },
+                        { name: "IntarvAS Core Solution", detail: "IntarvAS PBX Smart Queuing: Infinite concurrent calls routed dynamically via IVR." },
+                        { name: "Business Impact", detail: "Zero dropped calls and immediate connection to active sales agents." }
+                    ]
+                    },
+                    {
+                    title: "Sales Training & Agent Coaching",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Unmonitored sales calls with zero ability to intervene or help reps during active deals." },
+                        { name: "IntarvAS Core Solution", detail: "Live Call Whispering: Supervisors guide agents on live calls without the caller hearing." },
+                        { name: "Business Impact", detail: "Higher call-to-close ratios and accelerated onboarding for new support reps." }
+                    ]
+                    },
+                    {
+                    title: "National Presence & Branding",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Disjointed local phone numbers scattered across different branches and personnel." },
+                        { name: "IntarvAS Core Solution", detail: "0700/0800 Smart Numbers: A unified enterprise hotline connecting remote teams." },
+                        { name: "Business Impact", detail: "Instant brand authority and seamless nationwide call management." }
+                    ]
+                    },
+                    {
+                    title: "Multi-Channel Message Handling",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Reps manually switch between handheld WhatsApp phones and social media browser tabs." },
+                        { name: "IntarvAS Core Solution", detail: "All-in-One Solution Dashboard: Unified inbox combining WhatsApp, Instagram, TikTok, SMS, and Voice." },
+                        { name: "Business Impact", detail: "80% faster response times and zero missed customer messages." }
+                    ]
+                    },
+                    {
+                    title: "Customer Context & History",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Isolated chat threads forcing customers to repeat their issues across different channels." },
+                        { name: "IntarvAS Core Solution", detail: "Centralized Timeline: Every past call, message, and transaction synced under one profile." },
+                        { name: "Business Impact", detail: "Personalized resolution, lower customer frustration, and higher retention." }
+                    ]
+                    },
+                    {
+                    title: "24/7 Lead Capture & Coverage",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Offline inquiries during off-hours sit unaddressed until the next business day." },
+                        { name: "IntarvAS Core Solution", detail: "InVAS Bot Automation: Intelligent bots capturing lead data and answering FAQs around the clock." },
+                        { name: "Business Impact", detail: "Continuous pipeline growth and zero missed revenue opportunities overnight." }
+                    ]
+                    },
+                    {
+                    title: "Management Visibility & Analytics",
+                    features: [
+                        { name: "Legacy & Fragmented Setup", detail: "Blind operations with untracked response speeds, unrecorded calls, and unknown drop-off causes." },
+                        { name: "IntarvAS Core Solution", detail: "Real-Time Performance Dashboard: Live metrics, agent logs, and call recordings." },
+                        { name: "Business Impact", detail: "Data-driven decision-making, clear team accountability, and maximum conversion scale." }
+                    ]
+                    }
+                ]
+            },
+            {
+                type: "prose",
+                heading: "What Customers Actually Expect From a Brand in 2026",
+                paragraphs: [
+                    "Transforming customer engagement isn't just about adopting new tools, it's about meeting a new standard of expectation that customers now bring into every interaction with a brand. Before looking at what modern CRM systems make possible, it's worth understanding exactly what's driving the shift: the customer themselves. In 2026, patience is shorter, channels are more casual, and loyalty is earned or lost in the space of a single reply. Here's what today's customer is really measuring every time they reach out."
+                ]
+            },
+            {
+                type: "cta",
+                heading: "Ready to Modernize Your Customer Engagement Stack?",
+                paragraphs: [
+                    "Replace chaotic workflows with an enterprise-grade engagement engine built for scale.",
+                    "👉  Ready for a CRM upgrade? sign up for 7 days free trial at intarvas.com"
+                ]
+            }
+        ]
+        }
+    }
+    
 ];
