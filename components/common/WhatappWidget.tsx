@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const WHATSAPP_NUMBER = "2349039555552"; 
-const WHATSAPP_MESSAGE = "Hello! I'd like to get in touch."; 
+const WHATSAPP_MESSAGE = "Hi Intarvas, I'm reaching out from your website."; 
 const TOOLTIP_TEXT = "Chat with us on WhatsApp";
 
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
