@@ -3,20 +3,16 @@
 import React, { useEffect, useState } from "react";
 import {
   Check,
-  Award,
   Shield,
   TrendingUp,
-  Calendar,
-  Phone,
+  User,
 } from "lucide-react";
 import ConsultationDialog from "../pbxForm";
+import { ONE_USER_CONFIG, STANDARD_TIER_CONFIG, PBX_TIERS } from "@/lib/pbx-pricing";
 
 const PricingPlans = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
-  // const [titleText, setTitleText] = useState("");
-  // const [subtitleText, setSubtitleText] = useState("");
-  // const [isTitleComplete, setIsTitleComplete] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -49,148 +45,113 @@ const PricingPlans = () => {
     };
   }, []);
 
-  // const plans = [
-  //   {
-  //     name: "Basic Level",
-  //     icon: <Award className="w-6 h-6" />,
-  //     price: "5,000",
-  //     period: "/month",
-  //     description: "Best for small businesses",
-  //     userRange: "(min. 4 users)",
-  //     popular: false,
-  //     features: [
-  //       { text: "Basic Cloud PBX functionality", included: true },
-  //       { text: "Sales tools, per PBX", included: false },
-  //       { text: "Call Center, per PBX", included: false },
-  //       { text: "Call Statistics, per PBX", included: false },
-  //       { text: "Auto-dialing option, per PBX", included: false },
-  //       {
-  //         text: "Call recording with one-month storage, per PBX",
-  //         included: false,
-  //       },
-  //       { text: "CRM Integration / API, per PBX", included: false },
-  //       { text: "Integration with Microsoft Teams", included: false },
-  //       { text: "External IP-PBX Connector, per PBX", included: false },
-  //     ],
-  //   },
-  //   {
-  //     name: "Medium Enterprises",
-  //     icon: <Shield className="w-6 h-6" />,
-  //     price: "132,800",
-  //     period: "/month",
-  //     description: "Best for businesses with",
-  //     userRange: "4-50 users",
-  //     popular: true,
-  //     features: [
-  //       { text: "Basic Cloud PBX functionality", included: true },
-  //       { text: "Sales tools, per PBX", included: true },
-  //       { text: "Call Center, per PBX", included: true },
-  //       { text: "Call Statistics, per PBX", included: true },
-  //       { text: "Auto-dialing option, per PBX", included: true },
-  //       {
-  //         text: "Call recording with one-month storage, per PBX",
-  //         included: true,
-  //       },
-  //       { text: "CRM Integration / API, per PBX", included: true },
-  //       { text: "Integration with Microsoft Teams", included: true },
-  //       { text: "External IP-PBX Connector, per PBX", included: true },
-  //     ],
-  //   },
-  //   {
-  //     name: "Large Enterprise",
-  //     icon: <TrendingUp className="w-6 h-6" />,
-  //     price: "Custom Pricing",
-  //     period: "/month",
-  //     description: "Best for businesses with",
-  //     userRange: "50+ users",
-  //     popular: false,
-  //     features: [
-  //       { text: "Basic Cloud PBX functionality", included: true },
-  //       { text: "Sales tools, per PBX", included: true },
-  //       { text: "Call Center, per PBX", included: true },
-  //       { text: "Call Statistics, per PBX", included: true },
-  //       { text: "Auto-dialing option, per PBX", included: true },
-  //       {
-  //         text: "Call recording with one-month storage, per PBX",
-  //         included: true,
-  //       },
-  //       { text: "CRM Integration / API, per PBX", included: true },
-  //       { text: "Integration with Microsoft Teams", included: true },
-  //       { text: "External IP-PBX Connector, per PBX", included: true },
-  //     ],
-  //   },
-  // ];
+  const naira = (n) => `₦${n.toLocaleString()}`;
+
   const plans = [
     {
-      name: "Basic Level",
-      icon: <Award className="w-6 h-6" />,
-      price: "XX,XXX",
-      period: "/month",
-      description: "Best for small businesses",
-      userRange: "(min. 4 users)",
+      name: PBX_TIERS.ONE_USER,
+      icon: <User className="w-6 h-6 text-[#0A0F8F]" />,
+      price: naira(ONE_USER_CONFIG.flatAnnualLicense),
+      period: "/year",
+      rateNote: "Flat annual license · Single seat",
+      description: "Dedicated cloud PBX for solo professionals",
+      userRange: "1 user",
       popular: false,
-      features: [
-        { text: "Interactive Voice Recording", included: true },
-        { text: "Call Distribution", included: true },
-        { text: "Queue management", included: true },
-        { text: "BlackList", included: true },
-        { text: "Basic Call Report", included: true },
+      groups: [
         {
-          text: "Voicemail and FAX",
-          included: true,
+          label: "Included",
+          items: [
+            "Welcome message setup",
+            "PC & mobile app support",
+            "Deskphone (IP phone) support",
+            "Basic reports",
+          ],
         },
-        { text: "Call Forwarding", included: true },
-        { text: "Call Transfer", included: true },
-        { text: "Mobile and PC Application", included: true },
+        {
+          label: "Number",
+          items: [
+            `Mandatory Add-on: ${naira(30000)}/year`,
+          ],
+        },
       ],
     },
     {
-      name: "Medium Enterprises",
-      icon: <Shield className="w-6 h-6" />,
-      price: "XXX,XXX",
+      name: PBX_TIERS.VALUE_EDGE,
+      icon: <Shield className="w-6 h-6 text-[#0A0F8F]" />,
+      price: `${naira(STANDARD_TIER_CONFIG.VALUE_EDGE.baseRateBasic)}/user`,
       period: "/month",
-      description: "Best for businesses with",
-      userRange: "4-50 users",
+      rateNote: `${naira(STANDARD_TIER_CONFIG.VALUE_EDGE.baseRateBundled)}/user/mo bundled with add-ons`,
+      description: "Essential cloud PBX for growing teams",
+      userRange: `min. ${STANDARD_TIER_CONFIG.VALUE_EDGE.minUsers} users`,
       popular: true,
-      features: [
-        { text: "All Features in Basic Level", included: true },
-        { text: "Sales tools, per PBX", included: true },
-        { text: "Call Center, per PBX", included: true },
-        { text: "Call Statistics, per PBX", included: true },
-        { text: "Auto-dialing option, per PBX", included: true },
+      groups: [
         {
-          text: "Call recording with one-month storage, per PBX",
-          included: true,
+          label: "Call Handling",
+          items: ["IVR", "Call distribution", "Queues", "Blacklist", "Fax", "Voicemail", "Call transfer", "CUG"],
         },
-        { text: "CRM Integration / API, per PBX", included: true },
-        { text: "Integration with Microsoft Teams", included: true },
-        { text: "External IP-PBX Connector, per PBX", included: true },
+        {
+          label: "Management & Reporting",
+          items: ["Admin dashboard", "Role management", "Basic reports", "Call stats & reporting"],
+        },
+        {
+          label: "Sales Tools",
+          items: ["CRM integration", "Advanced call center", "Sales tools & callbacks", "Auto-dialing option"],
+        },
+        {
+          label: "Numbers & Credit",
+          items: [
+            "1 free 0700/0800 number",
+            `Extra numbers: ${naira(25000)}/year each`,
+            "Up to 1,200 bonus minutes/year (T&C applied)",
+            "1 month call recording",
+          ],
+        },
+        {
+          label: "Onboarding & Support",
+          items: ["Virtual onboarding session", "Standard basic support"],
+        },
       ],
     },
     {
-      name: "Large Enterprise",
-      icon: <TrendingUp className="w-6 h-6" />,
-      price: "Custom Pricing",
+      name: PBX_TIERS.PREMIUM,
+      icon: <TrendingUp className="w-6 h-6 text-[#0A0F8F]" />,
+      price: `${naira(STANDARD_TIER_CONFIG.PREMIUM.baseRateBasic)}/user`,
       period: "/month",
-      description: "Best for businesses with",
-      userRange: "50+ users",
+      rateNote: `${naira(STANDARD_TIER_CONFIG.PREMIUM.baseRateBundled)}/user/mo bundled with add-ons`,
+      description: "High-capacity PBX with enterprise features",
+      userRange: `min. ${STANDARD_TIER_CONFIG.PREMIUM.minUsers} users`,
       popular: false,
-      features: [
-        { text: "All Features in Basic Level", included: true },
-        { text: "Sales tools, per PBX", included: true },
-        { text: "Call Center, per PBX", included: true },
-        { text: "Call Statistics, per PBX", included: true },
-        { text: "Auto-dialing option, per PBX", included: true },
+      everythingIn: "ValueEdge",
+      groups: [
         {
-          text: "Call recording with one-month storage, per PBX",
-          included: true,
+          label: "Team Value",
+          items: ["1 free user for every 4 active users", "Pick your own number"],
         },
-        { text: "CRM Integration / API, per PBX", included: true },
-        { text: "Integration with Microsoft Teams", included: true },
-        { text: "External IP-PBX Connector, per PBX", included: true },
+        {
+          label: "Numbers & Credit",
+          items: [
+            "Up to 5 free 0700/0800 numbers",
+            "Up to 12,000 bonus minutes/year (T&C applied)",
+            "3 months call recording",
+            `Extra numbers: ${naira(20000)}/year each`,
+          ],
+        },
+        {
+          label: "Platform & Integration",
+          items: ["AIO integration with IntarvAS PBX (T&C applied)", "Early access to new platform features"],
+        },
+        {
+          label: "Onboarding & Support",
+          items: [
+            "Up to 2 physical onboarding sessions (T&C applied)",
+            "Dedicated premium support",
+            "Buy 1 add-on, get full PBX features free for 7 days (T&C applied)",
+          ],
+        },
       ],
     },
   ];
+
   return (
     <section id="pricing-section" className="bg-gray-50 py-20 px-8">
       <div className="max-w-7xl mx-auto">
@@ -238,70 +199,54 @@ const PricingPlans = () => {
 
                 {/* Price */}
                 <div className="mb-4">
-                  <div className="flex items-baseline gap-1 flex-wrap">
-                    {/* <span className={`font-bold ${
-                      plan.price === "Custom Pricing" 
-                        ? "text-lg sm:text-2xl md:text-2xl break-words" 
-                        : "text-4xl whitespace-nowrap"
-                    }`}>
-                      {plan.price === "Custom Pricing" ? plan.price : `₦ ${plan.price}`}
-                    </span> */}
-                    {/* {plan.price !== "Custom Pricing" && (
-                      <span className="text-gray-500 whitespace-nowrap">{plan.period}</span>
-                    )} */}
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2">
+                  {/* <div className="flex items-baseline gap-1.5 flex-wrap">
+                    <span className="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+                      ₦{plan.price}
+                    </span>
+                    <span className="text-gray-500 font-medium text-sm">
+                      {plan.period}
+                    </span>
+                  </div> */}
+                  {/* {plan.rateNote && (
+                    <div className="mt-2 inline-block text-xs font-medium text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">
+                      {plan.rateNote}
+                    </div>
+                  )} */}
+                  <p className="text-sm text-gray-600 mt-2.5">
                     {plan.description}{" "}
-                    <span className="font-semibold">{plan.userRange}</span>
+                    <br />
+                    <span className="font-semibold text-gray-800">({plan.userRange})</span>
                   </p>
                 </div>
 
-                {/* CTA Button */}
-                <ConsultationDialog triggerLabel={plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`} 
-                  triggerClassName={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${plan.popular
-                        ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
-                        : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
-                      }`}
-                />
-                {/* <a href="/contact">
-                  <button
-                    className={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-105 ${plan.popular
-                        ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
-                        : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
-                      }`}
-                  >
-
-                    {plan.price === "Custom Pricing" ? "Custom Request" : `Get Started`}
-                  </button>
-                </a> */}
-
                 {/* Features List */}
-                <div className="space-y-4">
-                  {plan.features.map((feature, idx) => (
-                    <div
-                      key={idx.toFixed()}
-                      className={`flex items-start gap-3 transition-all duration-300 hover:translate-x-1 ${visibleCards.includes(index)
-                          ? 'opacity-100 transform translate-x-0'
-                          : 'opacity-0 transform translate-x-4'
-                        }`}
-                      style={{
-                        transitionDelay: `${(idx * 50) + (index * 200)}ms`
-                      }}
-                    >
-                      <div
-                        className={`mt-0.5 flex-shrink-0 transition-colors duration-300 ${feature.included ? "text-gray-800" : "text-gray-300"
-                          }`}
-                      >
-                        <Check className="w-5 h-5" strokeWidth={2.5} />
+                <div className="h-[600px] overflow-y-auto custom-scrollbar">
+                  <div className="flex-1 flex flex-col gap-5">
+                    {plan.everythingIn && (
+                      <p className="font-medium text-[#0A0F8F]">Everything in {plan.everythingIn}, plus:</p>
+                    )}
+                    {plan.groups.map((group) => (
+                      <div key={group.label}>
+                        <p className="text-sm font-medium text-slate-400 mb-2">{group.label}</p>
+                        <ul className="space-y-2">
+                          {group.items.map((item) => (
+                            <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
+                              <Check className="w-4 h-4 text-[#0A0F8F] shrink-0 mt-0.5" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <span
-                        className={`text-sm transition-colors duration-300 ${feature.included ? "text-gray-700" : "text-gray-400"
-                          }`}
-                      >
-                        {feature.text}
-                      </span>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                  <div className="pt-6 p-3"> 
+                    <ConsultationDialog triggerLabel={`Choose ${plan.name}`} 
+                      triggerClassName={`w-full py-3 rounded-lg font-medium transition-all duration-300 mb-8 hover:scale-102 ${plan.popular
+                          ? "bg-[#0A0F8F] text-white hover:brightness-110 hover:shadow-lg"
+                          : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 hover:border-blue-300"
+                        }`}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -309,7 +254,7 @@ const PricingPlans = () => {
         </div>
 
         {/* Footer Info */}
-        <div className={`flex items-center pt-10 justify-center gap-8 text-sm text-gray-600 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
+        {/* <div className={`flex items-center pt-10 justify-center gap-8 text-sm text-gray-600 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
           <div className="flex items-center gap-2 hover:text-gray-800 transition-colors duration-300">
             <Calendar className="w-4 h-4" />
             <span>free trial on any package</span>
@@ -319,7 +264,7 @@ const PricingPlans = () => {
             <Phone className="w-4 h-4" />
             <span>free 2000 airtime</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

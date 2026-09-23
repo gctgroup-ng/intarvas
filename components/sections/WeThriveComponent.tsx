@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 interface Service {
   icon: string;
@@ -151,6 +152,21 @@ export default function ServicesShowcase() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="flex justify-between mt-24 mx-auto max-w-lg">
+        <Link href="https://drive.google.com/file/d/1F0qiPdA7ry3EO860dogYvWq_OkPdEE75/view?usp=sharing" target="_blank">
+          <Button variant="hero" size="lg" className="rounded-full px-6 py-2 text-sm hover:scale-105 transition-transform duration-300">
+            View IntarvAS Brochure
+            <ExternalLink />
+          </Button>
+        </Link>
+        <Link href="https://drive.google.com/file/d/1hsB_2Nsy2lqL_AiikEy17TdM3etLTtCX/view?usp=sharing" target="_blank">
+          <Button variant="outline" size="lg" className="rounded-full border border-[#0A0F8F] px-6 py-2 text-sm hover:scale-105 transition-transform duration-300">
+            View inVAS Presentation
+            <ExternalLink />
+          </Button>
+        </Link>
       </div>
     </section>
   );
