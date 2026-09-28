@@ -104,10 +104,10 @@ const BlockView = ({ block }: { block: ContentBlock }) => {
         case "cta":
         return (
             <div className="border-t border-gray-200 pt-5">
-            {block.heading && (
-                <h3 className="text-xl sm:text-2xl font-bold text-[#0A0F8F] mb-2">{block.heading}</h3>
-            )}
-            <Paragraphs paragraphs={block.paragraphs} className="text-gray-600 text-sm sm:text-base" />
+                {block.heading && (
+                    <h3 className="text-xl sm:text-xl font-semibold text-[#0A0F8F] mb-2">{block.heading}</h3>
+                )}
+                <Paragraphs paragraphs={block.paragraphs} className="text-[#0A0F8F] italic text-md sm:text-md" />
             </div>
         );
 
