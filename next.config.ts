@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   turbopack: {}, // Enable Turbopack
+  async redirects() {
+    return [
+      {
+        source: "/privacy-policy-3",
+        destination: "/privacy",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
