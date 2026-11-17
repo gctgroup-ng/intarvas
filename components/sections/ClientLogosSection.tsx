@@ -64,7 +64,7 @@ const ClientLogosSection = ({
     { src: "/image/clients/CIOD-logo.png", alt: "Chartered Institute of Directors", large: false },
     { src: "/image/clients/coinstick-logo.png", alt: "CoinStick Technologies", large: false },
     { src: "/image/clients/csi-grocery-logo.png", alt: "CSI Grocery", large: false, increaseSize: true, },
-    // { src: "/image/clients/distrolink-black-logo.png", alt: "Distrolink Services", large: false },
+    { src: "/image/clients/distrolink-black-logo.png", alt: "Distrolink Services", large: false },
     { src: "/image/clients/esoraehome-official-logo.webp", alt: "Esorae Home Stores", large: false },
     { src: "/image/clients/Lange-Grant.jpeg", alt: "Lange and Grant Commodities", large: false },
     { src: "/image/clients/future_homes.webp", alt: "Future Homes", large: false, increaseSize: true, },
