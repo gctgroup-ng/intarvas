@@ -17,7 +17,7 @@ const ClientLogosSection = ({
     // { src: "/image/clients/Lotus-Bank-Logo.png", alt: "Lotus Bank", large: false },
     { src: "/image/clients/aero-logo.svg", alt: "Aero", large: false },
     { src: "/image/clients/ICN.svg", alt: "ICN", large: true },
-    { src: "/image/clients/Klayed.svg", alt: "Klayed", large: false },
+    // { src: "/image/clients/Klayed.svg", alt: "Klayed", large: false },
     { src: "/image/clients/MiGO-Mobile-Black-Logo.svg", alt: "MiGO Mobile", large: false },
     { src: "/image/clients/Monieswitch.svg", alt: "Monieswitch", large: false },
     { src: "/image/clients/NMRC-Logo.svg", alt: "NMRC", large: false },
