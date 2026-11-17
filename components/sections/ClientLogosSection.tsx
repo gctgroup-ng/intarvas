@@ -58,7 +58,7 @@ const ClientLogosSection = ({
     { src: "/image/clients/instadrop.svg", alt: "Instadrop LLC", large: false },
     { src: "/image/clients/accessbest-logo.png", alt: "AccessBest Capital", large: false },
     { src: "/image/clients/Reverse-aesthetica.avif", alt: "Reverse Aesthetics", large: false },
-    { src: "/image/clients/amdor-logo.png", alt: "Amdor Analytics", large: false },
+    // { src: "/image/clients/amdor-logo.png", alt: "Amdor Analytics", large: false },
     { src: "/image/clients/bcos-logo.webp", alt: "BCOS Healthcare", large: false },
     { src: "/image/clients/Beviks-logo.avif", alt: "Beviks Realty Limited", large: false },
     { src: "/image/clients/CIOD-logo.png", alt: "Chartered Institute of Directors", large: false },
@@ -72,6 +72,13 @@ const ClientLogosSection = ({
     { src: "/image/clients/payWithPlay-logo.png", alt: "Pay With Play", large: true },
     { src: "/image/clients/SAFHAWA-LOGO.png", alt: "Safhawa Ventures", large: false },
     { src: "/image/clients/quantumbank.png", alt: "Quantum Microfinance Bank", large: false },
+
+    // 17th November, 2026
+    { src: "/image/clients/aava-brands.png", alt: "AAVA Brands Ltd", large: false },
+    { src: "/image/clients/buildbay.svg", alt: "Build Bay", large: false },
+    { src: "/image/clients/bullionsmslogo.png", alt: "Bulliom Technologies", large: false },
+    { src: "/image/clients/essenza.avif", alt: "Essenza Internaltional Limited", large: false },
+    { src: "/image/clients/travulas.png", alt: "Travulas", large: false },
     
   ];
 
