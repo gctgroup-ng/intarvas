@@ -13,7 +13,7 @@ const ClientLogosSection = ({
   const logos = [
     { src: "/image/clients/airtel.svg", alt: "Airtel", large: false,},
     { src: "/image/clients/fcmb.svg", alt: "FCMB", large: false },
-    { src: "/image/clients/mafab-1.svg", alt: "Mafab", large: false },
+    // { src: "/image/clients/mafab-1.svg", alt: "Mafab", large: false },
     // { src: "/image/clients/Lotus-Bank-Logo.png", alt: "Lotus Bank", large: false },
     { src: "/image/clients/aero-logo.svg", alt: "Aero", large: false },
     { src: "/image/clients/ICN.svg", alt: "ICN", large: true },
