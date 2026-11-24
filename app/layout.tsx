@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import SupportWidget from "@/components/common/SupportWidget";
 import WhatsAppWidget from "@/components/common/WhatappWidget";
+import AiWidget from "@/components/common/AiWidget";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
@@ -115,7 +116,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         <ClientProviders>
           <SupportWidget />
-          <WhatsAppWidget/>
+          <WhatsAppWidget />
+          <AiWidget />
           <MetaPixelProvider />
           <Toaster />
           <Sonner />
