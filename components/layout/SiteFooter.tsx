@@ -227,7 +227,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               Join our newsletter for exclusive insights and updates on the
-              latest
+              latest with intarvAS
             </p>
             <form onSubmit={handleSubmit} className="relative">
               <input
